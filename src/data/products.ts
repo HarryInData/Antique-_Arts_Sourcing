@@ -6,21 +6,21 @@ import type { Product } from "@/types";
 
 export const featuredProducts: Product[] = [
   {
-    code: "PL-A1",
-    name: "Aurelia Mesh Pendant Lamp",
-    category: "Pendant Lighting",
-    image: "/images/products/product_1.jpg",
+    code: "AQ-01",
+    name: "Heritage Brass Compass Collection",
+    category: "Antique Collectibles",
+    image: "/images/products/antique/antique_2.jpg",
   },
   {
-    code: "TL-O2",
-    name: "Orion Wire Desk Light",
-    category: "Table Lamps",
-    image: "/images/products/product_2.jpg",
+    code: "DL-01",
+    name: "Mesh Pear Tealight Holder",
+    category: "Desk Lights & Decor",
+    image: "/images/products/desk_lights/desk_light_1.jpg",
   },
   {
-    code: "PL-H3",
-    name: "Helios Dome Chandelier",
-    category: "Pendant Lighting",
-    image: "/images/products/product_3.jpg",
+    code: "LP-01",
+    name: "Wire Mesh Pendant Lamp",
+    category: "Pendant Lamps",
+    image: "/images/products/lamps/lamp_1.jpg",
   },
 ];

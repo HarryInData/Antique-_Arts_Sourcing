@@ -25,10 +25,9 @@ export interface GalleryItem {
 
 export type GalleryCategory =
   | "all"
-  | "lighting"
-  | "wire-mesh"
-  | "table-lamps"
-  | "decor";
+  | "antique"
+  | "desk-lights"
+  | "lamps";
 
 export interface GalleryFilter {
   label: string;

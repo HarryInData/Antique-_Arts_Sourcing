@@ -6,31 +6,24 @@ import type { Collection } from "@/types";
 
 export const collections: Collection[] = [
   {
-    title: "Pendant Lighting",
+    title: "Antique Collectibles",
     description:
-      "Statement ceiling fixtures that combine industrial metal weaves with warm architectural illumination.",
-    image: "/images/products/product_5.jpg",
-    filterKey: "lighting",
+      "Heritage brass clocks, compasses, telescopes, and handcrafted wooden game sets — timeless artefacts for distinguished interiors.",
+    image: "/images/products/antique/antique_3.jpg",
+    filterKey: "antique",
   },
   {
-    title: "Wire Mesh Lamps",
+    title: "Desk Lights & Decor",
     description:
-      "Intricately patterned metallic mesh fixtures creating a soft, warm atmosphere through golden weaves.",
-    image: "/images/products/product_4.jpg",
-    filterKey: "wire-mesh",
+      "Wire mesh tealight holders, decorative pendants, and accent pieces that bring warm golden ambiance to any space.",
+    image: "/images/products/desk_lights/desk_light_1.jpg",
+    filterKey: "desk-lights",
   },
   {
-    title: "Table Lamps",
+    title: "Pendant Lamps",
     description:
-      "Compact statement light pieces for sideboards, nightstands, and study desks with ambient controls.",
-    image: "/images/products/product_7.jpg",
-    filterKey: "table-lamps",
-  },
-  {
-    title: "Fruit Basket & Tableware",
-    description:
-      "Geometric wire metalware baskets, trays, and organizers providing a luxurious touch to dining and living spaces.",
-    image: "/images/products/product_8.jpg",
-    filterKey: "decor",
+      "Statement ceiling fixtures featuring intricate wire mesh weaves, industrial cages, and layered metalwork designs.",
+    image: "/images/products/lamps/lamp_4.jpg",
+    filterKey: "lamps",
   },
 ];

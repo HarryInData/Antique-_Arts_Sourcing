@@ -20,7 +20,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.25, 1, 0.5, 1] },
+    transition: { duration: 0.6, ease: [0.25, 1, 0.5, 1] as [number, number, number, number] },
   },
 };
 
@@ -138,7 +138,7 @@ export const AboutSection: FC = () => {
             <div className="about-glow absolute -inset-[10%] bg-[radial-gradient(circle,rgba(255,211,122,0.15)_0%,rgba(15,15,15,0)_70%)] pointer-events-none z-0" />
             <div className="relative z-[1] w-full aspect-[4/5] rounded-image overflow-hidden border border-white/5 shadow-[0_30px_60px_rgba(0,0,0,0.5)]">
               <Image
-                src="/images/products/product_6.jpg"
+                src="/images/products/antique/antique_1.jpg"
                 alt="Handcrafted artisan decorative piece"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

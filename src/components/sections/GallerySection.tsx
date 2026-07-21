@@ -19,13 +19,13 @@ const itemVariants = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.25, 1, 0.5, 1] },
+    transition: { duration: 0.5, ease: [0.25, 1, 0.5, 1] as [number, number, number, number] },
   },
   exit: {
     opacity: 0,
     scale: 0.88,
     y: -20,
-    transition: { duration: 0.3, ease: [0.5, 0, 0.75, 0] },
+    transition: { duration: 0.3, ease: [0.5, 0, 0.75, 0] as [number, number, number, number] },
   },
 };
 
