@@ -1,0 +1,23 @@
+{
+  "name": "Antique Arts Sourcing",
+  "short_name": "AAS",
+  "description": "Premium Handcrafted Luxury Lighting & Bespoke Home Décor — Global Sourcing Partner",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F0F0F",
+  "theme_color": "#D6A84F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/branding/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/branding/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "categories": ["business", "shopping", "lifestyle"]
+}

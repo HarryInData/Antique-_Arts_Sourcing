@@ -22,8 +22,8 @@ export const whyUsFeatures: WhyUsFeature[] = [
   {
     iconPath:
       "m21.5 9.75l-8.5-6.5l-8.5 6.5v11.5h17v-11.5m-3.5 10.25h-10v-9.5l5-3.8l5 3.8v9.5m-1-5.75h-8v1.5h8v-1.5m0-3h-8v1.5h8v-1.5Z",
-    title: "Nationwide Delivery",
+    title: "Worldwide Delivery",
     description:
-      "Each light fixture is packaged in wooden crates with bubble wraps to ensure safe delivery and pristine installation nationwide.",
+      "Each light fixture is packaged in wooden crates with bubble wraps to ensure safe delivery and pristine installation worldwide.",
   },
 ];
