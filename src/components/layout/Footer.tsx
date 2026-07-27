@@ -17,16 +17,17 @@ export const Footer: FC = () => {
           
           {/* Brand Column */}
           <div className="footer-col-brand">
-            <Link href="/" className="logo flex items-center gap-3 no-underline mb-6 flex-shrink-0">
-              <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white/10">
+            <Link href="/" className="logo flex items-center gap-3.5 no-underline mb-6 flex-shrink-0 group">
+              <div className="relative w-8 h-8 flex-shrink-0">
                 <Image
-                  src="/images/branding/antique-arts-sourcing-logo.jpeg"
+                  src="/images/branding/antique-arts-sourcing-emblem.png"
                   alt="Antique Arts Sourcing Logo"
                   fill
-                  className="object-cover"
+                  sizes="32px"
+                  className="object-contain"
                 />
               </div>
-              <span className="brand-text text-[1.25rem] tracking-[0.18em] whitespace-nowrap">
+              <span className="brand-text text-[1.25rem] tracking-[0.18em] whitespace-nowrap text-white group-hover:text-accent-gold transition-colors duration-200">
                 {siteConfig.brandName}
               </span>
             </Link>

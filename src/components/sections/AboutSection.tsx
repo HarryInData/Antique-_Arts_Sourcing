@@ -140,13 +140,13 @@ export const AboutSection: FC = () => {
             
             {/* Logo + Brand name above image */}
             <div className="relative z-[1] flex items-center gap-3.5 mb-4">
-              <div className="relative w-[40px] h-[40px] rounded-full overflow-hidden border border-accent-gold/40 shadow-sm">
+              <div className="relative w-[36px] h-[36px] flex-shrink-0">
                 <Image
-                  src="/images/branding/antique-arts-sourcing-logo.jpeg"
+                  src="/images/branding/antique-arts-sourcing-emblem.png"
                   alt="Antique Arts Sourcing logo"
                   fill
-                  sizes="40px"
-                  className="object-cover"
+                  sizes="36px"
+                  className="object-contain"
                 />
               </div>
               <p className="font-heading text-white text-[1.05rem] font-bold tracking-[0.12em] uppercase">
