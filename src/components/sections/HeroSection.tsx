@@ -250,7 +250,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ frames, isLoaded }) => {
                   Bespoke handcrafted lighting and luxury decorative items. Meticulously designed for spaces that demand the extraordinary.
                 </p>
                 <div className="flex gap-4 flex-wrap pointer-events-auto">
-                  <Button href="#collections" variant="primary">
+                  <Button href="/collections" variant="primary">
                     Explore Collections
                   </Button>
                 </div>
