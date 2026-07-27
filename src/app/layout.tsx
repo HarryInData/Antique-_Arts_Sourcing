@@ -30,25 +30,12 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-// ─── SEO Metadata (OG + Twitter Cards + Manifest + Icons) ───
+// ─── SEO Metadata (OG + Twitter Cards + Manifest + Icons + Hreflang) ───
 export const metadata: Metadata = {
   metadataBase: new URL("https://antiqueartssourcing.com"),
   title: "Antique Arts Sourcing | Premium Handcrafted Lighting & Luxury Décor",
   description:
-    "Antique Arts Sourcing is a premium luxury lighting and home décor brand. Explore our handcrafted pendant lighting, wire mesh lamps, and table lamps designed to illuminate and elevate your spaces.",
-  keywords: [
-    "luxury lighting",
-    "premium home decor",
-    "handcrafted pendant light",
-    "wire mesh lamp",
-    "Antique Arts Sourcing",
-    "table lamp",
-    "fruit basket",
-    "brass decor exporter India",
-    "bespoke lighting manufacturer",
-    "architectural lighting supplier",
-    "luxury home decor wholesale",
-  ],
+    "Antique Arts Sourcing is a global manufacturer & exporter of luxury handcrafted lighting, wire mesh pendant lamps, and bespoke brass decor for architects and designers worldwide.",
   openGraph: {
     title: "Antique Arts Sourcing | Premium Handcrafted Lighting & Luxury Décor",
     description:
@@ -57,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Antique Arts Sourcing",
     images: [
       {
-        url: "/images/branding/logo.jpeg",
+        url: "/images/branding/antique-arts-sourcing-founders-firozabad.jpg",
         width: 1200,
         height: 630,
         alt: "Antique Arts Sourcing — Premium Handcrafted Luxury Lighting & Décor",
@@ -71,19 +58,25 @@ export const metadata: Metadata = {
     title: "Antique Arts Sourcing | Premium Handcrafted Lighting & Luxury Décor",
     description:
       "Discover handcrafted pendant lighting, wire mesh lamps, and luxury home décor by Antique Arts Sourcing. Timeless Craftsmanship. Trusted Sourcing. Global Reach.",
-    images: ["/images/branding/logo.jpeg"],
+    images: ["/images/branding/antique-arts-sourcing-founders-firozabad.jpg"],
   },
   manifest: "/site.webmanifest",
   icons: {
-    icon: "/images/branding/logo.jpeg",
-    apple: "/images/branding/logo.jpeg",
+    icon: "/images/branding/antique-arts-sourcing-logo.jpeg",
+    apple: "/images/branding/antique-arts-sourcing-logo.jpeg",
   },
   alternates: {
     canonical: "https://antiqueartssourcing.com",
+    languages: {
+      "en-US": "https://antiqueartssourcing.com",
+      "en-GB": "https://antiqueartssourcing.com",
+      "en-IN": "https://antiqueartssourcing.com",
+      "x-default": "https://antiqueartssourcing.com",
+    },
   },
 };
 
-// ─── JSON-LD Structured Data (Organization + WebSite + Products) ───
+// ─── JSON-LD Structured Data (Organization + WebSite + Products + Breadcrumb) ───
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -92,7 +85,7 @@ const jsonLd = {
       "@id": "https://antiqueartssourcing.com/#organization",
       "name": "Antique Arts Sourcing",
       "url": "https://antiqueartssourcing.com",
-      "logo": "https://antiqueartssourcing.com/images/branding/logo.jpeg",
+      "logo": "https://antiqueartssourcing.com/images/branding/antique-arts-sourcing-logo.jpeg",
       "description":
         "Manufacturer & Global Exporter of Handcrafted Luxury Decorative Lighting, Architectural Metalwork, and Bespoke Home Décor.",
       "address": {
@@ -109,7 +102,6 @@ const jsonLd = {
         "contactType": "sales",
         "availableLanguage": ["English", "Hindi"],
       },
-      "sameAs": [],
     },
     {
       "@type": "WebSite",
@@ -121,9 +113,61 @@ const jsonLd = {
       },
     },
     {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is your Minimum Order Quantity (MOQ) for wholesale & custom orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accommodate both boutique trade projects and large-scale commercial hospitality orders. MOQs vary by collection—typically starting from 10 to 20 units per design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer bespoke design, custom dimensions, and finish customization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, custom craftsmanship is our specialty. Architects, interior designers, and luxury brands can request custom wire mesh densities, custom dimensions, and specific patinas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which international electrical wiring & certification standards do you support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our lighting fixtures can be wired and assembled to meet UL (North America), CE (Europe), SAA (Australia/NZ), and BS (UK) electrical specifications upon request."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://antiqueartssourcing.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Collections",
+          "item": "https://antiqueartssourcing.com/collections"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gallery",
+          "item": "https://antiqueartssourcing.com/gallery"
+        }
+      ]
+    },
+    {
       "@type": "Product",
       "name": "Heritage Brass Compass Collection",
-      "image": "https://antiqueartssourcing.com/images/products/antique/antique_2.jpg",
+      "image": "https://antiqueartssourcing.com/images/products/antique/heritage-brass-compass-collection.jpg",
       "description":
         "Handcrafted heritage brass compass collection — premium antique collectible pieces sourced from skilled Indian artisan workshops.",
       "brand": {
@@ -136,19 +180,17 @@ const jsonLd = {
         "@id": "https://antiqueartssourcing.com/#organization",
       },
       "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
+        "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "price": "0",
         "priceValidUntil": "2027-12-31",
         "url": "https://antiqueartssourcing.com/#featured",
-        "description": "Contact for wholesale & B2B pricing",
+        "description": "Wholesale B2B pricing available upon enquiry",
       },
     },
     {
       "@type": "Product",
       "name": "Mesh Pear Tealight Holder",
-      "image": "https://antiqueartssourcing.com/images/products/desk_lights/desk_light_1.jpg",
+      "image": "https://antiqueartssourcing.com/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
       "description":
         "Artisanal mesh pear tealight holder crafted from woven copper wire — ambient desk & table lighting accent for luxury interiors.",
       "brand": {
@@ -161,19 +203,17 @@ const jsonLd = {
         "@id": "https://antiqueartssourcing.com/#organization",
       },
       "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
+        "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "price": "0",
         "priceValidUntil": "2027-12-31",
         "url": "https://antiqueartssourcing.com/#featured",
-        "description": "Contact for wholesale & B2B pricing",
+        "description": "Wholesale B2B pricing available upon enquiry",
       },
     },
     {
       "@type": "Product",
       "name": "Wire Mesh Pendant Lamp",
-      "image": "https://antiqueartssourcing.com/images/products/lamps/lamp_1.jpg",
+      "image": "https://antiqueartssourcing.com/images/products/lamps/wire-mesh-trapeze-pendant-lamp.jpg",
       "description":
         "Signature handwoven pure copper wire mesh pendant lamp — creates warm ambient shadow patterns for dining areas, hotel lobbies, and architectural installations.",
       "brand": {
@@ -186,13 +226,11 @@ const jsonLd = {
         "@id": "https://antiqueartssourcing.com/#organization",
       },
       "offers": {
-        "@type": "Offer",
-        "availability": "https://schema.org/InStock",
+        "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "price": "0",
         "priceValidUntil": "2027-12-31",
         "url": "https://antiqueartssourcing.com/#featured",
-        "description": "Contact for wholesale & B2B pricing",
+        "description": "Wholesale B2B pricing available upon enquiry",
       },
     },
   ],
@@ -204,8 +242,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${outfit.variable} ${cormorant.variable} scroll-smooth`}>
-      <body className="antialiased bg-[#0F0F0F] text-white font-body overflow-x-hidden leading-relaxed">
+    <html lang="en" className={`${playfair.variable} ${outfit.variable} ${cormorant.variable} scroll-smooth`} suppressHydrationWarning>
+      <body className="antialiased bg-[#0F0F0F] text-white font-body overflow-x-hidden leading-relaxed" suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

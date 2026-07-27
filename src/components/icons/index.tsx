@@ -59,6 +59,13 @@ export const DownloadIcon: FC<IconProps> = ({ className = "w-[18px] h-[18px]", .
   </svg>
 );
 
+/** Chevron Down icon */
+export const ChevronDownIcon: FC<IconProps> = ({ className = "w-[18px] h-[18px]", ...props }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="m6 9 6 6 6-6" />
+  </svg>
+);
+
 /** Generic SVG icon from a path string */
 export const CustomIcon: FC<IconProps & { d: string }> = ({
   className = "w-[18px] h-[18px]",

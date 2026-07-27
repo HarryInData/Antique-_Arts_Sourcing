@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { CustomIcon } from "../icons";
 import { siteConfig } from "@/data/siteConfig";
 import { footerShowroomLinks, footerExhibitionLinks } from "@/data/navigation";
@@ -16,10 +17,10 @@ export const Footer: FC = () => {
           
           {/* Brand Column */}
           <div className="footer-col-brand">
-            <a href="#" className="logo flex items-center gap-3 no-underline mb-6 flex-shrink-0">
+            <Link href="/" className="logo flex items-center gap-3 no-underline mb-6 flex-shrink-0">
               <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white/10">
                 <Image
-                  src="/images/branding/logo.jpeg"
+                  src="/images/branding/antique-arts-sourcing-logo.jpeg"
                   alt="Antique Arts Sourcing Logo"
                   fill
                   className="object-cover"
@@ -28,7 +29,7 @@ export const Footer: FC = () => {
               <span className="brand-text text-[1.25rem] tracking-[0.18em] whitespace-nowrap">
                 {siteConfig.brandName}
               </span>
-            </a>
+            </Link>
             <p className="footer-brand-desc text-text-muted text-[0.95rem] leading-[1.7] font-light">
               Curating premium lighting systems and handcrafted home metalware accessories designed to elevate modern environments.
             </p>
@@ -41,13 +42,13 @@ export const Footer: FC = () => {
             </h4>
             <ul className="footer-list list-none space-y-3 p-0 m-0">
               {footerShowroomLinks.map((link) => (
-                <li key={link.href}>
-                  <a
+                <li key={link.label}>
+                  <Link
                     href={link.href}
                     className="footer-link text-text-gray font-light text-[0.9rem] hover:text-accent-gold hover:pl-1 transition-all duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -60,13 +61,13 @@ export const Footer: FC = () => {
             </h4>
             <ul className="footer-list list-none space-y-3 p-0 m-0">
               {footerExhibitionLinks.map((link) => (
-                <li key={link.href}>
-                  <a
+                <li key={link.label}>
+                  <Link
                     href={link.href}
                     className="footer-link text-text-gray font-light text-[0.9rem] hover:text-accent-gold hover:pl-1 transition-all duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

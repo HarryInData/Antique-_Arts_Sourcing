@@ -9,6 +9,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { WhyUsSection } from "@/components/sections/WhyUsSection";
 import { GallerySection } from "@/components/sections/GallerySection";
 import { CatalogueSection } from "@/components/sections/CatalogueSection";
+import { FaqSection } from "@/components/sections/FaqSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Lightbox } from "@/components/ui/Lightbox";
 
@@ -50,6 +51,9 @@ export default function Home() {
 
       {/* Catalogue Preview Section */}
       <CatalogueSection />
+
+      {/* Frequently Asked Questions Section */}
+      <FaqSection />
 
       {/* Contact & Consultation Enquiry Form */}
       <ContactSection />

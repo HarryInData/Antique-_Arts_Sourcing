@@ -142,7 +142,7 @@ export const AboutSection: FC = () => {
             <div className="relative z-[1] flex items-center gap-3.5 mb-4">
               <div className="relative w-[40px] h-[40px] rounded-full overflow-hidden border border-accent-gold/40 shadow-sm">
                 <Image
-                  src="/images/branding/logo.jpeg"
+                  src="/images/branding/antique-arts-sourcing-logo.jpeg"
                   alt="Antique Arts Sourcing logo"
                   fill
                   sizes="40px"
@@ -154,11 +154,11 @@ export const AboutSection: FC = () => {
               </p>
             </div>
 
-            {/* Image container — uses viewport height to fill the screen */}
-            <div className="relative z-[1] w-full rounded-image overflow-hidden border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-black" style={{ height: "calc(100vh - 260px)" }}>
+            {/* Image container — responsive height on mobile, calc on desktop */}
+            <div className="relative z-[1] w-full min-h-[380px] h-[450px] lg:h-[calc(100vh-260px)] rounded-image overflow-hidden border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-black">
               <Image
-                src="/images/branding/our_story.jpg"
-                alt="MR Decorative founding team — three founders standing together"
+                src="/images/branding/antique-arts-sourcing-founders-firozabad.jpg"
+                alt="Antique Arts Sourcing founding team — three founders standing together"
                 fill
                 sizes="(max-width: 1024px) 100vw, 48vw"
                 className="object-contain object-center"
