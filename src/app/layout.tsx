@@ -62,8 +62,15 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   icons: {
-    icon: "/images/branding/antique-arts-sourcing-logo.jpeg",
-    apple: "/images/branding/antique-arts-sourcing-logo.jpeg",
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/images/branding/antique-arts-sourcing-emblem.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/images/branding/antique-arts-sourcing-emblem.png"],
   },
   alternates: {
     canonical: "https://antiqueartssourcing.com",
