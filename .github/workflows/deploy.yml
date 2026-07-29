@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Trigger Hostinger Deployment API
+    name: Deploy to Hostinger via SSH
     runs-on: ubuntu-latest
 
     steps:
@@ -18,19 +18,28 @@ jobs:
       - name: Create Clean Source Zip Archive
         run: git archive -o source.zip HEAD
 
-      - name: Deploy to Hostinger JS Hosting
+      - name: Setup SSH Agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.HOSTINGER_SSH_KEY }}
+
+      - name: Upload and Deploy via SSH to Hostinger
         env:
-          HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN }}
+          HOSTINGER_HOST: "217.21.90.210"
+          HOSTINGER_PORT: "65002"
+          HOSTINGER_USER: "u689912606"
           DOMAIN: "antiqueartssourcing.com"
         run: |
-          if [ -z "$HOSTINGER_API_TOKEN" ]; then
-            echo "::error::HOSTINGER_API_TOKEN is missing in GitHub Secrets!"
-            echo "Please add HOSTINGER_API_TOKEN under GitHub Settings -> Secrets and variables -> Actions."
-            exit 1
-          fi
+          mkdir -p ~/.ssh
+          ssh-keyscan -p $HOSTINGER_PORT -H $HOSTINGER_HOST >> ~/.ssh/known_hosts 2>/dev/null || true
 
-          echo "Uploading source.zip and triggering Hostinger Deployment API for $DOMAIN..."
-          curl -s -X POST "https://api.hostinger.com/v1/hosting/js-deployments" \
-            -H "Authorization: Bearer $HOSTINGER_API_TOKEN" \
-            -F "domain=$DOMAIN" \
-            -F "file=@source.zip"
+          echo "Uploading source.zip to Hostinger server..."
+          scp -P $HOSTINGER_PORT source.zip ${HOSTINGER_USER}@${HOSTINGER_HOST}:/home/${HOSTINGER_USER}/domains/${DOMAIN}/
+
+          echo "Deploying on Hostinger..."
+          ssh -p $HOSTINGER_PORT ${HOSTINGER_USER}@${HOSTINGER_HOST} "
+            cd /home/${HOSTINGER_USER}/domains/${DOMAIN}/ && \
+            unzip -o source.zip -d public_html/ && \
+            rm -f source.zip
+          "
+          echo "Deployment uploaded successfully to Hostinger!"
