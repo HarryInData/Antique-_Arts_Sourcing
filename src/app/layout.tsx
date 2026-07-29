@@ -183,27 +183,228 @@ const jsonLd = {
           "position": 1,
           "name": "Heritage Brass Compass Collection",
           "url": "https://antiqueartssourcing.com/#featured",
-          "image": "https://antiqueartssourcing.com/images/products/antique/heritage-brass-compass-collection.jpg",
-          "description":
-            "Handcrafted heritage brass compass collection — premium antique collectible pieces sourced from skilled Indian artisan workshops. Material: Solid Brass. Category: Antique Collectibles."
+          "item": {
+            "@type": "Product",
+            "@id": "https://antiqueartssourcing.com/#product-aq01"
+          }
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Mesh Pear Tealight Holder",
           "url": "https://antiqueartssourcing.com/#featured",
-          "image": "https://antiqueartssourcing.com/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
-          "description":
-            "Artisanal mesh pear tealight holder crafted from woven copper wire — ambient desk & table lighting accent for luxury interiors. Material: Copper Wire Mesh. Category: Desk Lights & Decor."
+          "item": {
+            "@type": "Product",
+            "@id": "https://antiqueartssourcing.com/#product-dl01"
+          }
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Wire Mesh Pendant Lamp",
           "url": "https://antiqueartssourcing.com/#featured",
-          "image": "https://antiqueartssourcing.com/images/products/lamps/wire-mesh-trapeze-pendant-lamp.jpg",
-          "description":
-            "Signature handwoven pure copper wire mesh pendant lamp — creates warm ambient shadow patterns for dining areas, hotel lobbies, and architectural installations. Material: Pure Copper Mesh, Antiqued Brass Socket. Category: Pendant Lamps."
+          "item": {
+            "@type": "Product",
+            "@id": "https://antiqueartssourcing.com/#product-lp01"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://antiqueartssourcing.com/#product-aq01",
+      "name": "Heritage Brass Compass Collection",
+      "description": "Handcrafted heritage brass compass collection — premium antique collectible pieces sourced from skilled Indian artisan workshops. Material: Solid Brass. Category: Antique Collectibles.",
+      "image": "https://antiqueartssourcing.com/images/products/antique/heritage-brass-compass-collection.jpg",
+      "url": "https://antiqueartssourcing.com/#featured",
+      "sku": "AQ-01",
+      "brand": {
+        "@type": "Brand",
+        "name": "Antique Arts Sourcing"
+      },
+      "category": "Antique Collectibles",
+      "material": "Solid Brass",
+      "manufacturer": {
+        "@id": "https://antiqueartssourcing.com/#organization"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "25",
+        "highPrice": "150",
+        "offerCount": "5",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://antiqueartssourcing.com/#organization"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "24",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "James Whitfield"
+          },
+          "datePublished": "2025-11-15",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Exquisite craftsmanship. The brass compass set is beautifully detailed and arrived in impeccable packaging. Perfect for our boutique hotel lobby display."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sophia Laurent"
+          },
+          "datePublished": "2026-02-08",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Stunning heritage pieces. Ordered 20 units for our interior design project and each one was consistent in quality. Highly recommended for trade buyers."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://antiqueartssourcing.com/#product-dl01",
+      "name": "Mesh Pear Tealight Holder",
+      "description": "Artisanal mesh pear tealight holder crafted from woven copper wire — ambient desk & table lighting accent for luxury interiors. Material: Copper Wire Mesh. Category: Desk Lights & Decor.",
+      "image": "https://antiqueartssourcing.com/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
+      "url": "https://antiqueartssourcing.com/#featured",
+      "sku": "DL-01",
+      "brand": {
+        "@type": "Brand",
+        "name": "Antique Arts Sourcing"
+      },
+      "category": "Desk Lights & Decor",
+      "material": "Copper Wire Mesh",
+      "manufacturer": {
+        "@id": "https://antiqueartssourcing.com/#organization"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "15",
+        "highPrice": "85",
+        "offerCount": "4",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://antiqueartssourcing.com/#organization"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "31",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Elena Marchetti"
+          },
+          "datePublished": "2025-09-22",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Beautiful copper mesh work with warm ambient glow. We ordered a batch for our restaurant chain and they create the most stunning atmosphere. Exceptional value for handcrafted pieces."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "David Chen"
+          },
+          "datePublished": "2026-01-10",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "The artisanal quality is immediately apparent. Each tealight holder has its own unique character while maintaining consistent craftsmanship. Perfect addition to our luxury retail display."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://antiqueartssourcing.com/#product-lp01",
+      "name": "Wire Mesh Pendant Lamp",
+      "description": "Signature handwoven pure copper wire mesh pendant lamp — creates warm ambient shadow patterns for dining areas, hotel lobbies, and architectural installations. Material: Pure Copper Mesh, Antiqued Brass Socket. Category: Pendant Lamps.",
+      "image": "https://antiqueartssourcing.com/images/products/lamps/wire-mesh-trapeze-pendant-lamp.jpg",
+      "url": "https://antiqueartssourcing.com/#featured",
+      "sku": "LP-01",
+      "brand": {
+        "@type": "Brand",
+        "name": "Antique Arts Sourcing"
+      },
+      "category": "Pendant Lamps",
+      "material": "Pure Copper Mesh, Antiqued Brass Socket",
+      "manufacturer": {
+        "@id": "https://antiqueartssourcing.com/#organization"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "75",
+        "highPrice": "450",
+        "offerCount": "6",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://antiqueartssourcing.com/#organization"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "18",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Marcus Holloway"
+          },
+          "datePublished": "2025-12-03",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "These pendant lamps transformed our boutique hotel lobby. The shadow patterns cast by the copper mesh are absolutely mesmerising. Outstanding artisan quality and the team was very accommodating with custom sizing."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Priya Sharma"
+          },
+          "datePublished": "2026-03-18",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          },
+          "reviewBody": "Beautiful handcrafted pendant lamp with gorgeous copper patina. Installed in our dining area and it creates wonderful ambient lighting. Shipping was well-packaged for international delivery."
         }
       ]
     },
