@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── JSON-LD Structured Data (Organization + WebSite + Products + Breadcrumb) ───
+// ─── JSON-LD Structured Data (Organization + WebSite + FAQ + Breadcrumb + ItemList) ───
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -165,73 +165,40 @@ const jsonLd = {
       ]
     },
     {
-      "@type": "Product",
-      "name": "Heritage Brass Compass Collection",
-      "image": "https://antiqueartssourcing.com/images/products/antique/heritage-brass-compass-collection.jpg",
-      "description":
-        "Handcrafted heritage brass compass collection — premium antique collectible pieces sourced from skilled Indian artisan workshops.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Antique Arts Sourcing",
-      },
-      "category": "Antique Collectibles",
-      "material": "Solid Brass",
-      "manufacturer": {
-        "@id": "https://antiqueartssourcing.com/#organization",
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2027-12-31",
-        "url": "https://antiqueartssourcing.com/#featured",
-        "description": "Wholesale B2B pricing available upon enquiry",
-      },
-    },
-    {
-      "@type": "Product",
-      "name": "Mesh Pear Tealight Holder",
-      "image": "https://antiqueartssourcing.com/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
-      "description":
-        "Artisanal mesh pear tealight holder crafted from woven copper wire — ambient desk & table lighting accent for luxury interiors.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Antique Arts Sourcing",
-      },
-      "category": "Desk Lights & Decor",
-      "material": "Copper Wire Mesh",
-      "manufacturer": {
-        "@id": "https://antiqueartssourcing.com/#organization",
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2027-12-31",
-        "url": "https://antiqueartssourcing.com/#featured",
-        "description": "Wholesale B2B pricing available upon enquiry",
-      },
-    },
-    {
-      "@type": "Product",
-      "name": "Wire Mesh Pendant Lamp",
-      "image": "https://antiqueartssourcing.com/images/products/lamps/wire-mesh-trapeze-pendant-lamp.jpg",
-      "description":
-        "Signature handwoven pure copper wire mesh pendant lamp — creates warm ambient shadow patterns for dining areas, hotel lobbies, and architectural installations.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Antique Arts Sourcing",
-      },
-      "category": "Pendant Lamps",
-      "material": "Pure Copper Mesh, Antiqued Brass Socket",
-      "manufacturer": {
-        "@id": "https://antiqueartssourcing.com/#organization",
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2027-12-31",
-        "url": "https://antiqueartssourcing.com/#featured",
-        "description": "Wholesale B2B pricing available upon enquiry",
-      },
+      "@type": "ItemList",
+      "name": "Featured Collections — Antique Arts Sourcing",
+      "description": "Curated showcase of handcrafted luxury lighting, antique collectibles, and bespoke décor available for wholesale B2B enquiry.",
+      "url": "https://antiqueartssourcing.com/#featured",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Heritage Brass Compass Collection",
+          "url": "https://antiqueartssourcing.com/#featured",
+          "image": "https://antiqueartssourcing.com/images/products/antique/heritage-brass-compass-collection.jpg",
+          "description":
+            "Handcrafted heritage brass compass collection — premium antique collectible pieces sourced from skilled Indian artisan workshops. Material: Solid Brass. Category: Antique Collectibles."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mesh Pear Tealight Holder",
+          "url": "https://antiqueartssourcing.com/#featured",
+          "image": "https://antiqueartssourcing.com/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
+          "description":
+            "Artisanal mesh pear tealight holder crafted from woven copper wire — ambient desk & table lighting accent for luxury interiors. Material: Copper Wire Mesh. Category: Desk Lights & Decor."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wire Mesh Pendant Lamp",
+          "url": "https://antiqueartssourcing.com/#featured",
+          "image": "https://antiqueartssourcing.com/images/products/lamps/wire-mesh-trapeze-pendant-lamp.jpg",
+          "description":
+            "Signature handwoven pure copper wire mesh pendant lamp — creates warm ambient shadow patterns for dining areas, hotel lobbies, and architectural installations. Material: Pure Copper Mesh, Antiqued Brass Socket. Category: Pendant Lamps."
+        }
+      ]
     },
   ],
 };
