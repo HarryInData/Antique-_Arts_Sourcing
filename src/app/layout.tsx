@@ -33,13 +33,13 @@ const cormorant = Cormorant_Garamond({
 // ─── SEO Metadata (OG + Twitter Cards + Manifest + Icons + Hreflang) ───
 export const metadata: Metadata = {
   metadataBase: new URL("https://antiqueartssourcing.com"),
-  title: "Antique Arts Sourcing | Premium Handcrafted Lighting & Luxury Décor",
+  title: "Luxury Decor Exporter India | Antique Arts Sourcing",
   description:
-    "Antique Arts Sourcing is a global manufacturer & exporter of luxury handcrafted lighting, wire mesh pendant lamps, and bespoke brass decor for architects and designers worldwide.",
+    "India's premier B2B export partner for handcrafted luxury décor, bespoke furniture, glass artistry & architectural lighting. OEM/ODM custom manufacturing for importers, architects & hospitality brands across 20+ countries.",
   openGraph: {
-    title: "Antique Arts Sourcing | Premium Handcrafted Lighting & Luxury Décor",
+    title: "Luxury Decor Exporter India | Antique Arts Sourcing",
     description:
-      "A luxury showroom of handcrafted pendant lighting and home décor. Discover the art of illumination.",
+      "B2B export sourcing for handcrafted luxury décor, antique collectibles, bespoke furniture, and architectural lighting. Custom OEM/ODM manufacturing from Firozabad, India.",
     url: "https://antiqueartssourcing.com",
     siteName: "Antique Arts Sourcing",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: "/images/branding/antique-arts-sourcing-founders-firozabad.jpg",
         width: 1200,
         height: 630,
-        alt: "Antique Arts Sourcing — Premium Handcrafted Luxury Lighting & Décor",
+        alt: "Antique Arts Sourcing — India's Premier B2B Luxury Décor Export Partner",
       },
     ],
     type: "website",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Antique Arts Sourcing | Premium Handcrafted Lighting & Luxury Décor",
+    title: "Luxury Decor Exporter India | Antique Arts Sourcing",
     description:
-      "Discover handcrafted pendant lighting, wire mesh lamps, and luxury home décor by Antique Arts Sourcing. Timeless Craftsmanship. Trusted Sourcing. Global Reach.",
+      "B2B export partner for handcrafted luxury décor, bespoke furniture, glass artistry & architectural lighting. OEM/ODM. 20+ countries. Firozabad, India.",
     images: ["/images/branding/antique-arts-sourcing-founders-firozabad.jpg"],
   },
   manifest: "/site.webmanifest",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── JSON-LD Structured Data (Organization + WebSite + FAQ + Breadcrumb + ItemList) ───
+// ─── JSON-LD Structured Data (B2B Organization + WebSite + FAQPage + BreadcrumbList) ───
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -91,30 +91,64 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://antiqueartssourcing.com/#organization",
       "name": "Antique Arts Sourcing",
+      "alternateName": "AAS India",
       "url": "https://antiqueartssourcing.com",
       "logo": "https://antiqueartssourcing.com/images/branding/antique-arts-sourcing-logo.jpeg",
       "description":
-        "Manufacturer & Global Exporter of Handcrafted Luxury Decorative Lighting, Architectural Metalwork, and Bespoke Home Décor.",
+        "India's premier B2B export sourcing company specialising in handcrafted luxury décor, bespoke furniture, glass artistry, antique collectibles, and architectural decorative lighting for international importers, architects, and hospitality procurement.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Firozabad, Uttar Pradesh, India",
+      },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Dholpura road Pradeep Nagar",
+        "streetAddress": "Dholpura Road, Pradeep Nagar",
         "addressLocality": "Firozabad",
         "addressRegion": "Uttar Pradesh",
         "postalCode": "283203",
         "addressCountry": "IN",
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-75037-95101",
-        "contactType": "sales",
-        "availableLanguage": ["English", "Hindi"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-75037-95101",
+          "contactType": "B2B Export Sales",
+          "availableLanguage": ["English", "Hindi"],
+          "areaServed": ["US", "GB", "AE", "AU", "CA", "DE", "FR", "IT", "NL"],
+        },
+      ],
+      "sameAs": [],
+      "knowsAbout": [
+        "OEM Custom Manufacturing",
+        "ODM Private Label Manufacturing",
+        "Luxury Home Décor Export",
+        "Handcrafted Brass & Copper Artistry",
+        "Glass & Crystal Artistry",
+        "Bespoke Furniture & Joinery",
+        "Architectural Decorative Lighting",
+        "Hotel & Hospitality Décor",
+        "Antique Collectibles Export",
+        "ISPM-15 Export Packaging",
+        "Factory Audits & AQL Inspection",
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Luxury Décor & Custom Manufacturing Export Catalog",
+        "itemListElement": [
+          { "@type": "OfferCatalog", "name": "Antique Collectibles" },
+          { "@type": "OfferCatalog", "name": "Luxury Home Décor & Metal Art" },
+          { "@type": "OfferCatalog", "name": "Glass & Crystal Artistry" },
+          { "@type": "OfferCatalog", "name": "Bespoke Furniture & Joinery" },
+          { "@type": "OfferCatalog", "name": "Hotel & Hospitality Accents" },
+          { "@type": "OfferCatalog", "name": "Architectural Decorative Lighting" },
+        ],
       },
     },
     {
       "@type": "WebSite",
       "@id": "https://antiqueartssourcing.com/#website",
       "url": "https://antiqueartssourcing.com",
-      "name": "Antique Arts Sourcing",
+      "name": "Antique Arts Sourcing — Global Luxury Décor Export Partner",
       "publisher": {
         "@id": "https://antiqueartssourcing.com/#organization",
       },
@@ -124,29 +158,53 @@ const jsonLd = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is your Minimum Order Quantity (MOQ) for wholesale & custom orders?",
+          "name": "What product categories does Antique Arts Sourcing export?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We accommodate both boutique trade projects and large-scale commercial hospitality orders. MOQs vary by collection—typically starting from 10 to 20 units per design."
-          }
+            "text": "We export six core categories: Antique Collectibles, Luxury Home Décor & Metal Art, Glass & Crystal Artistry, Bespoke Furniture & Joinery, Hotel & Hospitality Accents, and Architectural Decorative Lighting. All products are available for OEM/ODM custom manufacturing.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Do you offer bespoke design, custom dimensions, and finish customization?",
+          "name": "What are your OEM and ODM custom manufacturing capabilities?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, custom craftsmanship is our specialty. Architects, interior designers, and luxury brands can request custom wire mesh densities, custom dimensions, and specific patinas."
-          }
+            "text": "We offer full OEM (Original Equipment Manufacturing) and ODM (Original Design Manufacturing) services. Buyers can submit CAD drawings, tech packs, or reference designs. We handle prototyping, material sourcing, production, AQL quality inspection, and export-ready ISPM-15 packaging.",
+          },
         },
         {
           "@type": "Question",
-          "name": "Which international electrical wiring & certification standards do you support?",
+          "name": "Which countries do you export to and what certifications do you support?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our lighting fixtures can be wired and assembled to meet UL (North America), CE (Europe), SAA (Australia/NZ), and BS (UK) electrical specifications upon request."
-          }
-        }
-      ]
+            "text": "We export to 20+ countries including the USA, UK, Canada, Australia, UAE, Germany, France, Italy, and the Netherlands. Our products can be certified to UL, CE, UKCA, and SAA standards. All shipments use ISPM-15 compliant timber crate packaging.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Minimum Order Quantity (MOQ) for B2B wholesale orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQs vary by product category and complexity. Standard décor items start from 50–100 units per SKU. Custom OEM/ODM orders are evaluated per-project. We accommodate both boutique trade buyers and large-scale hospitality procurement contracts.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How does Antique Arts Sourcing ensure quality for international buyers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every order undergoes multi-stage quality inspection including in-line checks, pre-shipment AQL sampling, and final factory audit. We provide detailed inspection reports with photographs. All products are packed in moisture-resistant, ISPM-15 certified timber crates for safe international freight.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can architects and designers submit CAD files for custom manufacturing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Architects, interior designers, and hospitality procurement teams can submit CAD drawings, 3D renders, material specifications, and tech packs directly through our RFQ form. We provide prototyping, sampling, and full-scale production with dedicated project management.",
+          },
+        },
+      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -155,258 +213,33 @@ const jsonLd = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://antiqueartssourcing.com"
+          "item": "https://antiqueartssourcing.com",
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Collections",
-          "item": "https://antiqueartssourcing.com/collections"
+          "name": "Export Services",
+          "item": "https://antiqueartssourcing.com/services",
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Gallery",
-          "item": "https://antiqueartssourcing.com/gallery"
-        }
-      ]
-    },
-    {
-      "@type": "ItemList",
-      "name": "Featured Collections — Antique Arts Sourcing",
-      "description": "Curated showcase of handcrafted luxury lighting, antique collectibles, and bespoke décor available for wholesale B2B enquiry.",
-      "url": "https://antiqueartssourcing.com/#featured",
-      "numberOfItems": 3,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Heritage Brass Compass Collection",
-          "url": "https://antiqueartssourcing.com/#featured",
-          "item": {
-            "@type": "Product",
-            "@id": "https://antiqueartssourcing.com/#product-aq01"
-          }
+          "name": "Product Categories",
+          "item": "https://antiqueartssourcing.com/categories",
         },
         {
           "@type": "ListItem",
-          "position": 2,
-          "name": "Mesh Pear Tealight Holder",
-          "url": "https://antiqueartssourcing.com/#featured",
-          "item": {
-            "@type": "Product",
-            "@id": "https://antiqueartssourcing.com/#product-dl01"
-          }
+          "position": 4,
+          "name": "B2B Solutions",
+          "item": "https://antiqueartssourcing.com/solutions",
         },
         {
           "@type": "ListItem",
-          "position": 3,
-          "name": "Wire Mesh Pendant Lamp",
-          "url": "https://antiqueartssourcing.com/#featured",
-          "item": {
-            "@type": "Product",
-            "@id": "https://antiqueartssourcing.com/#product-lp01"
-          }
-        }
-      ]
-    },
-    {
-      "@type": "Product",
-      "@id": "https://antiqueartssourcing.com/#product-aq01",
-      "name": "Heritage Brass Compass Collection",
-      "description": "Handcrafted heritage brass compass collection — premium antique collectible pieces sourced from skilled Indian artisan workshops. Material: Solid Brass. Category: Antique Collectibles.",
-      "image": "https://antiqueartssourcing.com/images/products/antique/heritage-brass-compass-collection.jpg",
-      "url": "https://antiqueartssourcing.com/#featured",
-      "sku": "AQ-01",
-      "brand": {
-        "@type": "Brand",
-        "name": "Antique Arts Sourcing"
-      },
-      "category": "Antique Collectibles",
-      "material": "Solid Brass",
-      "manufacturer": {
-        "@id": "https://antiqueartssourcing.com/#organization"
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "lowPrice": "25",
-        "highPrice": "150",
-        "offerCount": "5",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@id": "https://antiqueartssourcing.com/#organization"
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "24",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "James Whitfield"
-          },
-          "datePublished": "2025-11-15",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Exquisite craftsmanship. The brass compass set is beautifully detailed and arrived in impeccable packaging. Perfect for our boutique hotel lobby display."
+          "position": 5,
+          "name": "Request Quote",
+          "item": "https://antiqueartssourcing.com/contact",
         },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sophia Laurent"
-          },
-          "datePublished": "2026-02-08",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Stunning heritage pieces. Ordered 20 units for our interior design project and each one was consistent in quality. Highly recommended for trade buyers."
-        }
-      ]
-    },
-    {
-      "@type": "Product",
-      "@id": "https://antiqueartssourcing.com/#product-dl01",
-      "name": "Mesh Pear Tealight Holder",
-      "description": "Artisanal mesh pear tealight holder crafted from woven copper wire — ambient desk & table lighting accent for luxury interiors. Material: Copper Wire Mesh. Category: Desk Lights & Decor.",
-      "image": "https://antiqueartssourcing.com/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
-      "url": "https://antiqueartssourcing.com/#featured",
-      "sku": "DL-01",
-      "brand": {
-        "@type": "Brand",
-        "name": "Antique Arts Sourcing"
-      },
-      "category": "Desk Lights & Decor",
-      "material": "Copper Wire Mesh",
-      "manufacturer": {
-        "@id": "https://antiqueartssourcing.com/#organization"
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "lowPrice": "15",
-        "highPrice": "85",
-        "offerCount": "4",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@id": "https://antiqueartssourcing.com/#organization"
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "31",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Elena Marchetti"
-          },
-          "datePublished": "2025-09-22",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Beautiful copper mesh work with warm ambient glow. We ordered a batch for our restaurant chain and they create the most stunning atmosphere. Exceptional value for handcrafted pieces."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "David Chen"
-          },
-          "datePublished": "2026-01-10",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "The artisanal quality is immediately apparent. Each tealight holder has its own unique character while maintaining consistent craftsmanship. Perfect addition to our luxury retail display."
-        }
-      ]
-    },
-    {
-      "@type": "Product",
-      "@id": "https://antiqueartssourcing.com/#product-lp01",
-      "name": "Wire Mesh Pendant Lamp",
-      "description": "Signature handwoven pure copper wire mesh pendant lamp — creates warm ambient shadow patterns for dining areas, hotel lobbies, and architectural installations. Material: Pure Copper Mesh, Antiqued Brass Socket. Category: Pendant Lamps.",
-      "image": "https://antiqueartssourcing.com/images/products/lamps/wire-mesh-trapeze-pendant-lamp.jpg",
-      "url": "https://antiqueartssourcing.com/#featured",
-      "sku": "LP-01",
-      "brand": {
-        "@type": "Brand",
-        "name": "Antique Arts Sourcing"
-      },
-      "category": "Pendant Lamps",
-      "material": "Pure Copper Mesh, Antiqued Brass Socket",
-      "manufacturer": {
-        "@id": "https://antiqueartssourcing.com/#organization"
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "lowPrice": "75",
-        "highPrice": "450",
-        "offerCount": "6",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@id": "https://antiqueartssourcing.com/#organization"
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "18",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Marcus Holloway"
-          },
-          "datePublished": "2025-12-03",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "These pendant lamps transformed our boutique hotel lobby. The shadow patterns cast by the copper mesh are absolutely mesmerising. Outstanding artisan quality and the team was very accommodating with custom sizing."
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Priya Sharma"
-          },
-          "datePublished": "2026-03-18",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4",
-            "bestRating": "5"
-          },
-          "reviewBody": "Beautiful handcrafted pendant lamp with gorgeous copper patina. Installed in our dining area and it creates wonderful ambient lighting. Shipping was well-packaged for international delivery."
-        }
-      ]
+      ],
     },
   ],
 };

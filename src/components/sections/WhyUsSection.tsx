@@ -23,17 +23,17 @@ const cardVariants = {
 export const WhyUsSection: FC = () => {
   return (
     <section
-      id="why-us"
-      className="section why-us-section py-[120px] relative bg-bg-secondary"
+      id="solutions"
+      className="section why-us-section py-[60px] sm:py-[80px] lg:py-[120px] relative bg-bg-secondary"
     >
       <div className="container max-w-container mx-auto px-6">
         <SectionHeader
-          tag="Quality Commitments"
-          title="The Artisan Standard"
+          tag="Who We Serve"
+          title="Tailored Solutions for Every Buyer Profile"
           centered
         />
 
-        <div className="why-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[60px]">
+        <div className="why-grid grid grid-cols-1 md:grid-cols-3 gap-8 mt-[50px]">
           {whyUsFeatures.map((feature, index) => (
             <motion.div
               key={feature.title}

@@ -64,27 +64,38 @@ export function buildProductEmailBody(
 }
 
 /**
- * Build a WhatsApp consultation form message.
+ * Build a WhatsApp B2B RFQ message.
  */
 export function buildConsultationWhatsAppMessage(data: {
-  name: string;
+  companyName: string;
+  contactPerson: string;
+  email: string;
   phone: string;
-  interest: string;
+  buyerType: string;
+  productCategory: string;
+  orderVolume: string;
+  destinationCountry: string;
   message: string;
 }): string {
-  return `Hello Antique Arts Sourcing,\n\nI would like to request a lighting consultation.\n\nHere are my details:\n- Name: ${data.name}\n- Contact Number: ${data.phone}\n- Category of Interest: ${data.interest}\n- Project Details: ${data.message}\n\nPlease contact me at your earliest convenience.\n\nThank you.`;
+  return `Hello Antique Arts Sourcing,\n\nI would like to submit a B2B export enquiry.\n\nCompany Details:\n- Company: ${data.companyName}\n- Contact Person: ${data.contactPerson}\n- Email: ${data.email}\n- Phone/WhatsApp: ${data.phone}\n\nRequirement Details:\n- Buyer Type: ${data.buyerType}\n- Product Category: ${data.productCategory}\n- Estimated Order Volume: ${data.orderVolume}\n- Destination Country: ${data.destinationCountry}\n\nProject Brief:\n${data.message}\n\nPlease share your export catalogue and pricing.\n\nThank you.`;
 }
 
 /**
- * Build a Gmail compose URL for the consultation form.
+ * Build a Gmail compose URL for the B2B RFQ form.
  */
 export function buildConsultationEmailURL(data: {
-  name: string;
+  companyName: string;
+  contactPerson: string;
+  email: string;
   phone: string;
-  interest: string;
+  buyerType: string;
+  productCategory: string;
+  orderVolume: string;
+  destinationCountry: string;
   message: string;
 }): string {
-  const subject = `Consultation Request - ${data.interest}`;
-  const body = `Hello Antique Arts Sourcing,\n\nI would like to request a lighting consultation.\n\nHere are my details:\n- Name: ${data.name}\n- Contact Number: ${data.phone}\n- Category of Interest: ${data.interest}\n- Project Details: ${data.message}\n\nPlease contact me at your earliest convenience.\n\nThank you.`;
+  const subject = `B2B Export Enquiry - ${data.companyName} - ${data.productCategory}`;
+  const body = `Hello Antique Arts Sourcing,\n\nI would like to submit a B2B export enquiry.\n\nCompany Details:\n- Company: ${data.companyName}\n- Contact Person: ${data.contactPerson}\n- Email: ${data.email}\n- Phone/WhatsApp: ${data.phone}\n\nRequirement Details:\n- Buyer Type: ${data.buyerType}\n- Product Category: ${data.productCategory}\n- Estimated Order Volume: ${data.orderVolume}\n- Destination Country: ${data.destinationCountry}\n\nProject Brief:\n${data.message}\n\nPlease share your export catalogue and pricing.\n\nThank you.`;
   return buildGmailComposeURL(subject, body);
 }
+

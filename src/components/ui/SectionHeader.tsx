@@ -29,11 +29,12 @@ const fadeUp = {
 };
 
 const lineReveal = {
-  hidden: { scaleX: 0, originX: 0 },
-  visible: {
+  hidden: { scaleX: 0 },
+  visible: (centered: boolean) => ({
     scaleX: 1,
     transition: { duration: 0.8, ease: [0.25, 1, 0.5, 1] as [number, number, number, number] },
-  },
+    transformOrigin: centered ? "center center" : "left center",
+  }),
 };
 
 export const SectionHeader: FC<SectionHeaderProps> = ({
@@ -63,11 +64,12 @@ export const SectionHeader: FC<SectionHeaderProps> = ({
       </motion.span>
       <motion.h2
         variants={fadeUp}
-        className="font-heading text-[2.75rem] font-semibold leading-[1.2] tracking-tight mb-4 text-white"
+        className="font-heading text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] font-semibold leading-[1.2] tracking-tight mb-4 text-white"
       >
         {title}
       </motion.h2>
       <motion.div
+        custom={centered}
         variants={lineReveal}
         className={cn(
           "w-[60px] h-[2px] bg-accent-gold mb-8",

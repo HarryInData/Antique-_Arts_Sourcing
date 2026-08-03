@@ -21,17 +21,19 @@ export const CatalogueCard: FC<CatalogueCardProps> = ({ catalogue }) => {
   };
 
   return (
-    <div className="catalogue-card bg-bg-surface p-12 rounded-card border border-white/[0.02] text-center transition-medium hover:border-accent-gold/15 hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)]">
-      <div className="catalogue-icon-box text-accent-gold w-[60px] h-[60px] mx-auto mb-[30px]">
-        <DownloadIcon className="w-full h-full" />
+    <div className="catalogue-card bg-bg-surface p-8 sm:p-10 rounded-card border border-white/[0.04] text-center transition-all duration-300 hover:border-accent-gold/20 hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)] flex flex-col justify-between h-full">
+      <div>
+        <div className="catalogue-icon-box text-accent-gold w-[52px] h-[52px] mx-auto mb-6">
+          <DownloadIcon className="w-full h-full" />
+        </div>
+        <h3 className="catalogue-card-title font-heading text-[1.3rem] font-semibold text-white mb-2 leading-[1.3]">
+          {catalogue.title}
+        </h3>
+        <p className="catalogue-card-info text-[0.85rem] text-text-muted mb-8 leading-[1.6]">
+          {catalogue.info}
+        </p>
       </div>
-      <h3 className="catalogue-card-title font-heading text-[1.45rem] font-semibold text-white mb-2">
-        {catalogue.title}
-      </h3>
-      <p className="catalogue-card-info text-[0.85rem] text-text-muted mb-[30px]">
-        {catalogue.info}
-      </p>
-      
+
       <div className="catalogue-btn-group flex gap-3 justify-center flex-wrap mt-1 select-none">
         <Button
           href={waURL}

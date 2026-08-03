@@ -6,7 +6,7 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
   brandName: "ANTIQUE ARTS SOURCING",
-  tagline: "Premium Handcrafted Lighting & Luxury Décor",
+  tagline: "Global Luxury Décor & Custom Manufacturing Export Partner",
 
   contact: {
     phone: "+91 75037 95101",

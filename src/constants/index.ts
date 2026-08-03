@@ -34,11 +34,46 @@ export const BREAKPOINTS = {
   mobile: 480,
 } as const;
 
-/** Interest options for the consultation form dropdown */
-export const INTEREST_OPTIONS = [
-  "Pendant Lighting",
-  "Wire Mesh Lamps",
-  "Table Lamps",
-  "Fruit Baskets & Accessories",
-  "Custom Architectural Design",
+/** Product category options for the B2B RFQ form dropdown */
+export const PRODUCT_CATEGORY_OPTIONS = [
+  "Antique Collectibles",
+  "Luxury Home Décor & Metal Art",
+  "Glass & Crystal Artistry",
+  "Bespoke Furniture & Joinery",
+  "Hotel & Hospitality Accents",
+  "Architectural Decorative Lighting",
+  "Multiple Categories / Custom Project",
+] as const;
+
+/** Buyer type options for the B2B RFQ form dropdown */
+export const BUYER_TYPE_OPTIONS = [
+  "Importer / Wholesaler",
+  "Architect / Interior Designer",
+  "Retail Chain / Brand",
+  "Hotel / Hospitality Procurement",
+  "E-Commerce Brand",
+  "Other",
+] as const;
+
+/** Order volume options for the B2B RFQ form dropdown */
+export const ORDER_VOLUME_OPTIONS = [
+  "Sample Order (1–10 pcs)",
+  "Small Batch (50–200 pcs)",
+  "Medium Volume (200–1,000 pcs)",
+  "Large Volume (1,000+ pcs)",
+  "Project-Based / Custom",
+] as const;
+
+/** Destination country options for the B2B RFQ form dropdown */
+export const DESTINATION_COUNTRY_OPTIONS = [
+  "United States",
+  "United Kingdom",
+  "Canada",
+  "Australia",
+  "United Arab Emirates",
+  "Germany",
+  "France",
+  "Netherlands",
+  "Italy",
+  "Other",
 ] as const;

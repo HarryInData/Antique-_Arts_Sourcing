@@ -18,7 +18,7 @@ const cardVariants = {
     scale: 1,
     transition: {
       duration: 1,
-      delay: i * 0.18,
+      delay: i * 0.12,
       ease: [0.25, 1, 0.5, 1] as [number, number, number, number],
     },
   }),
@@ -29,16 +29,16 @@ export const CollectionsSection: FC<CollectionsSectionProps> = ({
 }) => {
   return (
     <section
-      id="collections"
-      className="section collections-section py-[120px] relative bg-bg-secondary"
+      id="categories"
+      className="section collections-section py-[60px] sm:py-[80px] lg:py-[120px] relative bg-bg-secondary"
     >
       <div className="container max-w-container mx-auto px-6">
         <SectionHeader
-          tag="Curated Collections"
-          title="The Showroom Spaces"
+          tag="Product Categories"
+          title="Six Core Product Verticals for International Buyers"
         />
 
-        <div className="collections-grid grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[60px]">
+        <div className="collections-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[60px]">
           {collections.map((collection, index) => (
             <motion.div
               key={collection.filterKey}

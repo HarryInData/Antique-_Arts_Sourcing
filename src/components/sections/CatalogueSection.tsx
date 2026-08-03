@@ -24,7 +24,7 @@ export const CatalogueSection: FC = () => {
   return (
     <section
       id="catalogue"
-      className="section catalogue-section py-[120px] relative bg-bg-secondary text-center"
+      className="section catalogue-section py-[60px] sm:py-[80px] lg:py-[120px] relative bg-bg-secondary text-center"
     >
       <div className="container max-w-container mx-auto px-6">
         <SectionHeader
@@ -34,7 +34,7 @@ export const CatalogueSection: FC = () => {
           centered
         />
 
-        <div className="catalogue-box grid grid-cols-1 lg:grid-cols-2 gap-10 mt-[50px]">
+        <div className="catalogue-box grid grid-cols-1 md:grid-cols-3 gap-8 mt-[50px]">
           {catalogues.map((catalogue, index) => (
             <motion.div
               key={catalogue.title}

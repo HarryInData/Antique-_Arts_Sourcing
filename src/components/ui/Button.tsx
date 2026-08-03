@@ -29,7 +29,7 @@ export const Button: FC<ButtonProps> = (props) => {
   const { variant = "primary", isBlock = false, icon, className, children, ...rest } = props;
 
   const baseStyles = "inline-flex items-center justify-center font-body leading-none transition-all duration-300 focus:outline-none cursor-pointer select-none";
-  
+
   const variants = {
     primary: "px-10 sm:px-12 py-4 rounded-full text-[0.825rem] font-semibold tracking-[0.16em] uppercase whitespace-nowrap bg-accent-gold text-bg-primary hover:bg-accent-warm-light hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(214,168,79,0.35)]",
     secondary: "px-10 sm:px-12 py-4 rounded-full text-[0.825rem] font-semibold tracking-[0.16em] uppercase whitespace-nowrap bg-transparent border border-white/20 text-white hover:border-accent-gold hover:text-accent-gold hover:-translate-y-0.5 hover:shadow-[0_10px_25px_var(--accent-glow)]",

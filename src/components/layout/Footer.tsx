@@ -10,15 +10,15 @@ export const Footer: FC = () => {
 
   return (
     <footer className="footer bg-[#080808] py-20 border-t border-white/[0.02] text-left">
-      <div className="container max-w-container mx-auto px-6">
-        
+      <div className="container max-w-[1200px] mx-auto px-6">
+
         {/* Grid Structure */}
         <div className="footer-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2.2fr_1fr_1fr_1.2fr] gap-[50px] mb-[60px]">
-          
+
           {/* Brand Column */}
           <div className="footer-col-brand">
-            <Link href="/" className="logo flex items-center gap-3.5 no-underline mb-6 flex-shrink-0 group">
-              <div className="relative w-8 h-8 flex-shrink-0">
+            <Link href="/" className="logo flex items-center gap-2.5 no-underline mb-5 flex-shrink-0 group">
+              <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
                 <Image
                   src="/images/branding/antique-arts-sourcing-emblem.png"
                   alt="Antique Arts Sourcing Logo"
@@ -27,7 +27,7 @@ export const Footer: FC = () => {
                   className="object-contain"
                 />
               </div>
-              <span className="brand-text text-[1.25rem] tracking-[0.18em] whitespace-nowrap text-white group-hover:text-accent-gold transition-colors duration-200">
+              <span className="brand-text text-[1.1rem] sm:text-[1.2rem] tracking-[0.12em] whitespace-nowrap text-white group-hover:text-accent-gold transition-colors duration-200">
                 {siteConfig.brandName}
               </span>
             </Link>

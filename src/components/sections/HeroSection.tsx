@@ -16,7 +16,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ frames, isLoaded }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const pinnedRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  
+
   // Track context for clean GSAP animation teardown
   const gsapCtxRef = useRef<gsap.Context | null>(null);
 
@@ -233,59 +233,90 @@ export const HeroSection: FC<HeroSectionProps> = ({ frames, isLoaded }) => {
         </div>
 
         {/* Floating text slides */}
-        <div className="hero-slides absolute left-[8%] top-0 w-[84%] md:w-[38%] h-screen flex items-center z-[3] pointer-events-none">
-          <div className="relative w-full h-[550px] -translate-y-[15px]">
-            {/* Slide 1 */}
+        <div className="hero-slides absolute left-[6%] sm:left-[8%] top-0 w-[88%] sm:w-[84%] md:w-[44%] lg:w-[38%] h-screen flex items-center z-[3] pointer-events-none">
+          <div className="relative w-full min-h-[380px] sm:min-h-[420px] md:min-h-[460px] max-h-[550px] -translate-y-[10px]">
+            {/* Slide 1 — Primary B2B Value Proposition */}
             <div
               id="slide-1"
-              className="absolute inset-0 flex flex-col justify-center opacity-0 translate-y-[60px] scale-[0.97] blur-[15px] transition-[opacity,transform,filter] duration-800 pointer-events-none w-full active"
-              style={{ opacity: 1, transform: "translateY(0px) scale(1)", filter: "blur(0px)" }}
+              className="absolute inset-0 flex flex-col justify-center opacity-100 translate-y-0 scale-100 blur-0 transition-[opacity,transform,filter] duration-800 pointer-events-auto w-full"
             >
-              <div className="max-w-[480px]">
-                <span className="subtitle-tag">Exquisite Craftsmanship</span>
-                <h1 className="hero-title text-5xl font-semibold leading-[1.15] mb-6 text-white font-heading">
-                  Illuminate Your World With <span className="highlight">Elegance</span>
+              <div className="max-w-[520px]">
+                <span className="subtitle-tag">India&apos;s Premier B2B Export Sourcing Partner</span>
+                <h1 className="hero-title text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.85rem] font-semibold leading-[1.15] mb-4 sm:mb-5 text-white font-heading">
+                  Global Luxury Décor &amp; Custom Manufacturing <span className="highlight">Export Partner</span>
                 </h1>
-                <p className="hero-desc text-[1.1rem] leading-[1.8] text-text-gray mb-9 font-light">
-                  Bespoke handcrafted lighting and luxury decorative items. Meticulously designed for spaces that demand the extraordinary.
+                <p className="hero-desc text-[0.925rem] sm:text-[0.975rem] md:text-[1.025rem] leading-[1.75] text-text-gray mb-5 sm:mb-6 font-light">
+                  From handcrafted brass artistry and glass décor to bespoke furniture and architectural lighting — we source, manufacture, and export premium Indian craftsmanship to importers, architects, and hospitality brands across 20+ countries.
                 </p>
-                <div className="flex gap-4 flex-wrap pointer-events-auto">
-                  <Button href="/collections" variant="primary">
-                    Explore Collections
+                <div className="flex gap-3 sm:gap-4 flex-wrap pointer-events-auto mb-5 sm:mb-6">
+                  <Button href="/contact" variant="primary">
+                    Request Export Catalogue &amp; RFQ
                   </Button>
+                  <Button href="/contact#rfq-form" variant="secondary">
+                    Submit CAD Brief
+                  </Button>
+                </div>
+                {/* Trust Badge Bar */}
+                <div className="hidden sm:flex flex-wrap gap-x-5 gap-y-2 text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.12em] text-text-gray font-medium pointer-events-auto">
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-gold inline-block" />
+                    ISO-Compliant Processes
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-gold inline-block" />
+                    AQL Quality Inspection
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-gold inline-block" />
+                    ISPM-15 Packaging
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-gold inline-block" />
+                    20+ Countries
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Slide 2 */}
+            {/* Slide 2 — OEM & ODM Manufacturing */}
             <div
               id="slide-2"
               className="absolute inset-0 flex flex-col justify-center opacity-0 translate-y-[60px] scale-[0.97] blur-[15px] transition-[opacity,transform,filter] duration-800 pointer-events-none w-full"
             >
               <div className="max-w-[480px]">
-                <span className="subtitle-tag">Artisanal Details</span>
-                <h2 className="hero-title text-5xl font-semibold leading-[1.15] mb-6 text-white font-heading">
-                  Handwoven <span className="highlight">Mesh</span> Designs
+                <span className="subtitle-tag">OEM &amp; ODM Manufacturing</span>
+                <h2 className="hero-title text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.85rem] font-semibold leading-[1.15] mb-4 sm:mb-5 text-white font-heading">
+                  Custom Manufacturing, <span className="highlight">Your Brand</span>
                 </h2>
-                <p className="hero-desc text-[1.1rem] leading-[1.8] text-text-gray mb-9 font-light">
-                  Notice the organic, fluid weave patterns. Every wire is bent, welded, and refined by local artisans, diffusing light into a soft golden pattern.
+                <p className="hero-desc text-[0.925rem] sm:text-[0.975rem] md:text-[1.025rem] leading-[1.75] text-text-gray mb-6 sm:mb-7 font-light">
+                  Full-service OEM and ODM capabilities. Submit your designs, tech packs, or CAD drawings — we prototype, manufacture, and deliver to your exact specifications with AQL quality assurance.
                 </p>
+                <div className="flex gap-4 flex-wrap pointer-events-auto">
+                  <Button href="/contact#rfq-form" variant="primary">
+                    Start Custom Project
+                  </Button>
+                </div>
               </div>
             </div>
 
-            {/* Slide 3 */}
+            {/* Slide 3 — Export Infrastructure */}
             <div
               id="slide-3"
               className="absolute inset-0 flex flex-col justify-center opacity-0 translate-y-[60px] scale-[0.97] blur-[15px] transition-[opacity,transform,filter] duration-800 pointer-events-none w-full"
             >
               <div className="max-w-[480px]">
-                <span className="subtitle-tag">Sensory Atmosphere</span>
-                <h2 className="hero-title text-5xl font-semibold leading-[1.15] mb-6 text-white font-heading">
-                  A Symphony of <span className="highlight">Shadows</span>
+                <span className="subtitle-tag">Trusted Export Infrastructure</span>
+                <h2 className="hero-title text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.85rem] font-semibold leading-[1.15] mb-4 sm:mb-5 text-white font-heading">
+                  Precision Sourcing, <span className="highlight">Global Delivery</span>
                 </h2>
-                <p className="hero-desc text-[1.1rem] leading-[1.8] text-text-gray mb-9 font-light">
-                  Our lighting products are engineered to do more than light a room—they create ambient textures, forming mesmerizing architectural shadows on your walls.
+                <p className="hero-desc text-[0.925rem] sm:text-[0.975rem] md:text-[1.025rem] leading-[1.75] text-text-gray mb-6 sm:mb-7 font-light">
+                  ISPM-15 certified packaging. UL/CE/UKCA compliance. Factory audits and pre-shipment AQL inspection. End-to-end export documentation and logistics coordination to your port of destination.
                 </p>
+                <div className="flex gap-4 flex-wrap pointer-events-auto">
+                  <Button href="/contact" variant="primary">
+                    Talk to Sourcing Expert
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

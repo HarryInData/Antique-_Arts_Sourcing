@@ -40,9 +40,9 @@ export const GallerySection: FC<GallerySectionProps> = ({
   );
 
   return (
-    <section id="gallery" className="section gallery-section py-[120px] relative bg-bg-primary">
+    <section id="gallery" className="section gallery-section py-[60px] sm:py-[80px] lg:py-[120px] relative bg-bg-primary">
       <div className="container max-w-container mx-auto px-6">
-        
+
         <div className="gallery-header-row flex justify-between items-end mb-[50px] flex-wrap gap-[30px]">
           <SectionHeader
             tag="Digital Exhibition"
@@ -62,11 +62,10 @@ export const GallerySection: FC<GallerySectionProps> = ({
               <button
                 key={filter.value}
                 onClick={() => onFilterChange(filter.value)}
-                className={`filter-btn font-body uppercase text-[0.8rem] tracking-[0.05em] py-2.5 px-5 rounded-btn border transition-all duration-300 ${
-                  activeFilter === filter.value
+                className={`filter-btn font-body uppercase text-[0.8rem] tracking-[0.05em] py-2.5 px-5 rounded-btn border transition-all duration-300 ${activeFilter === filter.value
                     ? "border-accent-gold text-accent-gold bg-accent-glow shadow-[0_0_20px_rgba(214,168,79,0.15)]"
                     : "border-white/10 text-text-gray hover:border-accent-gold hover:text-accent-gold hover:bg-accent-glow"
-                }`}
+                  }`}
               >
                 {filter.label}
               </button>
@@ -92,7 +91,7 @@ export const GallerySection: FC<GallerySectionProps> = ({
             ))}
           </AnimatePresence>
         </div>
-        
+
       </div>
     </section>
   );
