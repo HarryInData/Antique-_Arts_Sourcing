@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
   contact: {
     phone: "+91 75037 95101",
     phoneFormatted: "917503795101",
-    email: "info@antiquearts.com",
+    email: "info@antiqueartssourcing.com",
     address:
       "Dholpura road Pradeep Nagar, Firozabad-283203, U.P, India",
   },
