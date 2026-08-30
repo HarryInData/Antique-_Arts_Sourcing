@@ -1,12 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
-import { CollectionsSection } from "@/components/sections/CollectionsSection";
-import { FeaturedSection } from "@/components/sections/FeaturedSection";
+import { CollectionGallery } from "@/components/sections/CollectionGallery";
 
 export const metadata: Metadata = {
-  title: "Handcrafted Lighting & Decor Collections | Antique Arts Sourcing",
+  title: "The Collection — Luxury Craftsmanship | Antique Arts Sourcing",
   description:
-    "Explore our signature collections of handwoven copper wire mesh pendant lamps, artisanal desk lighting, and heritage brass decor pieces. Custom B2B manufacturing available.",
+    "Explore our six core B2B export categories: Antique Collectibles, Luxury Metalwork, Glass & Crystal, Bespoke Furniture, Lighting, and Hospitality Accents.",
   alternates: {
     canonical: "https://antiqueartssourcing.com/collections",
   },
@@ -14,9 +13,8 @@ export const metadata: Metadata = {
 
 export default function CollectionsPage() {
   return (
-    <div className="pt-24 min-h-screen bg-[#0F0F0F]">
-      <CollectionsSection />
-      <FeaturedSection />
+    <div className="pt-20 min-h-screen bg-ivory">
+      <CollectionGallery />
     </div>
   );
 }

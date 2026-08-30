@@ -1,27 +1,31 @@
 import type { NavLink } from "@/types";
 
 // ==========================================================================
-// NAVIGATION DATA — B2B Export Portal
+// NAVIGATION DATA — Luxury B2B Sourcing House
 // ==========================================================================
 
 export const mainNavLinks: NavLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Product Categories", href: "/collections" },
-  { label: "About Us", href: "/about" },
-  { label: "Project Gallery", href: "/gallery" },
-  { label: "Export Catalogue", href: "/catalogue" },
-  { label: "Request Quote", href: "/contact" },
+  { label: "Collection", href: "/collections" },
+  { label: "Capabilities", href: "/about" },
+  { label: "Projects", href: "/gallery" },
+  { label: "About", href: "/about" },
 ];
 
-export const footerShowroomLinks: NavLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Product Categories", href: "/collections" },
-  { label: "Export Services", href: "/about" },
-  { label: "About Us", href: "/about" },
+export const footerNavLinks: NavLink[] = [
+  { label: "Collection", href: "/collections" },
+  { label: "Capabilities", href: "/about" },
+  { label: "Projects", href: "/gallery" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
-export const footerExhibitionLinks: NavLink[] = [
-  { label: "Project Gallery", href: "/gallery" },
-  { label: "Export Catalogues", href: "/catalogue" },
-  { label: "Request a Quote", href: "/contact" },
+export const footerBusinessLinks: NavLink[] = [
+  { label: "B2B Sourcing", href: "/contact" },
+  { label: "OEM / ODM", href: "/contact" },
+  { label: "Custom Manufacturing", href: "/contact" },
+  { label: "Global Export", href: "/contact" },
 ];
+
+// Keep old exports for backward compatibility during migration
+export const footerShowroomLinks = footerNavLinks;
+export const footerExhibitionLinks = footerBusinessLinks;

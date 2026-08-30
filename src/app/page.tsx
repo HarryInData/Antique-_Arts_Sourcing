@@ -1,69 +1,49 @@
 "use client";
 
 import React from "react";
-import { Preloader } from "@/components/layout/Preloader";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { FeaturedSection } from "@/components/sections/FeaturedSection";
-import { CollectionsSection } from "@/components/sections/CollectionsSection";
-import { AboutSection } from "@/components/sections/AboutSection";
-import { WhyUsSection } from "@/components/sections/WhyUsSection";
-import { GallerySection } from "@/components/sections/GallerySection";
-import { CatalogueSection } from "@/components/sections/CatalogueSection";
-import { FaqSection } from "@/components/sections/FaqSection";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { Lightbox } from "@/components/ui/Lightbox";
-
-import { useFramePreloader } from "@/hooks/useFramePreloader";
-import { useGalleryFilter } from "@/hooks/useGalleryFilter";
-import { useLightbox } from "@/hooks/useLightbox";
+import { EditorialIntro } from "@/components/sections/EditorialIntro";
+import { CollectionGallery } from "@/components/sections/CollectionGallery";
+import { CraftSection } from "@/components/sections/CraftSection";
+import { SelectedWork } from "@/components/sections/SelectedWork";
+import { ManufacturingSection } from "@/components/sections/ManufacturingSection";
+import { ProjectsGallery } from "@/components/sections/ProjectsGallery";
+import { GlobalReach } from "@/components/sections/GlobalReach";
+import { HouseSection } from "@/components/sections/HouseSection";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export default function Home() {
-  const { progress, isLoaded, frames } = useFramePreloader();
-  const { activeFilter, selectFilter } = useGalleryFilter();
-  const { isOpen, activeItem, openLightbox, closeLightbox } = useLightbox();
-
   return (
     <>
-      {/* Luxury Preloader */}
-      <Preloader progress={progress} isLoaded={isLoaded} />
+      {/* Editorial Hero */}
+      <HeroSection />
 
-      {/* Scroll-Based Hero Canvas Animation Section */}
-      <HeroSection frames={frames} isLoaded={isLoaded} />
+      {/* Introduction — Objects with History */}
+      <EditorialIntro />
 
-      {/* Featured Showcase Section */}
-      <FeaturedSection />
+      {/* The Collection — 6 Categories */}
+      <CollectionGallery />
 
-      {/* Curated Collections Section */}
-      <CollectionsSection onFilterSelect={selectFilter} />
+      {/* Craftsmanship — From Hands to Spaces */}
+      <CraftSection />
 
-      {/* About Section */}
-      <AboutSection />
+      {/* Selected Work — Horizontal Gallery */}
+      <SelectedWork />
 
-      {/* Why Choose Us Section */}
-      <WhyUsSection />
+      {/* Custom Manufacturing — OEM / ODM */}
+      <ManufacturingSection />
 
-      {/* Gallery Section */}
-      <GallerySection
-        activeFilter={activeFilter}
-        onFilterChange={selectFilter}
-        onItemClick={openLightbox}
-      />
+      {/* Objects in Context — Project Gallery */}
+      <ProjectsGallery />
 
-      {/* Catalogue Preview Section */}
-      <CatalogueSection />
+      {/* Global Reach — Worldwide Delivery */}
+      <GlobalReach />
 
-      {/* Frequently Asked Questions Section */}
-      <FaqSection />
+      {/* The House — Heritage & About */}
+      <HouseSection />
 
-      {/* Contact & Consultation Enquiry Form */}
-      <ContactSection />
-
-      {/* Global Image Lightbox Modal */}
-      <Lightbox
-        isOpen={isOpen}
-        activeItem={activeItem}
-        onClose={closeLightbox}
-      />
+      {/* Final CTA — Build Something Worth Remembering */}
+      <FinalCTA />
     </>
   );
 }

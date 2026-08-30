@@ -1,27 +1,22 @@
-"use client";
-
 import React from "react";
-import { GallerySection } from "@/components/sections/GallerySection";
-import { Lightbox } from "@/components/ui/Lightbox";
-import { useGalleryFilter } from "@/hooks/useGalleryFilter";
-import { useLightbox } from "@/hooks/useLightbox";
+import type { Metadata } from "next";
+import { ProjectsGallery } from "@/components/sections/ProjectsGallery";
+import { SelectedWork } from "@/components/sections/SelectedWork";
+
+export const metadata: Metadata = {
+  title: "Projects — Objects in Context | Antique Arts Sourcing",
+  description:
+    "Explore Antique Arts Sourcing products integrated into luxury hotels, restaurants, and architectural residences worldwide.",
+  alternates: {
+    canonical: "https://antiqueartssourcing.com/gallery",
+  },
+};
 
 export default function GalleryPage() {
-  const { activeFilter, selectFilter } = useGalleryFilter();
-  const { isOpen, activeItem, openLightbox, closeLightbox } = useLightbox();
-
   return (
-    <div className="pt-24 min-h-screen bg-[#0F0F0F]">
-      <GallerySection
-        activeFilter={activeFilter}
-        onFilterChange={selectFilter}
-        onItemClick={openLightbox}
-      />
-      <Lightbox
-        isOpen={isOpen}
-        activeItem={activeItem}
-        onClose={closeLightbox}
-      />
+    <div className="pt-20 min-h-screen bg-ivory">
+      <SelectedWork />
+      <ProjectsGallery />
     </div>
   );
 }

@@ -1,8 +1,6 @@
 "use client";
 
 import React, { FC } from "react";
-import { Button } from "./Button";
-import { DownloadIcon, WhatsAppIcon, MailIcon } from "../icons";
 import { buildWhatsAppURL, buildGmailComposeURL } from "@/lib/enquiry";
 import { siteConfig } from "@/data/siteConfig";
 import type { CatalogueItem } from "@/types";
@@ -21,38 +19,32 @@ export const CatalogueCard: FC<CatalogueCardProps> = ({ catalogue }) => {
   };
 
   return (
-    <div className="catalogue-card bg-bg-surface p-8 sm:p-10 rounded-card border border-white/[0.04] text-center transition-all duration-300 hover:border-accent-gold/20 hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)] flex flex-col justify-between h-full">
+    <div className="bg-white border border-sand p-8 sm:p-10 text-center transition-all duration-300 hover:border-brass/30 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] flex flex-col justify-between h-full">
       <div>
-        <div className="catalogue-icon-box text-accent-gold w-[52px] h-[52px] mx-auto mb-6">
-          <DownloadIcon className="w-full h-full" />
-        </div>
-        <h3 className="catalogue-card-title font-heading text-[1.3rem] font-semibold text-white mb-2 leading-[1.3]">
+        <h3 className="font-serif text-[1.15rem] font-light text-ink mb-2 leading-[1.3]">
           {catalogue.title}
         </h3>
-        <p className="catalogue-card-info text-[0.85rem] text-text-muted mb-8 leading-[1.6]">
+        <p className="text-[0.8rem] text-muted mb-8 leading-[1.6] font-light">
           {catalogue.info}
         </p>
       </div>
 
-      <div className="catalogue-btn-group flex gap-3 justify-center flex-wrap mt-1 select-none">
-        <Button
+      <div className="flex gap-3 justify-center flex-wrap mt-1 select-none">
+        <a
           href={waURL}
           target="_blank"
-          variant="whatsapp"
-          className="flex-1 min-w-0 py-3.5 px-5 text-[0.8rem]"
-          icon={<WhatsAppIcon className="w-[18px] h-[18px]" />}
+          rel="noopener noreferrer"
+          className="flex-1 min-w-0 py-3 px-4 text-[0.65rem] font-semibold tracking-[0.12em] uppercase bg-[#25D366] text-white hover:bg-[#1ebe5b] transition-all duration-300 text-center"
         >
-          Request on WhatsApp
-        </Button>
-        <Button
+          WhatsApp
+        </a>
+        <a
           href={`mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(catalogue.emailSubject)}&body=${encodeURIComponent(catalogue.emailBody)}`}
           onClick={handleEmailClick}
-          variant="email-outline"
-          className="flex-1 min-w-0 py-3.5 px-5 text-[0.8rem]"
-          icon={<MailIcon className="w-[18px] h-[18px]" />}
+          className="flex-1 min-w-0 py-3 px-4 text-[0.65rem] font-semibold tracking-[0.12em] uppercase border border-ink text-ink hover:bg-ink hover:text-ivory transition-all duration-300 text-center"
         >
-          Request via Email
-        </Button>
+          Email
+        </a>
       </div>
     </div>
   );

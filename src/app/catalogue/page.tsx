@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function CataloguePage() {
   return (
-    <div className="pt-24 min-h-screen bg-[#171717]">
+    <div className="pt-20 min-h-screen bg-ivory">
       <CatalogueSection />
     </div>
   );

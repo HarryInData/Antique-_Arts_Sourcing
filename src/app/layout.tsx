@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair_Display, Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
-// Configure Playfair Display font (Headings)
-const playfair = Playfair_Display({
+// Configure Cormorant Garamond (Editorial Serif — Headings & Display)
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-heading",
   display: "swap",
 });
 
-// Configure Outfit font (Body text)
-const outfit = Outfit({
+// Configure Inter (Clean Sans — Body & UI)
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   variable: "--font-body",
   display: "swap",
 });
 
-// Configure Cormorant Garamond font (Brand display text)
-const cormorant = Cormorant_Garamond({
+// Also expose Cormorant as brand font
+const cormorantBrand = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
@@ -30,24 +30,24 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-// ─── SEO Metadata (OG + Twitter Cards + Manifest + Icons + Hreflang) ───
+// ─── SEO Metadata ───
 export const metadata: Metadata = {
   metadataBase: new URL("https://antiqueartssourcing.com"),
-  title: "Luxury Decor Exporter India | Antique Arts Sourcing",
+  title: "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
   description:
-    "India's premier B2B export partner for handcrafted luxury décor, bespoke furniture, glass artistry & architectural lighting. OEM/ODM custom manufacturing for importers, architects & hospitality brands across 20+ countries.",
+    "India's premier B2B sourcing house for handcrafted luxury décor, bespoke furniture, glass artistry & architectural lighting. OEM/ODM custom manufacturing for architects, designers & hospitality brands across 20+ countries.",
   openGraph: {
-    title: "Luxury Decor Exporter India | Antique Arts Sourcing",
+    title: "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
     description:
       "B2B export sourcing for handcrafted luxury décor, antique collectibles, bespoke furniture, and architectural lighting. Custom OEM/ODM manufacturing from Firozabad, India.",
     url: "https://antiqueartssourcing.com",
     siteName: "Antique Arts Sourcing",
     images: [
       {
-        url: "/images/branding/antique-arts-sourcing-founders-firozabad.jpg",
+        url: "/images/hero-editorial.jpg",
         width: 1200,
         height: 630,
-        alt: "Antique Arts Sourcing — India's Premier B2B Luxury Décor Export Partner",
+        alt: "Antique Arts Sourcing — India's Premier B2B Luxury Sourcing House",
       },
     ],
     type: "website",
@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luxury Decor Exporter India | Antique Arts Sourcing",
+    title: "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
     description:
-      "B2B export partner for handcrafted luxury décor, bespoke furniture, glass artistry & architectural lighting. OEM/ODM. 20+ countries. Firozabad, India.",
-    images: ["/images/branding/antique-arts-sourcing-founders-firozabad.jpg"],
+      "B2B sourcing house for handcrafted luxury décor, bespoke furniture & architectural lighting. OEM/ODM. 20+ countries. Firozabad, India.",
+    images: ["/images/hero-editorial.jpg"],
   },
   manifest: "/site.webmanifest",
   icons: {
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── JSON-LD Structured Data (B2B Organization + WebSite + FAQPage + BreadcrumbList) ───
+// ─── JSON-LD Structured Data ───
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -136,7 +136,7 @@ const jsonLd = {
         "name": "Luxury Décor & Custom Manufacturing Export Catalog",
         "itemListElement": [
           { "@type": "OfferCatalog", "name": "Antique Collectibles" },
-          { "@type": "OfferCatalog", "name": "Luxury Home Décor & Metal Art" },
+          { "@type": "OfferCatalog", "name": "Luxury Metalwork" },
           { "@type": "OfferCatalog", "name": "Glass & Crystal Artistry" },
           { "@type": "OfferCatalog", "name": "Bespoke Furniture & Joinery" },
           { "@type": "OfferCatalog", "name": "Hotel & Hospitality Accents" },
@@ -148,7 +148,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://antiqueartssourcing.com/#website",
       "url": "https://antiqueartssourcing.com",
-      "name": "Antique Arts Sourcing — Global Luxury Décor Export Partner",
+      "name": "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
       "publisher": {
         "@id": "https://antiqueartssourcing.com/#organization",
       },
@@ -161,7 +161,7 @@ const jsonLd = {
           "name": "What product categories does Antique Arts Sourcing export?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We export six core categories: Antique Collectibles, Luxury Home Décor & Metal Art, Glass & Crystal Artistry, Bespoke Furniture & Joinery, Hotel & Hospitality Accents, and Architectural Decorative Lighting. All products are available for OEM/ODM custom manufacturing.",
+            "text": "We export six core categories: Antique Collectibles, Luxury Metalwork, Glass & Crystal Artistry, Bespoke Furniture & Joinery, Hotel & Hospitality Accents, and Architectural Decorative Lighting. All products are available for OEM/ODM custom manufacturing.",
           },
         },
         {
@@ -218,25 +218,19 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Export Services",
-          "item": "https://antiqueartssourcing.com/services",
+          "name": "Collection",
+          "item": "https://antiqueartssourcing.com/collections",
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Product Categories",
-          "item": "https://antiqueartssourcing.com/categories",
+          "name": "About",
+          "item": "https://antiqueartssourcing.com/about",
         },
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "B2B Solutions",
-          "item": "https://antiqueartssourcing.com/solutions",
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Request Quote",
+          "name": "Contact",
           "item": "https://antiqueartssourcing.com/contact",
         },
       ],
@@ -250,8 +244,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${outfit.variable} ${cormorant.variable} scroll-smooth`} suppressHydrationWarning>
-      <body className="antialiased bg-[#0F0F0F] text-white font-body overflow-x-hidden leading-relaxed" suppressHydrationWarning>
+    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${cormorantBrand.variable} scroll-smooth`} suppressHydrationWarning>
+      <body className="antialiased bg-ivory text-ink font-sans overflow-x-hidden leading-relaxed" suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

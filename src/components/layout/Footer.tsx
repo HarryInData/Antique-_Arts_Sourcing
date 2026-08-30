@@ -1,52 +1,42 @@
 import React, { FC } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { CustomIcon } from "../icons";
 import { siteConfig } from "@/data/siteConfig";
-import { footerShowroomLinks, footerExhibitionLinks } from "@/data/navigation";
+import { footerNavLinks, footerBusinessLinks } from "@/data/navigation";
 
 export const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer bg-[#080808] py-20 border-t border-white/[0.02] text-left">
-      <div className="container max-w-[1200px] mx-auto px-6">
-
-        {/* Grid Structure */}
-        <div className="footer-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2.2fr_1fr_1fr_1.2fr] gap-[50px] mb-[60px]">
-
-          {/* Brand Column */}
-          <div className="footer-col-brand">
-            <Link href="/" className="logo flex items-center gap-2.5 no-underline mb-5 flex-shrink-0 group">
-              <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
-                <Image
-                  src="/images/branding/antique-arts-sourcing-emblem.png"
-                  alt="Antique Arts Sourcing Logo"
-                  fill
-                  sizes="32px"
-                  className="object-contain"
-                />
-              </div>
-              <span className="brand-text text-[1.1rem] sm:text-[1.2rem] tracking-[0.12em] whitespace-nowrap text-white group-hover:text-accent-gold transition-colors duration-200">
-                {siteConfig.brandName}
+    <footer className="bg-[#24231F] text-white pt-16 pb-12 border-t border-white/10">
+      <div className="container-main">
+        {/* 12-Column Footer Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-16">
+          {/* Brand & Mission (5 cols) */}
+          <div className="lg:col-span-5">
+            <Link href="/" className="inline-block no-underline mb-4 group">
+              <span className="text-[1.05rem] tracking-[0.2em] uppercase text-white font-sans font-medium group-hover:text-[#9A7B50] transition-colors duration-300">
+                ANTIQUE ARTS SOURCING
               </span>
             </Link>
-            <p className="footer-brand-desc text-text-muted text-[0.95rem] leading-[1.7] font-light">
-              Curating premium lighting systems and handcrafted home metalware accessories designed to elevate modern environments.
+            <p className="text-white/60 text-[0.875rem] font-sans font-light leading-[1.7] max-w-[360px] mb-4">
+              India&apos;s premier B2B sourcing house connecting artisan craftsmanship with architects, designers, and hospitality brands worldwide.
+            </p>
+            <p className="text-[0.6875rem] font-sans font-medium tracking-[0.18em] uppercase text-[#9A7B50]">
+              India · Global Sourcing · OEM / ODM
             </p>
           </div>
 
-          {/* Links Column 1: Showroom */}
-          <div className="footer-col-links">
-            <h4 className="footer-title font-body text-[0.85rem] uppercase tracking-[0.15em] text-white font-semibold mb-6">
-              Showroom
+          {/* Navigation Links (2 cols) */}
+          <div className="lg:col-span-2">
+            <h4 className="text-[0.6875rem] uppercase tracking-[0.2em] text-white/50 font-sans font-semibold mb-5">
+              Navigate
             </h4>
-            <ul className="footer-list list-none space-y-3 p-0 m-0">
-              {footerShowroomLinks.map((link) => (
+            <ul className="list-none space-y-3 p-0 m-0">
+              {footerNavLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="footer-link text-text-gray font-light text-[0.9rem] hover:text-accent-gold hover:pl-1 transition-all duration-200"
+                    className="text-white/70 font-sans font-light text-[0.875rem] hover:text-white transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -55,17 +45,17 @@ export const Footer: FC = () => {
             </ul>
           </div>
 
-          {/* Links Column 2: Exhibitions */}
-          <div className="footer-col-links">
-            <h4 className="footer-title font-body text-[0.85rem] uppercase tracking-[0.15em] text-white font-semibold mb-6">
-              Exhibitions
+          {/* Business Capabilities (2 cols) */}
+          <div className="lg:col-span-2">
+            <h4 className="text-[0.6875rem] uppercase tracking-[0.2em] text-white/50 font-sans font-semibold mb-5">
+              Business
             </h4>
-            <ul className="footer-list list-none space-y-3 p-0 m-0">
-              {footerExhibitionLinks.map((link) => (
+            <ul className="list-none space-y-3 p-0 m-0">
+              {footerBusinessLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="footer-link text-text-gray font-light text-[0.9rem] hover:text-accent-gold hover:pl-1 transition-all duration-200"
+                    className="text-white/70 font-sans font-light text-[0.875rem] hover:text-white transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -74,36 +64,44 @@ export const Footer: FC = () => {
             </ul>
           </div>
 
-          {/* Social Connections Column */}
-          <div className="footer-col-social">
-            <h4 className="footer-title font-body text-[0.85rem] uppercase tracking-[0.15em] text-white font-semibold mb-6">
-              Connect
+          {/* Contact Details (3 cols) */}
+          <div className="lg:col-span-3">
+            <h4 className="text-[0.6875rem] uppercase tracking-[0.2em] text-white/50 font-sans font-semibold mb-5">
+              Contact
             </h4>
-            <div className="footer-social-row flex gap-3">
-              {siteConfig.socials.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link-btn w-[44px] h-[44px] rounded-full border border-white/[0.08] flex justify-center items-center text-text-gray hover:text-accent-gold hover:border-accent-gold hover:bg-accent-glow transition-fast"
-                  aria-label={social.label}
-                >
-                  <CustomIcon d={social.iconPath} className="w-[18px] h-[18px]" />
-                </a>
-              ))}
+            <div className="flex flex-col gap-3 text-white/70 text-[0.875rem] font-sans font-light">
+              <a
+                href={`mailto:${siteConfig.contact.email}`}
+                className="hover:text-white transition-colors duration-300"
+              >
+                {siteConfig.contact.email}
+              </a>
+              <a
+                href={`https://wa.me/${siteConfig.contact.phoneFormatted}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors duration-300"
+              >
+                WhatsApp: {siteConfig.contact.phone}
+              </a>
+              <span className="text-white/50 text-[0.8125rem] leading-[1.6] pt-1">
+                {siteConfig.contact.address}
+              </span>
             </div>
           </div>
-
         </div>
 
-        {/* Bottom Area */}
-        <div className="footer-bottom text-center pt-10 border-t border-white/[0.03]">
-          <p className="text-[0.8rem] text-text-muted m-0 font-light font-body">
-            &copy; {currentYear} {siteConfig.brandName} Showroom. All Rights Reserved. Crafted for Exquisite Homes.
+        {/* Bottom Legal Bar */}
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-[0.6875rem] font-sans text-white/40 font-light tracking-[0.08em] m-0">
+            &copy; {currentYear} Antique Arts Sourcing. All Rights Reserved. Firozabad, India.
           </p>
+          <div className="flex gap-6 text-[0.6875rem] font-sans text-white/40 tracking-[0.08em]">
+            <span>B2B Luxury Export</span>
+            <span>·</span>
+            <span>ISPM-15 Certified</span>
+          </div>
         </div>
-
       </div>
     </footer>
   );
