@@ -37,7 +37,7 @@ export const HouseSection: FC = () => {
             </div>
             <div className="relative aspect-square overflow-hidden bg-[#ECE7DE]">
               <Image
-                src="/images/products/antique/rosewood-playing-card-box-brass.jpg"
+                src="/images/products/AAS-1002.webp"
                 alt="Rosewood playing card box with brass inlay"
                 fill
                 className="object-cover"
@@ -46,7 +46,7 @@ export const HouseSection: FC = () => {
             </div>
             <div className="relative aspect-square overflow-hidden bg-[#ECE7DE]">
               <Image
-                src="/images/products/desk_lights/geometric-wire-cage-accent-light.jpg"
+                src="/images/products/AAS-1004.webp"
                 alt="Geometric wire cage accent light production"
                 fill
                 className="object-cover"

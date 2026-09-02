@@ -36,7 +36,7 @@ export const ManufacturingSection: FC = () => {
           {/* Left: Prototype / Reference (6 cols) */}
           <div className="lg:col-span-6 relative aspect-[16/10] overflow-hidden bg-[#ECE7DE]">
             <Image
-              src="/images/products/antique/heritage-brass-desk-clock-trio.jpg"
+              src="/images/products/AAS-2001.webp"
               alt="Prototype development and technical specification sample"
               fill
               className="object-cover"
@@ -52,7 +52,7 @@ export const ManufacturingSection: FC = () => {
           {/* Right: Finished Object (6 cols) */}
           <div className="lg:col-span-6 relative aspect-[16/10] overflow-hidden bg-[#ECE7DE]">
             <Image
-              src="/images/products/desk_lights/mesh-diamond-pendant-shade.jpg"
+              src="/images/products/AAS-2002.webp"
               alt="Finished handcrafted object ready for global export"
               fill
               className="object-cover"

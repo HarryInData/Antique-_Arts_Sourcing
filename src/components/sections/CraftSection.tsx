@@ -35,7 +35,7 @@ export const CraftSection: FC = () => {
           {/* Workshop Image (6 cols) */}
           <div className="lg:col-span-6 relative aspect-[4/3] overflow-hidden bg-white">
             <Image
-              src="/images/products/antique/rosewood-chess-set-brass-inlay.jpg"
+              src="/images/products/AAS-2003.webp"
               alt="Artisan craftsmanship — handcrafted brass and woodwork in workshop"
               fill
               className="object-cover"

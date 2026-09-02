@@ -6,22 +6,22 @@ import { useReveal } from "@/hooks/useReveal";
 
 const projects = [
   {
-    image: "/images/products/lamps/matte-black-dome-mesh-pendant.jpg",
+    image: "/images/products/AAS-3001.webp",
     context: "Fine-Dining Restaurant",
     location: "London, UK",
   },
   {
-    image: "/images/products/desk_lights/industrial-wire-drop-light.jpg",
+    image: "/images/products/AAS-3002.webp",
     context: "Boutique Hotel Lobby",
     location: "Dubai, UAE",
   },
   {
-    image: "/images/products/lamps/hexagonal-wire-frame-accent-light.jpg",
+    image: "/images/products/AAS-3003.webp",
     context: "Private Residence",
     location: "New York, USA",
   },
   {
-    image: "/images/products/desk_lights/brushed-gold-table-accent-light.jpg",
+    image: "/images/products/AAS-3004.webp",
     context: "Heritage Resort Suite",
     location: "Jaipur, India",
   },
