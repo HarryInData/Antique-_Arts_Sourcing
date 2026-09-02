@@ -1,7 +1,6 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeader } from "../ui/SectionHeader";
 import { ChevronDownIcon } from "../icons";
 
@@ -90,21 +89,17 @@ export const FaqSection: FC = () => {
                   </span>
                 </button>
 
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
-                      className="overflow-hidden"
-                    >
-                      <div className="px-6 sm:px-8 pb-6 text-text-gray font-light text-[0.975rem] sm:text-[1.025rem] leading-[1.8] border-t border-white/[0.04] mt-1 pt-4">
-                        {item.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="px-6 sm:px-8 pb-6 text-text-gray font-light text-[0.975rem] sm:text-[1.025rem] leading-[1.8] border-t border-white/[0.04] mt-1 pt-4">
+                      {item.answer}
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}

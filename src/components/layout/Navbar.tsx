@@ -1,17 +1,37 @@
 "use client";
 
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
-import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { mainNavLinks } from "@/data/navigation";
 
 export const Navbar: FC = () => {
-  const isScrolled = useScrollPosition();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // initial check
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const isLightNav = isScrolled || pathname !== "/";
+
+  // Prevent scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -48,8 +68,8 @@ export const Navbar: FC = () => {
                         ? "text-[#181816] font-semibold"
                         : "text-[#6F6A61] hover:text-[#181816]"
                       : isActive
-                        ? "text-white font-semibold"
-                        : "text-white/70 hover:text-white"
+                        ? "!text-white font-semibold"
+                        : "!text-white/70 hover:!text-white"
                   }`}
                 >
                   {link.label}
@@ -60,10 +80,10 @@ export const Navbar: FC = () => {
             {/* Request Catalogue CTA */}
             <Link
               href="/contact"
-              className={`text-[0.7rem] font-semibold tracking-[0.16em] uppercase px-6 py-2.5 transition-all duration-300 border ${
+              className={`text-[0.68rem] font-semibold tracking-[0.16em] uppercase px-6 py-2.5 rounded-[3px] border transition-all duration-[450ms] ease-[cubic-bezier(0.25,1,0.5,1)] whitespace-nowrap ${
                 isLightNav
-                  ? "border-[#181816] text-[#181816] hover:bg-[#181816] hover:text-[#F4F1EA]"
-                  : "border-white/60 text-white hover:bg-white hover:text-[#181816]"
+                  ? "border-[#181816]/70 text-[#181816] hover:bg-[#181816] hover:text-[#F4F1EA] hover:border-[#181816]"
+                  : "!border-white/50 !text-white hover:!bg-white/10 hover:!border-white"
               }`}
             >
               Request Catalogue
@@ -110,53 +130,46 @@ export const Navbar: FC = () => {
       </header>
 
       {/* Mobile Drawer */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setIsMenuOpen(false)}
-            className="fixed inset-0 bg-[#181816]/30 z-[998] md:hidden backdrop-blur-sm"
-          >
-            <motion.nav
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", stiffness: 380, damping: 30 }}
-              onClick={(e) => e.stopPropagation()}
-              className="fixed top-0 right-0 w-[82%] max-w-[340px] h-screen bg-[#F4F1EA] border-l border-[rgba(24,24,22,0.12)] shadow-2xl flex flex-col justify-center px-10 gap-8 z-[999]"
-            >
-              <div className="flex flex-col gap-6">
-                {mainNavLinks.map((link) => {
-                  const isActive = pathname === link.href;
-                  return (
-                    <Link
-                      key={link.href + link.label}
-                      href={link.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`text-[0.85rem] uppercase font-medium tracking-[0.2em] transition-colors duration-300 ${
-                        isActive ? "text-[#9A7B50] font-semibold" : "text-[#181816] hover:text-[#9A7B50]"
-                      }`}
-                    >
-                      {link.label}
-                    </Link>
-                  );
-                })}
-              </div>
-              <div className="pt-4 border-t border-[rgba(24,24,22,0.1)]">
+      <div
+        className={`fixed inset-0 bg-[#181816]/30 z-[998] md:hidden backdrop-blur-sm transition-opacity duration-300 ${
+          isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsMenuOpen(false)}
+      >
+        <nav
+          onClick={(e) => e.stopPropagation()}
+          className={`fixed top-0 right-0 w-[82%] max-w-[340px] h-screen bg-[#F4F1EA] border-l border-[rgba(24,24,22,0.12)] shadow-2xl flex flex-col justify-center px-10 gap-8 z-[999] transition-transform duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex flex-col gap-6">
+            {mainNavLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
                 <Link
-                  href="/contact"
+                  key={link.href + link.label}
+                  href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="btn-primary w-full text-center text-[0.7rem]"
+                  className={`text-[0.85rem] uppercase font-medium tracking-[0.2em] transition-colors duration-300 ${
+                    isActive ? "text-[#9A7B50] font-semibold" : "text-[#181816] hover:text-[#9A7B50]"
+                  }`}
                 >
-                  Request Catalogue
+                  {link.label}
                 </Link>
-              </div>
-            </motion.nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              );
+            })}
+          </div>
+          <div className="pt-4 border-t border-[rgba(24,24,22,0.1)]">
+            <Link
+              href="/contact"
+              onClick={() => setIsMenuOpen(false)}
+              className="btn-primary w-full text-center text-[0.7rem]"
+            >
+              Request Catalogue
+            </Link>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };

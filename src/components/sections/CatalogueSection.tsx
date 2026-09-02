@@ -1,24 +1,14 @@
 "use client";
 
 import React, { FC } from "react";
-import { motion } from "framer-motion";
 import { CatalogueCard } from "../ui/CatalogueCard";
 import { catalogues } from "@/data/catalogues";
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-      delay: i * 0.15,
-      ease: [0.25, 1, 0.5, 1] as [number, number, number, number],
-    },
-  }),
-};
+import { useReveal } from "@/hooks/useReveal";
+import { cn } from "@/lib/utils";
 
 export const CatalogueSection: FC = () => {
+  const { ref, isVisible } = useReveal();
+
   return (
     <section
       id="catalogue"
@@ -33,18 +23,18 @@ export const CatalogueSection: FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {catalogues.map((catalogue, index) => (
-            <motion.div
+            <div
               key={catalogue.title}
-              custom={index}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-8%" }}
+              style={{ transitionDelay: `${index * 150}ms` }}
+              className={cn(
+                "transition-all duration-700 ease-out",
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              )}
             >
               <CatalogueCard catalogue={catalogue} />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

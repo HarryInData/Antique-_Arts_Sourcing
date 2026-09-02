@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
@@ -13,8 +13,8 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-// Configure Inter (Clean Sans — Body & UI)
-const inter = Inter({
+// Configure Plus Jakarta Sans (Premium UI Sans — Body & UI)
+const jakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   variable: "--font-body",
@@ -244,7 +244,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable} ${cormorantBrand.variable} scroll-smooth`} suppressHydrationWarning>
+    <html lang="en" className={`${cormorant.variable} ${jakartaSans.variable} ${cormorantBrand.variable} scroll-smooth`} suppressHydrationWarning>
       <body className="antialiased bg-ivory text-ink font-sans overflow-x-hidden leading-relaxed" suppressHydrationWarning>
         <script
           type="application/ld+json"

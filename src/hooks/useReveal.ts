@@ -6,8 +6,8 @@ import { useEffect, useRef, useState } from "react";
  * Intersection Observer hook for scroll-triggered reveal animations.
  * Returns a ref to attach and a boolean `isVisible`.
  */
-export function useReveal(threshold = 0.15) {
-  const ref = useRef<HTMLElement>(null);
+export function useReveal<T extends HTMLElement = HTMLDivElement>(threshold = 0.15) {
+  const ref = useRef<T>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

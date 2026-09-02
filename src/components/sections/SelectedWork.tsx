@@ -4,14 +4,21 @@ import React, { FC, useRef, useState } from "react";
 import Image from "next/image";
 import { useReveal } from "@/hooks/useReveal";
 
-const works = [
-  { num: "01", category: "Metalwork", name: "Heritage Brass Compass Collection", image: "/images/products/antique/heritage-brass-compass-collection.jpg" },
-  { num: "02", category: "Lighting", name: "Tiered Mesh Bell Pendant", image: "/images/products/lamps/tiered-mesh-bell-pendant-chandelier.jpg" },
-  { num: "03", category: "Décor", name: "Mesh Pear Tealight Holder", image: "/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg" },
-  { num: "04", category: "Antique", name: "Vintage Brass Spyglass Telescope", image: "/images/products/antique/vintage-brass-spyglass-telescope.jpg" },
-  { num: "05", category: "Lighting", name: "Brass Layered Cage Pendant", image: "/images/products/lamps/brass-layered-cage-pendant-light.jpg" },
-  { num: "06", category: "Décor", name: "Copper Mesh Globe Pendant", image: "/images/products/desk_lights/copper-mesh-globe-pendant-light.jpg" },
-];
+import { getFeaturedProducts, getCategories } from "@/lib/catalog";
+
+// Fetch up to 8 featured products dynamically
+const products = getFeaturedProducts().slice(0, 8);
+const categoriesData = getCategories();
+
+const works = products.map((p, index) => {
+  const cat = categoriesData.find(c => c.slug === p.categorySlug);
+  return {
+    num: String(index + 1).padStart(2, "0"),
+    category: cat?.name || p.category,
+    name: p.name,
+    image: p.image || "/images/placeholder.webp",
+  };
+});
 
 export const SelectedWork: FC = () => {
   const { ref, isVisible } = useReveal();

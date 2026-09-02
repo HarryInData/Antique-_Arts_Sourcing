@@ -31,7 +31,7 @@ export function buildProductWhatsAppMessage(
   product: Product | GalleryItem,
   imageURL?: string
 ): string {
-  let msg = `Hello Antique Arts Sourcing,\n\nI am interested in learning more about the following product:\n- Product Name: ${product.name}\n- Product Code: ${product.code}`;
+  let msg = `Hello Antique Arts Sourcing,\n\nI am interested in learning more about the following product:\n- Product Name: ${product.name}\n- Product Code: ${'sku' in product ? product.sku : product.code}`;
   if (imageURL) {
     msg += `\n- Product Image: ${imageURL}`;
   }
@@ -45,7 +45,7 @@ export function buildProductWhatsAppMessage(
 export function buildProductEmailSubject(
   product: Product | GalleryItem
 ): string {
-  return `Enquiry - ${product.name} (${product.code})`;
+  return `Enquiry - ${product.name} (${'sku' in product ? product.sku : product.code})`;
 }
 
 /**
@@ -55,7 +55,7 @@ export function buildProductEmailBody(
   product: Product | GalleryItem,
   imageURL?: string
 ): string {
-  let body = `Hello Antique Arts Sourcing,\n\nI am interested in learning more about the following product:\n- Product Name: ${product.name}\n- Product Code: ${product.code}`;
+  let body = `Hello Antique Arts Sourcing,\n\nI am interested in learning more about the following product:\n- Product Name: ${product.name}\n- Product Code: ${'sku' in product ? product.sku : product.code}`;
   if (imageURL) {
     body += `\n- Product Image: ${imageURL}`;
   }

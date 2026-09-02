@@ -7,7 +7,10 @@ export const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#24231F] text-white pt-16 pb-12 border-t border-white/10">
+    <footer className="bg-[#24231F] text-white">
+      {/* Brass accent hairline */}
+      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#9A7B50] to-transparent opacity-60" />
+      <div className="pt-16 pb-12">
       <div className="container-main">
         {/* 12-Column Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-16">
@@ -92,16 +95,22 @@ export const Footer: FC = () => {
         </div>
 
         {/* Bottom Legal Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-[0.6875rem] font-sans text-white/40 font-light tracking-[0.08em] m-0">
+        <div className="border-t border-white/[0.08] pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <p className="text-[0.6875rem] font-sans text-white/35 font-light tracking-[0.08em] m-0">
             &copy; {currentYear} Antique Arts Sourcing. All Rights Reserved. Firozabad, India.
           </p>
-          <div className="flex gap-6 text-[0.6875rem] font-sans text-white/40 tracking-[0.08em]">
-            <span>B2B Luxury Export</span>
-            <span>·</span>
-            <span>ISPM-15 Certified</span>
+          <div className="flex items-center gap-4 text-[0.6875rem] font-sans text-white/35 tracking-[0.08em]">
+            <span className="flex items-center gap-1.5">
+              <span className="w-1 h-1 rounded-full bg-[#9A7B50] inline-block" />
+              B2B Luxury Export
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-1 h-1 rounded-full bg-[#9A7B50] inline-block" />
+              ISPM-15 Certified
+            </span>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   );

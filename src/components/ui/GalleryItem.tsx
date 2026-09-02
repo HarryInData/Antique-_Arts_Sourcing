@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import type { FC } from "react";
 import Image from "next/image";
 import type { GalleryItem as GalleryItemType } from "@/types";
 
@@ -13,13 +13,13 @@ export const GalleryItem: FC<GalleryItemProps> = ({ item, onClick }) => {
       onClick={() => onClick(item)}
       className="gallery-item inline-block w-full mb-6 rounded-image overflow-hidden border border-white/[0.03] bg-bg-surface transition-all duration-400 ease-in-out cursor-pointer group"
     >
-      <div className="gallery-img-box relative w-full overflow-hidden">
-        {/* Next.js Image with intrinsic layout (auto height matching masonry) */}
-        <img
-          src={item.image}
+      <div className="gallery-img-box relative w-full aspect-[4/5] overflow-hidden">
+        <Image
+          src={item.image || "/images/placeholder.webp"}
           alt={item.name}
-          loading="lazy"
-          className="w-full h-auto object-cover transition-transform duration-800 ease-out group-hover:scale-[1.04]"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover transition-transform duration-800 ease-out group-hover:scale-[1.04]"
         />
 
         {/* Hover details overlay */}

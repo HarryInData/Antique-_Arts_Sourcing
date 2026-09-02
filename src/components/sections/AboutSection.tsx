@@ -2,29 +2,17 @@
 
 import React, { FC } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { ANIMATION } from "@/constants";
+import { useReveal } from "@/hooks/useReveal";
+import { cn } from "@/lib/utils";
 
 const paragraphStyle =
-  "text-text-gray font-light text-[1.05rem] lg:text-[1.1rem] leading-[1.8] mb-5";
-
-const staggerContainer = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.12, delayChildren: 0.15 },
-  },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: [0.25, 1, 0.5, 1] as [number, number, number, number] },
-  },
-};
+  "text-text-gray font-light text-[1.05rem] lg:text-[1.1rem] leading-[1.8] mb-5 transition-all duration-700 ease-out";
 
 export const AboutSection: FC = () => {
+  const { ref: leftRef, isVisible: leftVisible } = useReveal();
+  const { ref: rightRef, isVisible: rightVisible } = useReveal();
+  const { ref: statsRef, isVisible: statsVisible } = useReveal();
+
   return (
     <section id="about" className="section about-section py-[80px] sm:py-[100px] lg:py-[120px] relative bg-bg-primary overflow-hidden">
       <div className="container max-w-container mx-auto px-6">
@@ -35,65 +23,54 @@ export const AboutSection: FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
 
           {/* Left Column: Brand Story Narrative */}
-          <motion.div
+          <div
+            ref={leftRef}
             className="about-info"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-10%" }}
           >
-            <motion.span variants={fadeUp} className="block text-[0.8rem] uppercase tracking-[0.3em] text-accent-gold font-semibold mb-3">
+            <span className={cn("block text-[0.8rem] uppercase tracking-[0.3em] text-accent-gold font-semibold mb-3 transition-all duration-700 ease-out delay-100", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
               Artisan Heritage
-            </motion.span>
-            <motion.h2
-              variants={fadeUp}
-              className="font-heading text-[1.75rem] sm:text-[2.25rem] lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight mb-4 text-white"
+            </span>
+            <h2
+              className={cn("font-heading text-[1.75rem] sm:text-[2.25rem] lg:text-[2.75rem] font-bold leading-[1.12] tracking-tight mb-4 text-white transition-all duration-700 ease-out delay-150", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}
             >
               Trusted Export Craftsmanship From <span className="text-accent-gold">Firozabad</span>
-            </motion.h2>
+            </h2>
 
-            <motion.p
-              variants={fadeUp}
-              className="font-heading text-[1.05rem] lg:text-[1.15rem] font-medium text-text-gray tracking-wide mb-5"
+            <p
+              className={cn("font-heading text-[1.05rem] lg:text-[1.15rem] font-medium text-text-gray tracking-wide mb-5 transition-all duration-700 ease-out delay-200", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}
             >
               Timeless Craftsmanship. <span className="text-accent-gold">Trusted Sourcing.</span>
-            </motion.p>
+            </p>
 
-            <motion.div variants={fadeUp} className="w-[60px] h-[2px] bg-accent-gold mb-7" />
+            <div className={cn("h-[2px] bg-accent-gold mb-7 transition-all duration-700 ease-out delay-300", leftVisible ? "w-[60px]" : "w-0")} />
 
-            <motion.p variants={fadeUp} className={paragraphStyle}>
+            <p className={cn(paragraphStyle, "delay-300", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
               Every handcrafted piece carries more than beauty—it carries history, culture, and the dedicated hands of the master artisans who created it.
-            </motion.p>
+            </p>
 
-            <motion.p variants={fadeUp} className={paragraphStyle}>
+            <p className={cn(paragraphStyle, "delay-[400ms]", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
               <strong className="text-white font-medium">Antique Arts Sourcing</strong> was founded with a simple, enduring vision: to bridge traditional Indian artisan workshops with international importers, architects, and hospitality procurement teams.
-            </motion.p>
+            </p>
 
-            <motion.p variants={fadeUp} className="text-accent-gold font-medium text-[1.2rem] leading-[1.8] mb-5 italic font-heading">
+            <p className={cn("text-accent-gold font-medium text-[1.2rem] leading-[1.8] mb-5 italic font-heading transition-all duration-700 ease-out delay-[500ms]", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
               &ldquo;We don&apos;t simply export products—we build lasting partnerships and bring enduring craftsmanship from skilled hands to inspiring spaces around the world.&rdquo;
-            </motion.p>
+            </p>
 
-            <motion.p variants={fadeUp} className={paragraphStyle}>
+            <p className={cn(paragraphStyle, "delay-[600ms]", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
               Across generations, skilled artisans in metalwork, glassblowing, joinery, and architectural lighting have preserved traditional techniques. We partner directly with 50+ verified workshops to curate distinctive collections of premium decorative pieces, architectural accents, and bespoke OEM/ODM creations.
-            </motion.p>
+            </p>
 
-            <motion.div variants={fadeUp} className="mt-6 pt-6 border-t border-white/[0.08]">
+            <div className={cn("mt-6 pt-6 border-t border-white/[0.08] transition-all duration-700 ease-out delay-[700ms]", leftVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
               <p className="font-heading text-[1.15rem] lg:text-[1.25rem] font-semibold tracking-[0.06em] text-white">
                 Timeless Craftsmanship. <span className="text-accent-gold">Trusted Sourcing.</span> Global Reach.
               </p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Right Column: Founders Image Card */}
-          <motion.div
-            className="relative w-full"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-10%" }}
-            transition={{
-              duration: ANIMATION.scrollRevealDuration,
-              ease: ANIMATION.scrollRevealEase,
-            }}
+          <div
+            ref={rightRef}
+            className={cn("relative w-full transition-all duration-1000 ease-out", rightVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10")}
           >
             {/* Ambient background glow */}
             <div className="absolute -inset-4 bg-[radial-gradient(circle,rgba(255,211,122,0.15)_0%,rgba(15,15,15,0)_70%)] pointer-events-none z-0 rounded-3xl" />
@@ -135,7 +112,7 @@ export const AboutSection: FC = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
         </div>
 
@@ -143,12 +120,9 @@ export const AboutSection: FC = () => {
         {/* ====================================================================
            PART 2: SOURCING METRICS BANNER (Full-Width 4-Column Bar)
            ==================================================================== */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="my-10 sm:my-12 lg:my-16 p-6 sm:p-8 lg:p-10 bg-bg-secondary rounded-2xl border border-white/[0.06] shadow-[0_15px_35px_rgba(0,0,0,0.3)]"
+        <div
+          ref={statsRef}
+          className={cn("my-10 sm:my-12 lg:my-16 p-6 sm:p-8 lg:p-10 bg-bg-secondary rounded-2xl border border-white/[0.06] shadow-[0_15px_35px_rgba(0,0,0,0.3)] transition-all duration-700 ease-out", statsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8")}
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-white/[0.08]">
             <div className="flex flex-col items-center text-center p-2">
@@ -184,10 +158,7 @@ export const AboutSection: FC = () => {
               </span>
             </div>
           </div>
-        </motion.div>
-
-
-
+        </div>
 
       </div>
     </section>

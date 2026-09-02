@@ -2,18 +2,44 @@
 // ANTIQUE ARTS SOURCING — TYPE DEFINITIONS
 // ==========================================================================
 
-export interface Product {
-  code: string;
-  name: string;
-  category: string;
-  image: string;
-}
-
-export interface Collection {
+export interface ProductSEO {
   title: string;
   description: string;
+}
+
+export interface Product {
+  id: string;
+  sku: string;
+  category: string;
+  categorySlug: string;
+  name: string;
+  slug: string;
+  material: string;
+  finish: string;
+  dimensions: string;
+  color: string;
+  weight: number | null;
+  description: string;
+  shortDescription: string;
+  stock: number | null;
+  price: number | null;
+  currency: string;
   image: string;
-  filterKey: string;
+  gallery: string[];
+  featured: boolean;
+  newArrival: boolean;
+  bestSeller: boolean;
+  isActive: boolean;
+  tags: string[];
+  seo: ProductSEO;
+}
+
+export interface Category {
+  slug: string;
+  name: string;
+  count: number;
+  isEmpty: boolean;
+  coverImage?: string;
 }
 
 export interface GalleryItem {
@@ -73,14 +99,4 @@ export interface SiteConfig {
   socials: SocialLink[];
 }
 
-export interface LightboxState {
-  isOpen: boolean;
-  activeItem: GalleryItem | null;
-}
 
-export interface EnquiryFormData {
-  name: string;
-  phone: string;
-  interest: string;
-  message: string;
-}
