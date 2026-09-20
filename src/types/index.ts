@@ -2,17 +2,48 @@
 // ANTIQUE ARTS SOURCING — TYPE DEFINITIONS
 // ==========================================================================
 
+export interface ProductSEO {
+  title?: string;
+  description?: string;
+}
+
 export interface Product {
-  code: string;
-  name: string;
+  id?: string;
+  code?: string;
+  sku?: string;
   category: string;
+  categorySlug?: string;
+  name: string;
+  slug?: string;
+  material?: string;
+  finish?: string;
+  dimensions?: string;
+  dimension?: string;
+  color?: string;
+  weight?: number | null;
+  description?: string;
+  shortDescription?: string;
+  stock?: number | string | null;
+  price?: number | null;
+  currency?: string;
   image: string;
   images?: string[];
   fallbackImage?: string;
-  material?: string;
-  finish?: string;
-  dimension?: string;
-  stock?: string;
+  gallery?: string[];
+  featured?: boolean;
+  newArrival?: boolean;
+  bestSeller?: boolean;
+  isActive?: boolean;
+  tags?: string[];
+  seo?: ProductSEO;
+}
+
+export interface Category {
+  slug: string;
+  name: string;
+  count: number;
+  isEmpty: boolean;
+  coverImage?: string;
 }
 
 export interface Collection {

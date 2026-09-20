@@ -17,9 +17,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) return { title: "Product Not Found" };
 
-  const title = product.seo.title || `${product.name} | Antique Arts Sourcing`;
+  const title = product.seo?.title || `${product.name} | Antique Arts Sourcing`;
   const description =
-    product.seo.description ||
+    product.seo?.description ||
     product.shortDescription ||
     `${product.name} — handcrafted in India for B2B export.`;
   const canonical = `${BASE_URL}/collections/${categorySlug}/${productSlug}`;
@@ -108,7 +108,7 @@ export default async function ProductPage({ params }: Props) {
             {/* Thumbnail strip */}
             {product.gallery && product.gallery.length > 1 && (
               <div className="grid grid-cols-5 gap-3">
-                {product.gallery.slice(0, 5).map((img, i) => (
+                {product.gallery.slice(0, 5).map((img: string, i: number) => (
                   <div
                     key={i}
                     className="relative aspect-square bg-white border border-black/[0.04] rounded-[2px] overflow-hidden"
