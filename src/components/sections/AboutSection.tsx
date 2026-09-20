@@ -66,7 +66,7 @@ export const AboutSection: FC = () => {
             </motion.p>
 
             <motion.p variants={fadeUp} className={paragraphStyle}>
-              <strong className="text-white font-medium">Antique Arts Sourcing</strong> was founded with a simple, enduring vision: to bridge traditional Indian artisan workshops with international importers, architects, and hospitality procurement teams.
+              <strong className="text-white font-medium">Antique Arts Sourcing</strong> was founded with a simple, enduring vision: to bridge traditional artisan workshops with international importers, architects, and hospitality procurement teams.
             </motion.p>
 
             <motion.p variants={fadeUp} className="text-accent-gold font-medium text-[1.2rem] leading-[1.8] mb-5 italic font-heading">

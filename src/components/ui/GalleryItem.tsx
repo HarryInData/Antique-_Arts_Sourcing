@@ -8,17 +8,27 @@ interface GalleryItemProps {
 }
 
 export const GalleryItem: FC<GalleryItemProps> = ({ item, onClick }) => {
+  const handleImgError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.currentTarget;
+    const fallback = item.fallbackImage || "/products/placeholder.webp";
+    if (!target.dataset.fallbackApplied) {
+      target.dataset.fallbackApplied = "true";
+      target.src = fallback;
+    }
+  };
+
   return (
     <div
       onClick={() => onClick(item)}
       className="gallery-item inline-block w-full mb-6 rounded-image overflow-hidden border border-white/[0.03] bg-bg-surface transition-all duration-400 ease-in-out cursor-pointer group"
     >
       <div className="gallery-img-box relative w-full overflow-hidden">
-        {/* Next.js Image with intrinsic layout (auto height matching masonry) */}
+        {/* Intrinsic layout matching masonry with fallback error protection */}
         <img
           src={item.image}
           alt={item.name}
           loading="lazy"
+          onError={handleImgError}
           className="w-full h-auto object-cover transition-transform duration-800 ease-out group-hover:scale-[1.04]"
         />
 

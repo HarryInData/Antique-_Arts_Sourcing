@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { EnquiryButtonGroup } from "./EnquiryButtonGroup";
@@ -11,6 +11,8 @@ interface ProductCardProps {
 }
 
 export const ProductCard: FC<ProductCardProps> = ({ product }) => {
+  const [imgSrc, setImgSrc] = useState(product.image);
+
   return (
     <motion.div
       whileHover={{ y: -8, transition: { duration: 0.35, ease: [0.25, 1, 0.5, 1] } }}
@@ -18,11 +20,17 @@ export const ProductCard: FC<ProductCardProps> = ({ product }) => {
     >
       <div className="featured-img-wrapper relative w-full pt-[120%] overflow-hidden bg-black/10">
         <Image
-          src={product.image}
+          src={imgSrc}
           alt={product.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="featured-img absolute inset-0 w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110"
+          onError={() => {
+            const fallback = product.fallbackImage || "/products/placeholder.webp";
+            if (imgSrc !== fallback) {
+              setImgSrc(fallback);
+            }
+          }}
         />
         <div className="featured-overlay absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 backdrop-blur-[3px] transition-opacity duration-400 ease-out">
           <EnquiryButtonGroup product={product} isCardOverlay />

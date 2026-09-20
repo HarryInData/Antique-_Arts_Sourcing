@@ -1,7 +1,10 @@
+"use client";
+
 import React, { FC } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 import { footerNavLinks, footerBusinessLinks } from "@/data/navigation";
+import { trackEmailClick, trackWhatsAppClick } from "@/lib/analytics";
 
 export const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
@@ -19,10 +22,10 @@ export const Footer: FC = () => {
               </span>
             </Link>
             <p className="text-white/60 text-[0.875rem] font-sans font-light leading-[1.7] max-w-[360px] mb-4">
-              India&apos;s premier B2B sourcing house connecting artisan craftsmanship with architects, designers, and hospitality brands worldwide.
+              Premier B2B sourcing and manufacturing house connecting artisan craftsmanship with architects, designers, and hospitality brands worldwide.
             </p>
             <p className="text-[0.6875rem] font-sans font-medium tracking-[0.18em] uppercase text-[#9A7B50]">
-              India · Global Sourcing · OEM / ODM
+              Bespoke Manufacturing · Global Export · OEM / ODM
             </p>
           </div>
 
@@ -72,6 +75,7 @@ export const Footer: FC = () => {
             <div className="flex flex-col gap-3 text-white/70 text-[0.875rem] font-sans font-light">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
+                onClick={() => trackEmailClick({ location: "footer" })}
                 className="hover:text-white transition-colors duration-300"
               >
                 {siteConfig.contact.email}
@@ -80,6 +84,7 @@ export const Footer: FC = () => {
                 href={`https://wa.me/${siteConfig.contact.phoneFormatted}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick({ location: "footer" })}
                 className="hover:text-white transition-colors duration-300"
               >
                 WhatsApp: {siteConfig.contact.phone}

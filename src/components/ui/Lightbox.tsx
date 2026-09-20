@@ -64,6 +64,14 @@ export const Lightbox: FC<LightboxProps> = ({
               <img
                 src={activeItem.image}
                 alt={activeItem.name}
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  const fallback = activeItem.fallbackImage || "/products/placeholder.webp";
+                  if (!target.dataset.fallbackApplied) {
+                    target.dataset.fallbackApplied = "true";
+                    target.src = fallback;
+                  }
+                }}
                 className="w-full h-full object-cover absolute inset-0"
               />
             </div>

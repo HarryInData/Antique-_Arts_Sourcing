@@ -32,7 +32,7 @@ export const EditorialIntro: FC = () => {
           {/* Right Column (5 cols): Description + Statistics */}
           <div className="lg:col-span-5 pt-2 lg:pt-8">
             <p className="body-text mb-12">
-              Antique Arts Sourcing bridges India&apos;s artisan heritage with contemporary global design through sourcing, custom manufacturing and export.
+              Antique Arts Sourcing bridges timeless artisan heritage with contemporary global design through sourcing, custom manufacturing and export.
             </p>
 
             {/* Statistics Grid */}

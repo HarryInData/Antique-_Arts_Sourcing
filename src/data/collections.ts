@@ -1,50 +1,93 @@
 import type { Collection } from "@/types";
 
 // ==========================================================================
-// PRODUCT CATEGORIES DATA — 6 Core B2B Export Verticals
+// MASTER CATEGORIES — Antique Arts Sourcing
+// High-Resolution Editorial Photography
 // ==========================================================================
 
 export const collections: Collection[] = [
   {
-    title: "Antique Collectibles",
+    title: "Lamps & Lightings",
     description:
-      "Heritage brass compasses, telescopes, sundials, chess sets, and globes — curated antique collectibles for hotel lobby displays, museum gift shops, and luxury retail merchandising.",
-    image: "/images/products/antique/rosewood-chess-set-brass-inlay.jpg",
+      "Handcrafted table lamps, glass hurricane lamps, and architectural pendant lighting with refined electrical fixtures and artisan metal finishes.",
+    image: "/images/products/lamps/tiered-mesh-bell-pendant-chandelier.jpg",
+    filterKey: "lamps",
+  },
+  {
+    title: "Glass Vases",
+    description:
+      "Master handblown marbled, frosted, and etched glass vases crafted in Firozabad. Architectural silhouettes for luxury interiors and hospitality.",
+    image: "/products/aas_resource/aas_img_003.jpeg",
+    filterKey: "glass-vases",
+  },
+  {
+    title: "Glass Votives",
+    description:
+      "Silvered, foiled, and etched glass tea-light votives and hurricane candleholders that create mesmerizing ambient reflections.",
+    image: "/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
+    filterKey: "glass-votives",
+  },
+  {
+    title: "Nautical Collections",
+    description:
+      "Museum-grade brass marine sextants, harbour spyglass telescopes on hardwood tripods, divers helmets, and pocket compasses.",
+    image: "/images/products/antique/vintage-brass-spyglass-telescope.jpg",
+    filterKey: "nautical",
+  },
+  {
+    title: "Glass Knobs",
+    description:
+      "Cut crystal and hand-faceted colored glass cabinet hardware knobs with precision-fitted brass and nickel mounting screws.",
+    image: "/products/collections_hd/glass-knob-studio.jpg",
+    filterKey: "glass-knobs",
+  },
+  {
+    title: "Christmas Ornaments",
+    description:
+      "Mercury glass baubles, ribbed festive spheres, and handcrafted glass ornaments featuring vintage silvering and rich seasonal patinas.",
+    image: "/products/collections_hd/christmas-ornament-tree.jpg",
+    filterKey: "christmas-ornaments",
+  },
+  {
+    title: "Antique Collection",
+    description:
+      "Curated heritage brass sundials, armillary spheres, celestial globes, astrolabes, and vintage timepieces with authentic heirloom character.",
+    image: "/products/aas_resource/aas_img_117.jpeg",
     filterKey: "antique",
   },
   {
-    title: "Luxury Home Décor & Metal Art",
+    title: "Tabletop & Decor",
     description:
-      "Hand-forged wall sculptures, brass candle holders, decorative trays, copper vases, and figurines — wholesale home décor and metal artistry for design showrooms and private label brands.",
-    image: "/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
-    filterKey: "home-decor",
+      "Hand-hammered brass centerpiece urns, sculptural candleholders, embossed copper trays, and decorative vessels for considered living.",
+    image: "/images/products/antique/rosewood-playing-card-box-brass.jpg",
+    filterKey: "tabletop",
   },
   {
-    title: "Glass & Crystal Artistry",
+    title: "Kitchenware and Cutlery",
     description:
-      "Hand-blown coloured glass vases, crystal bowls, mosaic lanterns, and glass terrariums — sourced from Firozabad's renowned glass artisan clusters for hospitality and luxury gifting markets.",
-    image: "/images/products/antique/heritage-brass-compass-collection.jpg",
-    filterKey: "glass-crystal",
+      "Artisanal brass salad servers, hammered metal cutlery sets, wine coolers, and decorative tableware engineered for luxury hospitality.",
+    image: "/images/katachi/table.jpg",
+    filterKey: "kitchenware",
   },
   {
-    title: "Bespoke Furniture & Joinery",
+    title: "Bath Accessories",
     description:
-      "Console tables, accent chairs, bar cabinets, and shelving units in sheesham, mango wood, and reclaimed timber — custom furniture for interior design projects and boutique hotel fit-outs.",
+      "Bespoke solid cast brass lotion dispensers, vanity soap dishes, towel trays, and hotel bathroom hardware tailored for luxury suites.",
+    image: "/products/aas_resource/aas_img_049.jpeg",
+    filterKey: "bath",
+  },
+  {
+    title: "Storage & Organiser",
+    description:
+      "Glass vitrine display boxes with brass soldering, tiered desk organisers, and velvet-lined presentation caddies.",
     image: "/images/products/antique/rosewood-chess-set-brass-inlay.jpg",
-    filterKey: "furniture",
+    filterKey: "storage",
   },
   {
-    title: "Hotel & Hospitality Accents",
+    title: "Festive Collection",
     description:
-      "Lobby sculptures, room accent pieces, bathroom accessories, and restaurant décor — purpose-designed hospitality accents for procurement managers and FF&E specifiers.",
-    image: "/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
-    filterKey: "hospitality",
-  },
-  {
-    title: "Architectural Decorative Lighting",
-    description:
-      "Wire mesh pendant lamps, industrial chandeliers, lantern sconces, and bespoke lighting installations — handcrafted architectural lighting for commercial interiors and restaurant design.",
-    image: "/images/products/lamps/tiered-mesh-bell-pendant-chandelier.jpg",
-    filterKey: "lamps",
+      "Handcrafted brass diya lanterns, hanging bell garlands, and bespoke celebratory accents for international festive seasons.",
+    image: "/products/collections_hd/festive-lantern-clean.jpg",
+    filterKey: "festive",
   },
 ];

@@ -4,107 +4,82 @@ import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useReveal } from "@/hooks/useReveal";
-
-const categories = [
-  {
-    num: "01",
-    title: "Antique Collectibles",
-    desc: "Heritage brass compasses, telescopes, sundials, and chess sets for hotel lobby displays and luxury retail.",
-    image: "/images/products/antique/heritage-brass-compass-collection.jpg",
-    href: "/collections",
-  },
-  {
-    num: "02",
-    title: "Luxury Metalwork",
-    desc: "Hand-forged wall sculptures, brass candle holders, copper vases, and decorative trays for design showrooms.",
-    image: "/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
-    href: "/collections",
-  },
-  {
-    num: "03",
-    title: "Glass & Crystal",
-    desc: "Hand-blown coloured glass vases, crystal bowls, and mosaic lanterns from Firozabad's artisan clusters.",
-    image: "/images/products/antique/rosewood-chess-set-brass-inlay.jpg",
-    href: "/collections",
-  },
-  {
-    num: "04",
-    title: "Bespoke Furniture",
-    desc: "Console tables, accent chairs, and bar cabinets in sheesham, mango wood, and reclaimed timber.",
-    image: "/images/products/antique/vintage-brass-spyglass-telescope.jpg",
-    href: "/collections",
-  },
-  {
-    num: "05",
-    title: "Lighting",
-    desc: "Wire mesh pendants, industrial chandeliers, and lantern sconces — handcrafted architectural lighting.",
-    image: "/images/products/lamps/tiered-mesh-bell-pendant-chandelier.jpg",
-    href: "/collections",
-  },
-  {
-    num: "06",
-    title: "Hospitality Accents",
-    desc: "Lobby sculptures, room accent pieces, and restaurant décor for procurement managers and FF&E specifiers.",
-    image: "/images/products/lamps/brass-layered-cage-pendant-light.jpg",
-    href: "/collections",
-  },
-];
+import { collections } from "@/data/collections";
 
 export const CollectionGallery: FC = () => {
   const { ref, isVisible } = useReveal();
 
   return (
-    <section className="section-pad bg-white border-t border-b border-[rgba(24,24,22,0.06)]">
+    <section id="collections" className="section-pad bg-white border-t border-b border-[rgba(24,24,22,0.06)]">
       <div
         ref={ref as React.RefObject<HTMLDivElement>}
         className={`container-main reveal ${isVisible ? "visible" : ""}`}
       >
-        {/* Consistent Standard Section Header */}
-        <div className="mb-12 sm:mb-16">
-          <span className="eyebrow">01 / The Collection</span>
-          <h2 className="heading-section mb-4">The Collection</h2>
-          <p className="body-text">
-            Objects shaped by Indian craftsmanship and curated for contemporary architectural spaces.
-          </p>
+        {/* Section Header */}
+        <div className="mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between border-b border-[rgba(24,24,22,0.08)] pb-8">
+          <div>
+            <span className="eyebrow">01 / Curated Verticals</span>
+            <h2 className="heading-section mb-3">Our Product Categories</h2>
+            <p className="body-text max-w-xl">
+              12 master export verticals catalogued from our Firozabad glass foundries, brass casting workshops, and artisanal metal ateliers.
+            </p>
+          </div>
+          <div className="mt-4 md:mt-0 text-[0.75rem] font-sans font-medium tracking-[0.18em] uppercase text-[#9A7B50]">
+            Master Catalog · 280+ Pieces
+          </div>
         </div>
 
-        {/* Asymmetric 12-Column Grid */}
+        {/* 12-Column Responsive Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {categories.map((cat, i) => (
-            <Link
-              key={cat.num}
-              href={cat.href}
-              className={`group flex flex-col no-underline ${
-                i === 0 || i === 5 ? "md:col-span-2 lg:col-span-2" : "col-span-1"
-              }`}
-            >
-              {/* Image Box with Fixed Aspect Ratio */}
-              <div className={`relative overflow-hidden bg-[#ECE7DE] mb-5 ${
-                i === 0 || i === 5 ? "aspect-[16/9] sm:aspect-[2/1]" : "aspect-[4/5]"
-              }`}>
-                <Image
-                  src={cat.image}
-                  alt={cat.title}
-                  fill
-                  className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]"
-                  sizes={i === 0 || i === 5 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-                />
-              </div>
+          {collections.map((cat, i) => {
+            const isWide = i % 7 === 0 || i % 7 === 6;
+            const numStr = String(i + 1).padStart(2, "0");
 
-              {/* Text Below Image */}
-              <div className="flex flex-col">
-                <span className="text-[0.6875rem] font-sans font-medium tracking-[0.2em] uppercase text-[#9A7B50] mb-1">
-                  {cat.num}
-                </span>
-                <h3 className="heading-sub text-[1.25rem] sm:text-[1.4rem] mb-2 group-hover:text-[#9A7B50] transition-colors duration-300">
-                  {cat.title}
-                </h3>
-                <p className="text-[0.875rem] font-sans font-light text-[#6F6A61] leading-[1.6] max-w-[420px]">
-                  {cat.desc}
-                </p>
-              </div>
-            </Link>
-          ))}
+            return (
+              <Link
+                key={cat.filterKey}
+                href={`/gallery?category=${cat.filterKey}`}
+                className={`group flex flex-col no-underline ${
+                  isWide ? "md:col-span-2 lg:col-span-2" : "col-span-1"
+                }`}
+              >
+                {/* Image Box */}
+                <div
+                  className={`relative overflow-hidden bg-[#ECE7DE] mb-5 border border-[rgba(24,24,22,0.08)] ${
+                    isWide ? "aspect-[16/9] sm:aspect-[2/1]" : "aspect-[4/5]"
+                  }`}
+                >
+                  <Image
+                    src={cat.image}
+                    alt={`${cat.title} — Handcrafted luxury export décor by Antique Arts Sourcing`}
+                    fill
+                    sizes={isWide ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+                    className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]"
+                  />
+                  <div className="absolute top-3 left-3 bg-[#F4F1EA]/90 backdrop-blur-md px-2.5 py-1 text-[9px] font-sans font-medium tracking-[0.2em] uppercase text-[#181816]">
+                    Category {numStr}
+                  </div>
+                </div>
+
+                {/* Text Metadata */}
+                <div className="flex flex-col">
+                  <span className="text-[0.6875rem] font-sans font-medium tracking-[0.2em] uppercase text-[#9A7B50] mb-1">
+                    Vertical {numStr}
+                  </span>
+                  <h3 className="heading-sub text-[1.25rem] sm:text-[1.4rem] mb-2 group-hover:text-[#9A7B50] transition-colors duration-300">
+                    {cat.title}
+                  </h3>
+                  <p className="text-[0.875rem] font-sans font-light text-[#6F6A61] leading-[1.6] max-w-[420px]">
+                    {cat.description}
+                  </p>
+                  <div className="pt-3 mt-2 flex items-center gap-1.5 text-[0.7rem] font-sans font-semibold tracking-[0.16em] uppercase text-[#181816] group-hover:text-[#9A7B50] transition-colors">
+                    <span>View Category Gallery</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useReveal } from "@/hooks/useReveal";
 
 const steps = [
-  { num: "01", title: "Source", desc: "Identify the finest artisan workshops and raw materials across India's traditional craft clusters." },
+  { num: "01", title: "Source", desc: "Identify the finest artisan workshops and raw materials across specialized traditional craft clusters." },
   { num: "02", title: "Develop", desc: "Translate reference sketches, CAD drawings, and tech packs into production-ready prototypes." },
   { num: "03", title: "Craft", desc: "Master artisans hand-produce each piece using time-tested metalwork, glass, and joinery techniques." },
   { num: "04", title: "Inspect", desc: "Rigorous multi-stage in-line checks and final pre-shipment AQL quality inspection protocols." },
@@ -23,10 +23,10 @@ export const CraftSection: FC = () => {
       >
         {/* Standard Section Header */}
         <div className="mb-12 sm:mb-16">
-          <span className="eyebrow">02 / Process</span>
-          <h2 className="heading-section mb-4">From Hands to Spaces.</h2>
+          <span className="eyebrow">02 / Process &amp; Quality</span>
+          <h2 className="heading-section mb-4">Quality Control &amp; Factory Audits</h2>
           <p className="body-text">
-            A transparent, multi-stage sourcing and manufacturing process designed for international trade standards.
+            A transparent, multi-stage sourcing and manufacturing process with AQL inspection designed for international trade standards.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export const CraftSection: FC = () => {
           {/* Workshop Image (6 cols) */}
           <div className="lg:col-span-6 relative aspect-[4/3] overflow-hidden bg-white">
             <Image
-              src="/images/products/antique/rosewood-chess-set-brass-inlay.jpg"
+              src="/products/antique-collectibles/rosewood-chess-set-brass-inlay.webp"
               alt="Artisan craftsmanship — handcrafted brass and woodwork in workshop"
               fill
               className="object-cover"

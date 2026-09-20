@@ -14,7 +14,7 @@ export const HeroSection: FC = () => {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-editorial.jpg"
-          alt="Handcrafted Indian decorative object inside contemporary architectural interior"
+          alt="Handcrafted luxury decorative object inside contemporary architectural interior"
           fill
           priority
           className="object-cover object-center"
@@ -31,27 +31,26 @@ export const HeroSection: FC = () => {
         <div className="container-main">
           {/* Eyebrow */}
           <p className="text-[0.6875rem] sm:text-[0.75rem] font-sans font-medium tracking-[0.25em] uppercase text-white/70 mb-4 sm:mb-5">
-            India, Sourced with Intent.
+            B2B Luxury Manufacturer &amp; Sourcing Partner
           </p>
 
-          {/* Main Headline */}
-          <h1 className="heading-hero text-white mb-6 sm:mb-8">
-            Luxury Objects.<br />
-            Crafted for Global Spaces.
+          {/* Main Headline — High Intent Technical SEO H1 */}
+          <h1 className="heading-hero text-white mb-6 sm:mb-8 text-3xl sm:text-5xl lg:text-6xl font-light">
+            Luxury Home Décor Manufacturer &amp; Export Sourcing Partner
           </h1>
 
           {/* Supporting Text */}
-          <p className="text-[0.95rem] sm:text-[1.0625rem] font-sans font-light leading-[1.7] text-white/80 max-w-[560px] mb-8 sm:mb-10">
-            Antique Arts Sourcing connects India&apos;s finest craftsmanship with architects, designers, hospitality groups and global buyers.
+          <p className="text-[0.95rem] sm:text-[1.0625rem] font-sans font-light leading-[1.7] text-white/80 max-w-[620px] mb-8 sm:mb-10">
+            Antique Arts Sourcing manufactures and exports handcrafted luxury home décor, antique collectibles, brass art, decorative lighting, and bespoke furniture for global importers, retailers, interior designers, and hospitality projects.
           </p>
 
           {/* CTAs sharing exact baseline */}
           <div className="flex flex-wrap items-center gap-4 mb-10 sm:mb-12">
             <Link href="/collections" className="btn-hero-primary">
-              Explore Collection
+              Explore Collections
             </Link>
             <Link href="/contact" className="btn-hero-secondary">
-              Start a Project
+              Request a Quote
             </Link>
           </div>
 

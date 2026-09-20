@@ -15,43 +15,30 @@ export const HouseSection: FC = () => {
       >
         {/* Standard Section Header */}
         <div className="mb-12 sm:mb-16">
-          <span className="eyebrow">07 / Heritage</span>
-          <h2 className="heading-section mb-4">The House</h2>
+          <span className="eyebrow">07 / Export Heritage</span>
+          <h2 className="heading-section mb-4">Why International Buyers Work With Us</h2>
           <p className="body-text">
-            Rooted in Firozabad&apos;s centuries-old artisan traditions, delivering to international trade standards.
+            Rooted in Firozabad&apos;s centuries-old artisan traditions, providing reliable manufacturing partnerships, rigorous AQL inspection, and end-to-end export support.
           </p>
         </div>
 
         {/* 12-Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-          {/* Images Grid (6 cols) */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-            <div className="relative aspect-[3/4] overflow-hidden col-span-2 bg-[#ECE7DE]">
+          {/* Founders Image (6 cols) */}
+          <div className="lg:col-span-6">
+            <div className="relative aspect-[3/2] overflow-hidden bg-[#ECE7DE] border border-[rgba(24,24,22,0.08)]">
               <Image
                 src="/images/branding/antique-arts-sourcing-founders-firozabad.jpg"
-                alt="Antique Arts Sourcing founders in Firozabad workshop"
+                alt="Antique Arts Sourcing Founding Leadership Team"
                 fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
             </div>
-            <div className="relative aspect-square overflow-hidden bg-[#ECE7DE]">
-              <Image
-                src="/images/products/antique/rosewood-playing-card-box-brass.jpg"
-                alt="Rosewood playing card box with brass inlay"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 50vw, 20vw"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden bg-[#ECE7DE]">
-              <Image
-                src="/images/products/desk_lights/geometric-wire-cage-accent-light.jpg"
-                alt="Geometric wire cage accent light production"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 50vw, 20vw"
-              />
+            <div className="mt-3 flex items-center justify-between text-[0.75rem] font-sans tracking-[0.12em] uppercase text-[#6F6A61]">
+              <span>Founding Leadership &amp; Sourcing Direction</span>
+              <span>Firozabad, UP</span>
             </div>
           </div>
 
@@ -61,10 +48,10 @@ export const HouseSection: FC = () => {
               Antique Arts Sourcing was founded in Firozabad, Uttar Pradesh — a city with centuries of glass-blowing and metalworking heritage. What began as a local craft workshop has evolved into a dedicated global B2B sourcing house.
             </p>
             <p className="body-text mb-6">
-              We collaborate directly with over 50 artisan workshops across India, each specialising in distinct craft disciplines: hand-forged brass and copper metalwork, mouth-blown crystal, reclaimed hardwood furniture, and architectural lighting installations.
+              We collaborate directly with over 50 specialized artisan workshops, each excelling in distinct craft disciplines: hand-forged brass and copper metalwork, mouth-blown crystal, bespoke furniture joinery, and architectural lighting installations.
             </p>
             <p className="body-text mb-10">
-              Every collection we source, develop, or manufacture meets rigorous international quality standards. From multi-stage in-line quality audits to ISPM-15 certified timber crate export packaging, we bridge the gap between traditional Indian craftsmanship and the expectations of global trade buyers.
+              Every collection we source, develop, or manufacture meets rigorous international quality standards. From multi-stage in-line quality audits to ISPM-15 certified timber crate export packaging, we bridge the gap between traditional artisanal craftsmanship and the expectations of global trade buyers.
             </p>
 
             {/* 4 Value Pillars */}

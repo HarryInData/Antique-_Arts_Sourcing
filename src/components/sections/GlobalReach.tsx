@@ -25,12 +25,12 @@ export const GlobalReach: FC = () => {
       >
         {/* Standard Section Header */}
         <div className="mb-12 sm:mb-16">
-          <span className="eyebrow">06 / Global Reach</span>
+          <span className="eyebrow">06 / Global Logistics</span>
           <h2 className="heading-section mb-4">
-            Crafted in India.<br />Delivered Worldwide.
+            Global Export &amp; Logistics Support
           </h2>
           <p className="body-text">
-            Export logistics infrastructure serving design firms, importers, and hospitality chains across 20+ countries.
+            ISPM-15 compliant export logistics and direct freight coordination serving importers, wholesalers, and design firms across 20+ countries.
           </p>
         </div>
 

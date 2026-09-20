@@ -1,31 +1,32 @@
 import type { NavLink } from "@/types";
 
 // ==========================================================================
-// NAVIGATION DATA — Luxury B2B Sourcing House
+// NAVIGATION DATA — Antique Arts Sourcing Portfolio
 // ==========================================================================
 
 export const mainNavLinks: NavLink[] = [
-  { label: "Collection", href: "/collections" },
-  { label: "Capabilities", href: "/about" },
-  { label: "Projects", href: "/gallery" },
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Collection", href: "/collections" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const footerNavLinks: NavLink[] = [
-  { label: "Collection", href: "/collections" },
-  { label: "Capabilities", href: "/about" },
-  { label: "Projects", href: "/gallery" },
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Collection", href: "/collections" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const footerBusinessLinks: NavLink[] = [
-  { label: "B2B Sourcing", href: "/contact" },
-  { label: "OEM / ODM", href: "/contact" },
-  { label: "Custom Manufacturing", href: "/contact" },
-  { label: "Global Export", href: "/contact" },
+  { label: "B2B Sourcing Services", href: "/services#product-sourcing" },
+  { label: "OEM / ODM Manufacturing", href: "/services#oem-manufacturing" },
+  { label: "AQL Quality Inspection", href: "/services#quality-inspection" },
+  { label: "Export Logistics & Crating", href: "/services#export-logistics" },
+  { label: "Request a Quote", href: "/contact" },
 ];
 
-// Keep old exports for backward compatibility during migration
 export const footerShowroomLinks = footerNavLinks;
 export const footerExhibitionLinks = footerBusinessLinks;

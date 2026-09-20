@@ -25,9 +25,9 @@ export const ManufacturingSection: FC = () => {
         {/* Standard Section Header */}
         <div className="mb-12 sm:mb-16">
           <span className="eyebrow">04 / Capabilities</span>
-          <h2 className="heading-section mb-4">Your Design. Our Craft.</h2>
+          <h2 className="heading-section mb-4">Custom OEM &amp; Private Label Manufacturing</h2>
           <p className="body-text">
-            Full OEM &amp; ODM custom manufacturing capabilities for trade specifiers, luxury retailers, and hospitality projects.
+            Comprehensive OEM, ODM, and private-label contract manufacturing for international trade specifiers, retailers, and hospitality projects.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export const ManufacturingSection: FC = () => {
           {/* Left: Prototype / Reference (6 cols) */}
           <div className="lg:col-span-6 relative aspect-[16/10] overflow-hidden bg-[#ECE7DE]">
             <Image
-              src="/images/products/antique/heritage-brass-desk-clock-trio.jpg"
+              src="/products/antique-collectibles/heritage-brass-desk-clock-trio.webp"
               alt="Prototype development and technical specification sample"
               fill
               className="object-cover"
@@ -52,7 +52,7 @@ export const ManufacturingSection: FC = () => {
           {/* Right: Finished Object (6 cols) */}
           <div className="lg:col-span-6 relative aspect-[16/10] overflow-hidden bg-[#ECE7DE]">
             <Image
-              src="/images/products/desk_lights/mesh-diamond-pendant-shade.jpg"
+              src="/products/decorative-lighting/mesh-diamond-pendant-shade.webp"
               alt="Finished handcrafted object ready for global export"
               fill
               className="object-cover"

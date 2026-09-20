@@ -40,13 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    // Future B2B hub pages — add these as standalone pages are created
-    // {
-    //   url: `${baseUrl}/services`,
-    //   lastModified: new Date(),
-    //   changeFrequency: "monthly",
-    //   priority: 0.8,
-    // },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
     // {
     //   url: `${baseUrl}/categories`,
     //   lastModified: new Date(),

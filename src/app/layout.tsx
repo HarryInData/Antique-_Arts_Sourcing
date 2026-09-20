@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -33,13 +34,16 @@ const cormorantBrand = Cormorant_Garamond({
 // ─── SEO Metadata ───
 export const metadata: Metadata = {
   metadataBase: new URL("https://antiqueartssourcing.com"),
-  title: "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
+  title: {
+    default: "Antique Arts Sourcing | Luxury Home Décor & Handcrafted Product Exporter",
+    template: "%s | Antique Arts Sourcing",
+  },
   description:
-    "India's premier B2B sourcing house for handcrafted luxury décor, bespoke furniture, glass artistry & architectural lighting. OEM/ODM custom manufacturing for architects, designers & hospitality brands across 20+ countries.",
+    "Premier B2B manufacturer, exporter, and sourcing partner for handcrafted luxury home décor, antique collectibles, brass & metal art, decorative lighting, and bespoke furniture. Serving global importers, interior designers, and hospitality procurement.",
   openGraph: {
-    title: "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
+    title: "Antique Arts Sourcing | Luxury Home Décor & Handcrafted Product Exporter",
     description:
-      "B2B export sourcing for handcrafted luxury décor, antique collectibles, bespoke furniture, and architectural lighting. Custom OEM/ODM manufacturing from Firozabad, India.",
+      "B2B export sourcing & custom manufacturing for handcrafted luxury décor, antique collectibles, brass art, and architectural lighting from Firozabad.",
     url: "https://antiqueartssourcing.com",
     siteName: "Antique Arts Sourcing",
     images: [
@@ -47,7 +51,7 @@ export const metadata: Metadata = {
         url: "/images/hero-editorial.jpg",
         width: 1200,
         height: 630,
-        alt: "Antique Arts Sourcing — India's Premier B2B Luxury Sourcing House",
+        alt: "Antique Arts Sourcing — Premier B2B Luxury Sourcing House",
       },
     ],
     type: "website",
@@ -55,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
+    title: "Antique Arts Sourcing | Luxury Home Décor & Handcrafted Product Exporter",
     description:
-      "B2B sourcing house for handcrafted luxury décor, bespoke furniture & architectural lighting. OEM/ODM. 20+ countries. Firozabad, India.",
+      "B2B sourcing house for handcrafted luxury décor, bespoke furniture & architectural lighting. OEM/ODM. 20+ countries. Firozabad.",
     images: ["/images/hero-editorial.jpg"],
   },
   manifest: "/site.webmanifest",
@@ -91,11 +95,11 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://antiqueartssourcing.com/#organization",
       "name": "Antique Arts Sourcing",
-      "alternateName": "AAS India",
+      "alternateName": "Antique Arts Sourcing",
       "url": "https://antiqueartssourcing.com",
       "logo": "https://antiqueartssourcing.com/images/branding/antique-arts-sourcing-logo.jpeg",
       "description":
-        "India's premier B2B export sourcing company specialising in handcrafted luxury décor, bespoke furniture, glass artistry, antique collectibles, and architectural decorative lighting for international importers, architects, and hospitality procurement.",
+        "Premier B2B export sourcing company specialising in handcrafted luxury décor, bespoke furniture, glass artistry, antique collectibles, and architectural decorative lighting for international importers, architects, and hospitality procurement.",
       "foundingLocation": {
         "@type": "Place",
         "name": "Firozabad, Uttar Pradesh, India",
@@ -148,7 +152,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://antiqueartssourcing.com/#website",
       "url": "https://antiqueartssourcing.com",
-      "name": "Antique Arts Sourcing — Luxury Indian Craftsmanship for Global Spaces",
+      "name": "Antique Arts Sourcing — Bespoke Craftsmanship for Global Spaces",
       "publisher": {
         "@id": "https://antiqueartssourcing.com/#organization",
       },
@@ -250,6 +254,21 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JVMJ6X5FC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JVMJ6X5FC', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         <Navbar />
         <main>{children}</main>
         <Footer />

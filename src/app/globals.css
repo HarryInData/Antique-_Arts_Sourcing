@@ -25,9 +25,11 @@
   --color-brass: #9A7B50;
 
   /* Typography */
-  --font-serif: var(--font-heading), "Cormorant Garamond", Georgia, serif;
+  --font-heading: var(--font-heading), "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-body: var(--font-body), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-heading), "Cormorant Garamond", Garamond, Georgia, serif;
   --font-sans: var(--font-body), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-brand: var(--font-brand), "Cormorant Garamond", Georgia, serif;
+  --font-brand: var(--font-brand), "Cormorant Garamond", Garamond, Georgia, serif;
 }
 
 /* ==========================================================================
@@ -141,12 +143,18 @@ button {
    GLOBAL TYPOGRAPHY SCALE
    ========================================================================== */
 
-.font-serif {
-  font-family: var(--font-serif);
+.font-serif,
+.font-heading {
+  font-family: var(--font-heading);
 }
 
-.font-sans {
-  font-family: var(--font-sans);
+.font-sans,
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-brand {
+  font-family: var(--font-brand);
 }
 
 /* H1: Hero Display */

@@ -16,6 +16,11 @@ import {
   buildConsultationWhatsAppMessage,
   buildConsultationEmailURL,
 } from "@/lib/enquiry";
+import {
+  trackRFQSubmission,
+  trackWhatsAppClick,
+  trackEmailClick,
+} from "@/lib/analytics";
 
 // B2B RFQ Validation schema
 const schema = z.object({
@@ -59,6 +64,12 @@ export const ContactSection: FC = () => {
     const isValid = await trigger();
     if (!isValid) return;
     const data = getValues();
+    trackRFQSubmission({
+      category: data.productCategory,
+      buyerType: data.buyerType,
+      source: "contact_page_whatsapp",
+    });
+    trackWhatsAppClick({ location: "contact_page_form" });
     const message = buildConsultationWhatsAppMessage(data);
     const waURL = buildWhatsAppURL(message);
     window.open(waURL, "_blank");
@@ -68,6 +79,12 @@ export const ContactSection: FC = () => {
     const isValid = await trigger();
     if (!isValid) return;
     const data = getValues();
+    trackRFQSubmission({
+      category: data.productCategory,
+      buyerType: data.buyerType,
+      source: "contact_page_email",
+    });
+    trackEmailClick({ location: "contact_page_form", subject: "B2B Sourcing Consultation" });
     const gmailURL = buildConsultationEmailURL(data);
     window.open(gmailURL, "_blank");
   };
@@ -78,7 +95,7 @@ export const ContactSection: FC = () => {
         {/* Section Header */}
         <div className="mb-12 sm:mb-16">
           <span className="eyebrow">Direct Sourcing Desk</span>
-          <h2 className="heading-section mb-4">Request a Quote</h2>
+          <h1 className="heading-section mb-4">Request a Quote &amp; B2B Sourcing Enquiry</h1>
           <p className="body-text">
             Submit your sourcing or custom manufacturing brief. Our export team responds within 24 hours with product availability and technical specification sheets.
           </p>

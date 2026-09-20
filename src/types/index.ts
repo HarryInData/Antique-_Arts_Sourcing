@@ -7,27 +7,59 @@ export interface Product {
   name: string;
   category: string;
   image: string;
+  images?: string[];
+  fallbackImage?: string;
+  material?: string;
+  finish?: string;
+  dimension?: string;
+  stock?: string;
 }
 
 export interface Collection {
   title: string;
   description: string;
   image: string;
-  filterKey: string;
+  filterKey: GalleryCategory;
 }
 
 export interface GalleryItem {
   code: string;
   name: string;
   category: GalleryCategory;
+  categoryLabel?: string;
   image: string;
+  images?: string[];
+  fallbackImage?: string;
+  material?: string;
+  finish?: string;
+  dimension?: string;
+  stock?: string;
 }
 
 export type GalleryCategory =
   | "all"
+  | "lamps"
+  | "glass-vases"
+  | "glass-votives"
+  | "nautical"
+  | "glass-knobs"
+  | "christmas-ornaments"
   | "antique"
+  | "tabletop"
+  | "kitchenware"
+  | "bath"
+  | "storage"
+  | "festive"
+  | "antique-collectibles"
   | "desk-lights"
-  | "lamps";
+  | "decorative-lighting"
+  | "home-decor"
+  | "luxury-home-decor"
+  | "glass-crystal"
+  | "furniture"
+  | "furniture-accessories"
+  | "hospitality"
+  | "hotel-decor";
 
 export interface GalleryFilter {
   label: string;
