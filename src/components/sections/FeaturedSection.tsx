@@ -1,8 +1,9 @@
 "use client";
 
 import React, { FC } from "react";
-import { motion } from "framer-motion";
 import { SectionHeader } from "../ui/SectionHeader";
+import { useReveal } from "@/hooks/useReveal";
+import { cn } from "@/lib/utils";
 
 // B2B Capability data — 4 core export services
 const capabilities = [
@@ -32,21 +33,9 @@ const capabilities = [
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 60, scale: 0.95 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.9,
-      delay: i * 0.12,
-      ease: [0.25, 1, 0.5, 1] as [number, number, number, number],
-    },
-  }),
-};
-
 export const FeaturedSection: FC = () => {
+  const { ref, isVisible } = useReveal();
+
   return (
     <section id="capabilities" className="section featured-section py-[60px] sm:py-[80px] lg:py-[120px] relative bg-bg-primary">
       <div className="container max-w-container mx-auto px-6">
@@ -57,15 +46,15 @@ export const FeaturedSection: FC = () => {
           centered
         />
 
-        <div className="featured-grid grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[60px]">
+        <div ref={ref} className="featured-grid grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[60px]">
           {capabilities.map((cap, index) => (
-            <motion.div
+            <div
               key={cap.title}
-              custom={index}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-8%" }}
+              style={{ transitionDelay: `${index * 120}ms` }}
+              className={cn(
+                "transition-all duration-700 ease-out",
+                isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-12 scale-95"
+              )}
             >
               <div className="bg-bg-secondary border border-white/[0.05] rounded-2xl p-8 lg:p-10 h-full transition-all duration-300 hover:border-accent-gold/30 hover:shadow-[0_8px_30px_rgba(214,168,79,0.08)] group">
                 {/* Icon */}
@@ -86,7 +75,7 @@ export const FeaturedSection: FC = () => {
                   {cap.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

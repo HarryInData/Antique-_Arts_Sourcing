@@ -26,7 +26,7 @@ type ClickProps = BaseProps & ButtonHTMLAttributes<HTMLButtonElement> & { href?:
 export type ButtonProps = LinkProps | ClickProps;
 
 export const Button: FC<ButtonProps> = (props) => {
-  const { variant = "primary", isBlock = false, icon, className, children, ...rest } = props;
+  const { variant = "primary", isBlock = false, icon, className, children } = props;
 
   const baseStyles = "inline-flex items-center justify-center font-body leading-none transition-all duration-300 focus:outline-none cursor-pointer select-none";
 

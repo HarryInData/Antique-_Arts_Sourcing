@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import { Button } from "./Button";
 import { WhatsAppIcon, MailIcon } from "../icons";
 import {
@@ -15,36 +15,37 @@ import type { Product, GalleryItem } from "@/types";
 
 interface EnquiryButtonGroupProps {
   product: Product | GalleryItem;
-  className?: string;
   isCardOverlay?: boolean;
 }
 
 export const EnquiryButtonGroup: FC<EnquiryButtonGroupProps> = ({
   product,
-  className,
   isCardOverlay = false,
 }) => {
-  const [absImageURL, setAbsImageURL] = useState<string>("");
+  // Derive absolute image URL at click-time via the click handler — no useEffect needed.
+  const getAbsImageURL = () =>
+    typeof window !== "undefined"
+      ? new URL(product.image, window.location.origin).href
+      : product.image;
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Resolve relative path to absolute URL
-      const url = new URL(product.image, window.location.origin).href;
-      setAbsImageURL(url);
-    }
-  }, [product.image]);
-
-  const waMessage = buildProductWhatsAppMessage(product, absImageURL);
+  const waMessage = buildProductWhatsAppMessage(product);
   const waURL = buildWhatsAppURL(waMessage);
-
   const emailSubject = buildProductEmailSubject(product);
-  const emailBody = buildProductEmailBody(product, absImageURL);
-  
-  // Custom click handler for Gmail Compose fallback
+  const emailBody = buildProductEmailBody(product);
+
   const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const gmailURL = buildGmailComposeURL(emailSubject, emailBody);
+    const absImg = getAbsImageURL();
+    const body = buildProductEmailBody(product, absImg);
+    const gmailURL = buildGmailComposeURL(emailSubject, body);
     window.open(gmailURL, "_blank");
+  };
+
+  const handleWaClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const absImg = getAbsImageURL();
+    const msg = buildProductWhatsAppMessage(product, absImg);
+    window.open(buildWhatsAppURL(msg), "_blank");
   };
 
   if (isCardOverlay) {
@@ -53,6 +54,7 @@ export const EnquiryButtonGroup: FC<EnquiryButtonGroupProps> = ({
         <Button
           href={waURL}
           target="_blank"
+          onClick={handleWaClick}
           variant="card-enquiry-wa"
           icon={<WhatsAppIcon className="w-[18px] h-[18px]" />}
         >
@@ -70,12 +72,12 @@ export const EnquiryButtonGroup: FC<EnquiryButtonGroupProps> = ({
     );
   }
 
-  // Horizontal version for lightbox/other displays if needed
   return (
     <div className="flex flex-col gap-3 w-full">
       <Button
         href={waURL}
         target="_blank"
+        onClick={handleWaClick}
         variant="whatsapp"
         icon={<WhatsAppIcon className="w-[18px] h-[18px]" />}
         isBlock

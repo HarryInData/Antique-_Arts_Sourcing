@@ -1,26 +1,15 @@
 "use client";
 
 import React, { FC } from "react";
-import { motion } from "framer-motion";
 import { SectionHeader } from "../ui/SectionHeader";
 import { WhyCard } from "../ui/WhyCard";
 import { whyUsFeatures } from "@/data/whyUs";
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.95 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.8,
-      delay: i * 0.12,
-      ease: [0.25, 1, 0.5, 1] as [number, number, number, number],
-    },
-  }),
-};
+import { useReveal } from "@/hooks/useReveal";
+import { cn } from "@/lib/utils";
 
 export const WhyUsSection: FC = () => {
+  const { ref, isVisible } = useReveal();
+
   return (
     <section
       id="solutions"
@@ -33,18 +22,18 @@ export const WhyUsSection: FC = () => {
           centered
         />
 
-        <div className="why-grid grid grid-cols-1 md:grid-cols-3 gap-8 mt-[50px]">
+        <div ref={ref} className="why-grid grid grid-cols-1 md:grid-cols-3 gap-8 mt-[50px]">
           {whyUsFeatures.map((feature, index) => (
-            <motion.div
+            <div
               key={feature.title}
-              custom={index}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-8%" }}
+              style={{ transitionDelay: `${index * 120}ms` }}
+              className={cn(
+                "transition-all duration-700 ease-out",
+                isVisible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-12 scale-95"
+              )}
             >
               <WhyCard feature={feature} />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

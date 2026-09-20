@@ -1,8 +1,8 @@
 "use client";
 
 import React, { FC } from "react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useReveal } from "@/hooks/useReveal";
 
 interface SectionHeaderProps {
   tag: string;
@@ -12,31 +12,6 @@ interface SectionHeaderProps {
   className?: string;
 }
 
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.15, delayChildren: 0.1 },
-  },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, ease: [0.25, 1, 0.5, 1] as [number, number, number, number] },
-  },
-};
-
-const lineReveal = {
-  hidden: { scaleX: 0 },
-  visible: (centered: boolean) => ({
-    scaleX: 1,
-    transition: { duration: 0.8, ease: [0.25, 1, 0.5, 1] as [number, number, number, number] },
-    transformOrigin: centered ? "center center" : "left center",
-  }),
-};
-
 export const SectionHeader: FC<SectionHeaderProps> = ({
   tag,
   title,
@@ -44,49 +19,42 @@ export const SectionHeader: FC<SectionHeaderProps> = ({
   centered = false,
   className,
 }) => {
+  const { ref, isVisible } = useReveal();
+
   return (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-10%" }}
+    <div
+      ref={ref}
       className={cn(
-        "mb-[50px] flex flex-col",
+        "mb-[50px] flex flex-col transition-all duration-700 ease-out",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
         centered ? "text-center items-center" : "items-start",
         className
       )}
     >
-      <motion.span
-        variants={fadeUp}
-        className="block text-[0.8rem] uppercase tracking-[0.3em] text-accent-gold font-semibold mb-3"
-      >
+      <span className="block text-[0.8rem] uppercase tracking-[0.3em] text-accent-gold font-semibold mb-3">
         {tag}
-      </motion.span>
-      <motion.h2
-        variants={fadeUp}
-        className="font-heading text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] font-semibold leading-[1.2] tracking-tight mb-4 text-white"
-      >
+      </span>
+      <h2 className="font-heading text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] font-semibold leading-[1.2] tracking-tight mb-4 text-white">
         {title}
-      </motion.h2>
-      <motion.div
-        custom={centered}
-        variants={lineReveal}
+      </h2>
+      <div
         className={cn(
-          "w-[60px] h-[2px] bg-accent-gold mb-8",
+          "h-[2px] bg-accent-gold mb-8 transition-all duration-700 delay-200 ease-out",
+          isVisible ? "w-[60px]" : "w-0",
           centered ? "mx-auto" : "mr-auto"
         )}
       />
       {description && (
-        <motion.p
-          variants={fadeUp}
+        <p
           className={cn(
-            "text-text-gray font-light text-[1.1rem] leading-[1.8] mb-6",
+            "text-text-gray font-light text-[1.1rem] leading-[1.8] mb-6 transition-all duration-700 delay-300 ease-out",
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
             centered ? "max-w-xl mx-auto" : "max-w-xl"
           )}
         >
           {description}
-        </motion.p>
+        </p>
       )}
-    </motion.div>
+    </div>
   );
 };

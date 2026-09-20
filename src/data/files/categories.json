@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "lamps-lightings",
+    "name": "Lamps & Lightings",
+    "count": 30,
+    "isEmpty": false
+  },
+  {
+    "slug": "glass-vases",
+    "name": "Glass Vases",
+    "count": 30,
+    "isEmpty": false
+  },
+  {
+    "slug": "glass-votives",
+    "name": "Glass Votives",
+    "count": 30,
+    "isEmpty": false
+  },
+  {
+    "slug": "nautical",
+    "name": "Nautical Collections",
+    "count": 30,
+    "isEmpty": false
+  },
+  {
+    "slug": "glass-knobs",
+    "name": "Glass Knobs",
+    "count": 30,
+    "isEmpty": false
+  },
+  {
+    "slug": "christmas-ornaments",
+    "name": "Christmas Ornaments",
+    "count": 30,
+    "isEmpty": false
+  },
+  {
+    "slug": "kitchenware-cutlery",
+    "name": "Kitchenware & Cutlery",
+    "count": 0,
+    "isEmpty": true
+  },
+  {
+    "slug": "antique-collection",
+    "name": "Antique Collection",
+    "count": 0,
+    "isEmpty": true
+  },
+  {
+    "slug": "tabletop-decor",
+    "name": "Tabletop & Decor",
+    "count": 0,
+    "isEmpty": true
+  },
+  {
+    "slug": "bath-accessories",
+    "name": "Bath Accessories",
+    "count": 0,
+    "isEmpty": true
+  },
+  {
+    "slug": "storage-organiser",
+    "name": "Storage & Organiser",
+    "count": 0,
+    "isEmpty": true
+  },
+  {
+    "slug": "festive-collection",
+    "name": "Festive Collection",
+    "count": 0,
+    "isEmpty": true
+  }
+]
