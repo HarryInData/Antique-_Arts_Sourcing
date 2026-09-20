@@ -10,7 +10,7 @@ export const collections: Collection[] = [
     title: "Lamps & Lightings",
     description:
       "Handcrafted table lamps, glass hurricane lamps, and architectural pendant lighting with refined electrical fixtures and artisan metal finishes.",
-    image: "/images/products/lamps/tiered-mesh-bell-pendant-chandelier.jpg",
+    image: "/products/decorative-lighting/tiered-mesh-bell-pendant-chandelier.webp",
     filterKey: "lamps",
   },
   {
@@ -24,14 +24,14 @@ export const collections: Collection[] = [
     title: "Glass Votives",
     description:
       "Silvered, foiled, and etched glass tea-light votives and hurricane candleholders that create mesmerizing ambient reflections.",
-    image: "/images/products/desk_lights/mesh-pear-tealight-holder-copper.jpg",
+    image: "/products/decorative-lighting/mesh-pear-tealight-holder-copper.webp",
     filterKey: "glass-votives",
   },
   {
     title: "Nautical Collections",
     description:
       "Museum-grade brass marine sextants, harbour spyglass telescopes on hardwood tripods, divers helmets, and pocket compasses.",
-    image: "/images/products/antique/vintage-brass-spyglass-telescope.jpg",
+    image: "/products/antique-collectibles/vintage-brass-spyglass-telescope.webp",
     filterKey: "nautical",
   },
   {
@@ -59,7 +59,7 @@ export const collections: Collection[] = [
     title: "Tabletop & Decor",
     description:
       "Hand-hammered brass centerpiece urns, sculptural candleholders, embossed copper trays, and decorative vessels for considered living.",
-    image: "/images/products/antique/rosewood-playing-card-box-brass.jpg",
+    image: "/products/antique-collectibles/rosewood-playing-card-box-brass.webp",
     filterKey: "tabletop",
   },
   {
@@ -80,7 +80,7 @@ export const collections: Collection[] = [
     title: "Storage & Organiser",
     description:
       "Glass vitrine display boxes with brass soldering, tiered desk organisers, and velvet-lined presentation caddies.",
-    image: "/images/products/antique/rosewood-chess-set-brass-inlay.jpg",
+    image: "/products/antique-collectibles/rosewood-chess-set-brass-inlay.webp",
     filterKey: "storage",
   },
   {
