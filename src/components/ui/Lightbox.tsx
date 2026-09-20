@@ -56,7 +56,7 @@ export const Lightbox: FC<LightboxProps> = ({
             animate={{ scale: 1 }}
             exit={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            onClick={(e) => e.stopPropagation()} // Prevent close on modal body click
+            onClick={(e: React.MouseEvent) => e.stopPropagation()} // Prevent close on modal body click
             className="lightbox-content-box flex flex-col md:flex-row max-w-[900px] w-[90%] max-h-[90vh] md:max-h-[70vh] bg-bg-surface rounded-card overflow-hidden border border-white/5 shadow-2xl overflow-y-auto md:overflow-y-visible"
           >
             {/* Left side: Image */}
