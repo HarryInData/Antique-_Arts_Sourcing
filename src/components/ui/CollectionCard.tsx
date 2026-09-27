@@ -33,7 +33,7 @@ export const CollectionCard: FC<CollectionCardProps> = ({
       <div className="absolute inset-0 z-0 transition-transform duration-[1.2s] ease-out group-hover:scale-105">
         <Image
           src={image}
-          alt={collection.name}
+          alt={`${collection.name} — Handcrafted luxury collection`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover"

@@ -3,7 +3,8 @@
     "slug": "lamps-lightings",
     "name": "Lamps & Lightings",
     "count": 30,
-    "isEmpty": false
+    "isEmpty": false,
+    "coverImage": "/images/categories/lamps-lightings.webp"
   },
   {
     "slug": "glass-vases",
@@ -15,7 +16,8 @@
     "slug": "glass-votives",
     "name": "Glass Votives",
     "count": 30,
-    "isEmpty": false
+    "isEmpty": false,
+    "coverImage": "/images/categories/glass-votives.webp"
   },
   {
     "slug": "nautical",
@@ -27,13 +29,15 @@
     "slug": "glass-knobs",
     "name": "Glass Knobs",
     "count": 30,
-    "isEmpty": false
+    "isEmpty": false,
+    "coverImage": "/images/categories/glass-knobs.webp"
   },
   {
     "slug": "christmas-ornaments",
     "name": "Christmas Ornaments",
     "count": 30,
-    "isEmpty": false
+    "isEmpty": false,
+    "coverImage": "/images/categories/christmas-ornaments.webp"
   },
   {
     "slug": "kitchenware-cutlery",

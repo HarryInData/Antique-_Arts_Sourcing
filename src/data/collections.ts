@@ -10,7 +10,7 @@ export const collections: Collection[] = [
     title: "Lamps & Lightings",
     description:
       "Handcrafted table lamps, glass hurricane lamps, and architectural pendant lighting with refined electrical fixtures and artisan metal finishes.",
-    image: "/products/decorative-lighting/tiered-mesh-bell-pendant-chandelier.webp",
+    image: "/images/categories/lamps-lightings.webp",
     filterKey: "lamps",
   },
   {
@@ -24,7 +24,7 @@ export const collections: Collection[] = [
     title: "Glass Votives",
     description:
       "Silvered, foiled, and etched glass tea-light votives and hurricane candleholders that create mesmerizing ambient reflections.",
-    image: "/products/decorative-lighting/mesh-pear-tealight-holder-copper.webp",
+    image: "/images/categories/glass-votives.webp",
     filterKey: "glass-votives",
   },
   {
@@ -38,14 +38,14 @@ export const collections: Collection[] = [
     title: "Glass Knobs",
     description:
       "Cut crystal and hand-faceted colored glass cabinet hardware knobs with precision-fitted brass and nickel mounting screws.",
-    image: "/products/collections_hd/glass-knob-studio.jpg",
+    image: "/images/categories/glass-knobs.webp",
     filterKey: "glass-knobs",
   },
   {
     title: "Christmas Ornaments",
     description:
       "Mercury glass baubles, ribbed festive spheres, and handcrafted glass ornaments featuring vintage silvering and rich seasonal patinas.",
-    image: "/products/collections_hd/christmas-ornament-tree.jpg",
+    image: "/images/categories/christmas-ornaments.webp",
     filterKey: "christmas-ornaments",
   },
   {

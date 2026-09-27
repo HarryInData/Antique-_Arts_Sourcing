@@ -146,6 +146,8 @@ button {
 .font-serif,
 .font-heading {
   font-family: var(--font-heading);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "lnum" 1, "pnum" 1;
 }
 
 .font-sans,
@@ -155,6 +157,8 @@ button {
 
 .font-brand {
   font-family: var(--font-brand);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "lnum" 1, "pnum" 1;
 }
 
 /* H1: Hero Display */
