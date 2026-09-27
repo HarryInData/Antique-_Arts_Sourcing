@@ -17,7 +17,7 @@ export const collections: Collection[] = [
     title: "Glass Vases",
     description:
       "Master handblown marbled, frosted, and etched glass vases crafted in Firozabad. Architectural silhouettes for luxury interiors and hospitality.",
-    image: "/products/aas_resource/aas_img_003.jpeg",
+    image: "/images/categories/glass-vases.webp",
     filterKey: "glass-vases",
   },
   {
@@ -31,7 +31,7 @@ export const collections: Collection[] = [
     title: "Nautical Collections",
     description:
       "Museum-grade brass marine sextants, harbour spyglass telescopes on hardwood tripods, divers helmets, and pocket compasses.",
-    image: "/products/antique-collectibles/vintage-brass-spyglass-telescope.webp",
+    image: "/images/categories/nautical.webp",
     filterKey: "nautical",
   },
   {

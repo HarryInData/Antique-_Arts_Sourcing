@@ -10,7 +10,8 @@
     "slug": "glass-vases",
     "name": "Glass Vases",
     "count": 30,
-    "isEmpty": false
+    "isEmpty": false,
+    "coverImage": "/images/categories/glass-vases.webp"
   },
   {
     "slug": "glass-votives",
@@ -23,7 +24,8 @@
     "slug": "nautical",
     "name": "Nautical Collections",
     "count": 30,
-    "isEmpty": false
+    "isEmpty": false,
+    "coverImage": "/images/categories/nautical.webp"
   },
   {
     "slug": "glass-knobs",
