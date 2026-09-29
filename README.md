@@ -1,6 +1,6 @@
 # Antique Arts Sourcing — Official Web Application
 
-**Antique Arts Sourcing** is a global manufacturer & exporter of handcrafted luxury decorative lighting, wire mesh pendant lamps, and bespoke architectural metalware for architects, interior designers, and luxury hospitality projects worldwide.
+**Antique Arts Sourcing** is a global manufacturer & exporter of handcrafted luxury decorative lighting, wire mesh pendant lamps, and bespoke architectural metalware for architects, interior designers, and luxury hospitality projects worldwide..
 
 ---
 
