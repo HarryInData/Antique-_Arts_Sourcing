@@ -38,7 +38,7 @@ export const CollectionGallery: FC = () => {
             return (
               <Link
                 key={cat.filterKey}
-                href={`/gallery?category=${cat.filterKey}`}
+                href={cat.href || `/gallery?category=${cat.filterKey}`}
                 className={`group flex flex-col no-underline ${
                   isWide ? "md:col-span-2 lg:col-span-2" : "col-span-1"
                 }`}
@@ -73,7 +73,7 @@ export const CollectionGallery: FC = () => {
                     {cat.description}
                   </p>
                   <div className="pt-3 mt-2 flex items-center gap-1.5 text-[0.7rem] font-sans font-semibold tracking-[0.16em] uppercase text-[#181816] group-hover:text-[#9A7B50] transition-colors">
-                    <span>View Category Gallery</span>
+                    <span>{cat.href?.startsWith("/category/") ? "Explore Collection" : "View Category Gallery"}</span>
                     <span>→</span>
                   </div>
                 </div>
