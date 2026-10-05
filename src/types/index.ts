@@ -51,6 +51,7 @@ export interface Collection {
   description: string;
   image: string;
   filterKey: GalleryCategory;
+  href?: string;
 }
 
 export interface GalleryItem {
