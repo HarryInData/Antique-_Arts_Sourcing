@@ -1,11 +1,7 @@
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getCategories, getProductsByCategory } from "@/lib/catalog";
-import { CollectionComingSoon } from "@/components/ui/CollectionComingSoon";
-import {
-  resolveCuratedCategory,
-  resolveCategoryDisplayName,
-} from "@/lib/curatedCategories";
 import type { Metadata } from "next";
 
 const BASE_URL = "https://antiqueartssourcing.com";
@@ -16,17 +12,17 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { categorySlug } = await params;
-  const curated = resolveCuratedCategory(categorySlug);
   const category = getCategories().find((c) => c.slug === categorySlug);
-  const categoryName = curated?.name || category?.name || resolveCategoryDisplayName(categorySlug);
+
+  if (!category) return { title: "Category Not Found" };
 
   return {
-    title: `${categoryName} | Antique Arts Sourcing`,
-    description: `Explore our curated B2B export collection of ${categoryName.toLowerCase()} — handcrafted in India for architects, designers, and hospitality buyers worldwide.`,
+    title: `${category.name} | Antique Arts Sourcing`,
+    description: `Explore our curated B2B export collection of ${category.name.toLowerCase()} — handcrafted in India for architects, designers, and hospitality buyers worldwide.`,
     alternates: { canonical: `${BASE_URL}/collections/${categorySlug}` },
     openGraph: {
-      title: `${categoryName} | Antique Arts Sourcing`,
-      description: `Explore our curated B2B export collection of ${categoryName.toLowerCase()}.`,
+      title: `${category.name} | Antique Arts Sourcing`,
+      description: `Explore our curated B2B export collection of ${category.name.toLowerCase()}.`,
       url: `${BASE_URL}/collections/${categorySlug}`,
       siteName: "Antique Arts Sourcing",
       type: "website",
@@ -35,53 +31,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const catalogSlugs = getCategories().map((c) => ({ categorySlug: c.slug }));
-  const curatedSlugs = [
-    { categorySlug: "antique-collection" },
-    { categorySlug: "tabletop-decor-kitchenware-cutlery" },
-    { categorySlug: "tabletop-decor" },
-    { categorySlug: "kitchenware-cutlery" },
-    { categorySlug: "bath-accessories" },
-    { categorySlug: "storage-organizer" },
-    { categorySlug: "storage-organiser" },
-    { categorySlug: "festive-collection" },
-  ];
-  return [...catalogSlugs, ...curatedSlugs];
+  return getCategories().map((c) => ({ categorySlug: c.slug }));
 }
 
 export default async function CategoryPage({ params }: Props) {
   const { categorySlug } = await params;
-  const curated = resolveCuratedCategory(categorySlug);
   const category = getCategories().find((c) => c.slug === categorySlug);
 
-  // If this is one of our curated coming-soon categories or empty category
-  if (curated || !category || category.isEmpty) {
-    const categoryName = curated?.name || category?.name || resolveCategoryDisplayName(categorySlug);
-    return (
-      <div className="pt-24 lg:pt-28 min-h-screen bg-[#F4F1EA]">
-        <CollectionComingSoon
-          categoryName={categoryName}
-          categorySlug={categorySlug}
-          backHref="/#collections"
-        />
-      </div>
-    );
-  }
+  if (!category) notFound();
 
   const products = getProductsByCategory(categorySlug);
-
-  // Fallback to CollectionComingSoon if products array is empty
-  if (products.length === 0) {
-    return (
-      <div className="pt-24 lg:pt-28 min-h-screen bg-[#F4F1EA]">
-        <CollectionComingSoon
-          categoryName={category.name}
-          categorySlug={categorySlug}
-          backHref="/#collections"
-        />
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-bg-primary text-text-primary">
@@ -137,45 +96,65 @@ export default async function CategoryPage({ params }: Props) {
 
       {/* ── Minimalist Product Grid ───────────────────────────────── */}
       <div className="max-w-[1320px] mx-auto px-6 lg:px-12 py-16 lg:py-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-16">
-          {products.map((product) => (
+        
+        {products.length === 0 ? (
+          /* Empty State */
+          <div className="flex flex-col items-center justify-center py-20 text-center">
+            <p className="font-serif text-3xl mb-4 text-text-primary">
+              Curating Collection
+            </p>
+            <p className="font-sans font-light max-w-md mx-auto mb-8 text-text-muted">
+              The {category.name} collection is currently being updated with our latest artisanal pieces.
+            </p>
             <Link
-              key={product.slug}
-              href={`/collections/${product.categorySlug}/${product.slug}`}
-              className="group flex flex-col"
+              href="/contact"
+              className="px-8 py-3 rounded-full font-sans font-medium tracking-[0.15em] uppercase text-[0.6875rem] border border-black/10 hover:border-accent-gold hover:text-accent-gold transition-colors duration-300"
             >
-              {/* Image Container - White background to blend with product photos */}
-              <div 
-                className="relative w-full aspect-[4/5] mb-5 overflow-hidden bg-white border border-black/[0.03] rounded-[2px]"
-              >
-                <Image
-                  src={product.image || "/images/placeholder.webp"}
-                  alt={product.name}
-                  fill
-                  className="object-cover object-center transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                />
-                {/* Subtle hover overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.02] transition-colors duration-500 pointer-events-none" />
-              </div>
-
-              {/* Clean Typography */}
-              <div className="flex flex-col px-1">
-                <span className="font-sans font-semibold tracking-[0.15em] uppercase text-[0.625rem] text-accent-gold mb-1.5">
-                  {product.sku}
-                </span>
-                <h3 className="font-serif text-xl leading-snug text-text-primary group-hover:text-accent-gold transition-colors duration-300">
-                  {product.name}
-                </h3>
-                {product.material && (
-                  <p className="font-sans font-light text-[0.8125rem] text-text-muted mt-1 truncate">
-                    {product.material}
-                  </p>
-                )}
-              </div>
+              Request Catalog Direct
             </Link>
-          ))}
-        </div>
+          </div>
+        ) : (
+          /* Grid */
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-16">
+            {products.map((product) => (
+              <Link
+                key={product.slug}
+                href={`/collections/${product.categorySlug}/${product.slug}`}
+                className="group flex flex-col"
+              >
+                {/* Image Container - White background to blend with product photos */}
+                <div 
+                  className="relative w-full aspect-[4/5] mb-5 overflow-hidden bg-white border border-black/[0.03] rounded-[2px]"
+                >
+                  <Image
+                    src={product.image || "/images/placeholder.webp"}
+                    alt={product.name}
+                    fill
+                    className="object-cover object-center transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  {/* Subtle hover overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/[0.02] transition-colors duration-500 pointer-events-none" />
+                </div>
+
+                {/* Clean Typography */}
+                <div className="flex flex-col px-1">
+                  <span className="font-sans font-semibold tracking-[0.15em] uppercase text-[0.625rem] text-accent-gold mb-1.5">
+                    {product.sku}
+                  </span>
+                  <h3 className="font-serif text-xl leading-snug text-text-primary group-hover:text-accent-gold transition-colors duration-300">
+                    {product.name}
+                  </h3>
+                  {product.material && (
+                    <p className="font-sans font-light text-[0.8125rem] text-text-muted mt-1 truncate">
+                      {product.material}
+                    </p>
+                  )}
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
 
     </div>
