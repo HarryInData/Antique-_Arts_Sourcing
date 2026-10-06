@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getCategories, getProductsByCategory } from "@/lib/catalog";
+import { getFrozenCategoryBySlug } from "@/lib/frozenCategories";
+import { CollectionUnavailable } from "@/components/ui/CollectionUnavailable";
 import type { Metadata } from "next";
 
 const BASE_URL = "https://antiqueartssourcing.com";
@@ -39,6 +41,20 @@ export default async function CategoryPage({ params }: Props) {
   const category = getCategories().find((c) => c.slug === categorySlug);
 
   if (!category) notFound();
+
+  // If frozen category, render ONLY CollectionUnavailable before mounting product grid
+  const frozenConfig = getFrozenCategoryBySlug(category.slug);
+  if (frozenConfig) {
+    return (
+      <div className="pt-24 lg:pt-32 min-h-screen bg-[#181816]">
+        <CollectionUnavailable
+          categoryName={frozenConfig.displayName}
+          categorySlug={category.slug}
+          backHref="/collections"
+        />
+      </div>
+    );
+  }
 
   const products = getProductsByCategory(categorySlug);
 

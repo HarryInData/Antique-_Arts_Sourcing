@@ -7,6 +7,8 @@ import { galleryItems, galleryFilters } from "@/data/gallery";
 import { GalleryItem, GalleryCategory } from "@/types";
 import { Search, X, Eye, FileText, CheckCircle2, MessageSquare, ChevronLeft, ChevronRight } from "lucide-react";
 import { trackRFQSubmission, trackWhatsAppClick } from "@/lib/analytics";
+import { isFrozenFilterKey, getFrozenCategoryByFilterKey } from "@/lib/frozenCategories";
+import { CollectionUnavailable } from "@/components/ui/CollectionUnavailable";
 
 export const PortfolioGalleryContent: FC = () => {
   const searchParams = useSearchParams();
@@ -24,9 +26,12 @@ export const PortfolioGalleryContent: FC = () => {
     }
   }, [searchParams]);
 
-  // Filtered items
+  // Filtered items (exclude frozen categories from "all" view to prevent uncurated product images from mounting)
   const filteredItems = useMemo(() => {
     return galleryItems.filter((item) => {
+      if (activeCategory === "all" && isFrozenFilterKey(item.category)) {
+        return false;
+      }
       const matchesCategory = activeCategory === "all" || item.category === activeCategory;
       const q = searchQuery.toLowerCase().trim();
       const matchesSearch =
@@ -81,11 +86,16 @@ export const PortfolioGalleryContent: FC = () => {
     };
   }, [activeItem, currentIndex, filteredItems]);
 
-  // Category counts
+  // Category counts (frozen categories count as 0 in public commercial catalog)
   const categoryCounts = useMemo(() => {
-    const counts: Record<string, number> = { all: galleryItems.length };
+    const counts: Record<string, number> = { all: 0 };
     for (const item of galleryItems) {
-      counts[item.category] = (counts[item.category] || 0) + 1;
+      if (isFrozenFilterKey(item.category)) {
+        counts[item.category] = 0;
+      } else {
+        counts[item.category] = (counts[item.category] || 0) + 1;
+        counts.all += 1;
+      }
     }
     return counts;
   }, []);
@@ -117,8 +127,14 @@ export const PortfolioGalleryContent: FC = () => {
           </div>
 
           <div className="text-[0.75rem] font-sans text-[#6F6A61] tracking-[0.14em] uppercase self-end sm:self-center">
-            Showing <strong className="text-[#181816] font-semibold">{filteredItems.length}</strong> of{" "}
-            {galleryItems.length} Artifacts
+            {isFrozenFilterKey(activeCategory) ? (
+              <span className="text-[#9A7B50] font-medium tracking-[0.16em]">Collection Under Curation</span>
+            ) : (
+              <>
+                Showing <strong className="text-[#181816] font-semibold">{filteredItems.length}</strong> of{" "}
+                {categoryCounts.all} Commercial Pieces
+              </>
+            )}
           </div>
         </div>
 
@@ -126,6 +142,7 @@ export const PortfolioGalleryContent: FC = () => {
         <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
           {galleryFilters.map((filter) => {
             const isActive = activeCategory === filter.value;
+            const isFrozen = isFrozenFilterKey(filter.value);
             const count = categoryCounts[filter.value] || 0;
 
             return (
@@ -140,21 +157,42 @@ export const PortfolioGalleryContent: FC = () => {
                 }`}
               >
                 <span>{filter.label}</span>
-                <span
-                  className={`text-[0.625rem] px-1.5 py-0.5 rounded-full ${
-                    isActive ? "bg-white/20 text-white" : "bg-[#F4F1EA] text-[#6F6A61]"
-                  }`}
-                >
-                  {count}
-                </span>
+                {isFrozen ? (
+                  <span
+                    className={`text-[0.5625rem] px-1.5 py-0.5 uppercase tracking-wider rounded-sm ${
+                      isActive ? "bg-[#9A7B50] text-white" : "bg-[#ECE7DE] text-[#9A7B50]"
+                    }`}
+                  >
+                    Curating
+                  </span>
+                ) : (
+                  <span
+                    className={`text-[0.625rem] px-1.5 py-0.5 rounded-full ${
+                      isActive ? "bg-white/20 text-white" : "bg-[#F4F1EA] text-[#6F6A61]"
+                    }`}
+                  >
+                    {count}
+                  </span>
+                )}
               </button>
             );
           })}
         </div>
       </div>
 
-      {/* Grid of Products */}
-      {filteredItems.length === 0 ? (
+      {/* Grid of Products or Collection Under Curation */}
+      {isFrozenFilterKey(activeCategory) ? (
+        <div className="rounded-lg overflow-hidden border border-black/10">
+          <CollectionUnavailable
+            categoryName={
+              getFrozenCategoryByFilterKey(activeCategory)?.displayName ||
+              galleryFilters.find((f) => f.value === activeCategory)?.label ||
+              activeCategory
+            }
+            backHref="/collections"
+          />
+        </div>
+      ) : filteredItems.length === 0 ? (
         <div className="py-24 text-center space-y-4 bg-white border border-[rgba(24,24,22,0.08)] p-8">
           <p className="font-serif text-2xl font-light text-[#181816]">No pieces found matching your criteria</p>
           <p className="font-sans text-xs text-[#6F6A61] max-w-sm mx-auto">
