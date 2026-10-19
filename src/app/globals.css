@@ -25,11 +25,11 @@
   --color-brass: #9A7B50;
 
   /* Typography */
-  --font-heading: var(--font-heading), "Cormorant Garamond", Garamond, Georgia, serif;
-  --font-body: var(--font-body), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: var(--font-heading), "Cormorant Garamond", Garamond, Georgia, serif;
-  --font-sans: var(--font-body), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-brand: var(--font-brand), "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-heading: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-brand: "Cormorant Garamond", Garamond, Georgia, serif;
 }
 
 /* ==========================================================================
@@ -46,6 +46,13 @@
   --color-border-light: rgba(24, 24, 22, 0.06);
   --color-accent: #9A7B50;
   --color-dark: #24231F;
+
+  /* Typography */
+  --font-heading: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-brand: "Cormorant Garamond", Garamond, Georgia, serif;
 
   /* Container */
   --container-max: 1320px;
