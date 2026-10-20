@@ -35,18 +35,18 @@ const galleryJsonLd = {
 
 export default function GalleryPage() {
   return (
-    <div className="pt-36 pb-20 min-h-screen bg-[#F4F1EA]">
+    <div className="pb-28 min-h-screen bg-[#F4F1EA]" style={{ paddingTop: "clamp(150px, 16vh, 200px)" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryJsonLd) }}
       />
       <div className="container-main">
         {/* Page Header */}
-        <div className="mb-12 border-b border-[rgba(24,24,22,0.1)] pb-8">
+        <div className="mb-14 border-b border-[rgba(24,24,22,0.12)] pb-10 pt-2 sm:pt-4">
           <span className="text-[0.6875rem] font-sans font-medium tracking-[0.25em] uppercase text-[#9A7B50] block mb-2">
             MASTER EXPORT CATALOGUE · 12 CATEGORIES
           </span>
-          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-[#181816] mb-4">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-[#181816] mb-5 tracking-tight leading-tight">
             Commercial Export Portfolio &amp; Product Gallery
           </h1>
           <p className="font-sans text-xs sm:text-base text-[#6F6A61] font-light max-w-2xl leading-relaxed">

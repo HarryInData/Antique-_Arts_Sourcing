@@ -103,80 +103,108 @@ export const PortfolioGalleryContent: FC = () => {
   return (
     <div className="w-full">
       {/* Search & Filter Header Bar */}
-      <div className="mb-10 space-y-6">
-        {/* Search Input */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-[rgba(24,24,22,0.1)] pb-6">
-          <div className="relative w-full sm:w-80">
-            <Search className="w-4 h-4 text-[#6F6A61] absolute left-3.5 top-1/2 -translate-y-1/2" />
+      <div className="mb-14 space-y-8">
+        {/* Search Input & Item Counter Bar */}
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6 border-b border-[rgba(24,24,22,0.12)] pb-8">
+          <div className="relative w-full lg:max-w-xl">
+            <div className="absolute inset-y-0 left-0 pl-4.5 flex items-center pointer-events-none">
+              <Search className="w-5 h-5 text-[#9A7B50]" />
+            </div>
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by SKU, item, material..."
-              className="w-full pl-10 pr-4 py-2.5 bg-white border border-[rgba(24,24,22,0.15)] text-xs font-sans text-[#181816] placeholder-[#6F6A61]/60 focus:outline-none focus:border-[#9A7B50]"
+              placeholder="Search by SKU, item, material, finish..."
+              style={{
+                paddingLeft: "52px",
+                paddingRight: "64px",
+                height: "56px",
+                fontSize: "15px",
+              }}
+              className="w-full bg-white border border-[rgba(24,24,22,0.18)] rounded-xl text-sm font-sans text-[#181816] placeholder-[#6F6A61]/70 shadow-sm hover:border-[rgba(24,24,22,0.35)] focus:outline-none focus:border-[#9A7B50] focus:ring-2 focus:ring-[#9A7B50]/20 transition-all"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-[#6F6A61] hover:text-[#181816]"
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs font-sans font-semibold uppercase tracking-wider text-[#9A7B50] hover:text-[#181816] px-3 py-1.5 bg-[#F4F1EA] hover:bg-[#EAE5DA] rounded-md transition-colors"
               >
                 Clear
               </button>
             )}
           </div>
 
-          <div className="text-[0.75rem] font-sans text-[#6F6A61] tracking-[0.14em] uppercase self-end sm:self-center">
+          <div className="inline-flex items-center gap-2.5 self-start lg:self-center px-5 py-3 bg-white rounded-full border border-[rgba(24,24,22,0.12)] shadow-sm text-xs sm:text-[13px] font-sans text-[#6F6A61] tracking-[0.14em] uppercase">
             {isFrozenFilterKey(activeCategory) ? (
-              <span className="text-[#9A7B50] font-medium tracking-[0.16em]">Collection Under Curation</span>
+              <span className="text-[#9A7B50] font-semibold tracking-[0.16em]">Collection Under Curation</span>
             ) : (
               <>
-                Showing <strong className="text-[#181816] font-semibold">{filteredItems.length}</strong> of{" "}
-                {categoryCounts.all} Commercial Pieces
+                <span>Showing</span>
+                <strong className="text-[#181816] font-bold text-sm">{filteredItems.length}</strong>
+                <span>of</span>
+                <strong className="text-[#181816] font-semibold">{categoryCounts.all}</strong>
+                <span>Commercial Pieces</span>
               </>
             )}
           </div>
         </div>
 
-        {/* Category Pills (Horizontal scrolling on mobile) */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-          {galleryFilters.map((filter) => {
-            const isActive = activeCategory === filter.value;
-            const isFrozen = isFrozenFilterKey(filter.value);
-            const count = categoryCounts[filter.value] || 0;
+        {/* Category Filter Pills (Prominent, large, readable buttons with elegant count badges) */}
+        <div className="relative">
+          <div
+            className="flex items-center gap-3 sm:gap-3.5 overflow-x-auto py-3 px-1 scrollbar-none"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}
+          >
+            {galleryFilters.map((filter) => {
+              const isActive = activeCategory === filter.value;
+              const isFrozen = isFrozenFilterKey(filter.value);
+              const count = categoryCounts[filter.value] || 0;
 
-            return (
-              <button
-                key={filter.value}
-                type="button"
-                onClick={() => setActiveCategory(filter.value)}
-                className={`px-4 py-2 text-[0.7rem] font-sans font-medium tracking-[0.14em] uppercase whitespace-nowrap transition-all border shrink-0 flex items-center gap-2 ${
-                  isActive
-                    ? "bg-[#181816] text-[#F4F1EA] border-[#181816] shadow-sm"
-                    : "bg-white text-[#6F6A61] border-[rgba(24,24,22,0.12)] hover:border-[#181816] hover:text-[#181816]"
-                }`}
-              >
-                <span>{filter.label}</span>
-                {isFrozen ? (
-                  <span
-                    className={`text-[0.5625rem] px-1.5 py-0.5 uppercase tracking-wider rounded-sm ${
-                      isActive ? "bg-[#9A7B50] text-white" : "bg-[#ECE7DE] text-[#9A7B50]"
-                    }`}
-                  >
-                    Curating
-                  </span>
-                ) : (
-                  <span
-                    className={`text-[0.625rem] px-1.5 py-0.5 rounded-full ${
-                      isActive ? "bg-white/20 text-white" : "bg-[#F4F1EA] text-[#6F6A61]"
-                    }`}
-                  >
-                    {count}
-                  </span>
-                )}
-              </button>
-            );
-          })}
+              return (
+                <button
+                  key={filter.value}
+                  type="button"
+                  onClick={() => setActiveCategory(filter.value)}
+                  style={{
+                    paddingLeft: "22px",
+                    paddingRight: "22px",
+                    paddingTop: "14px",
+                    paddingBottom: "14px",
+                    minHeight: "52px",
+                  }}
+                  className={`group text-xs sm:text-[0.875rem] font-sans font-semibold tracking-[0.12em] uppercase whitespace-nowrap transition-all duration-200 border-2 shrink-0 flex items-center gap-3 rounded-xl cursor-pointer ${
+                    isActive
+                      ? "bg-[#181816] text-[#F4F1EA] border-[#181816] shadow-lg shadow-black/15 scale-[1.02]"
+                      : "bg-white text-[#24231F] border-[rgba(24,24,22,0.16)] hover:border-[#9A7B50] hover:text-[#181816] hover:bg-[#FAF8F5] shadow-xs hover:scale-[1.01]"
+                  }`}
+                >
+                  <span className="leading-none">{filter.label}</span>
+                  {isFrozen ? (
+                    <span
+                      className={`text-[0.6875rem] px-2.5 py-1 uppercase tracking-wider rounded-md font-semibold ${
+                        isActive ? "bg-[#9A7B50] text-white" : "bg-[#ECE7DE] text-[#9A7B50]"
+                      }`}
+                    >
+                      Curating
+                    </span>
+                  ) : (
+                    <span
+                      className={`text-[0.75rem] sm:text-[0.8125rem] font-mono font-bold px-2.5 py-0.5 rounded-full transition-colors ${
+                        isActive
+                          ? "bg-white/25 text-white ring-1 ring-white/30"
+                          : "bg-[#ECE7DE] text-[#181816] group-hover:bg-[#E3DDD1]"
+                      }`}
+                    >
+                      {count}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 
