@@ -2473,18 +2473,6 @@ export const galleryItems: GalleryItem[] = [
     material: "GLASS & METAL",
     finish: "CLEAR & COLOR",
     dimension: "D-50,HT75 MM",
-    stock: "100",
-  },
-  {
-    code: "AAS-5049",
-    name: "GLASS KNOB W/ FIT SCREW",
-    category: "glass-knobs",
-    categoryLabel: "GLASS KNOBS",
-    image: "/products/glass-knobs/Picture28.jpg",
-    material: "GLASS & METAL",
-    finish: "CLEAR & COLOR",
-    dimension: "D-50,HT75 MM",
-    stock: "100",
   },
   {
     code: "AAS-6001",

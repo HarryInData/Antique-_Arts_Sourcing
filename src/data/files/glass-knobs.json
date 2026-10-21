@@ -928,5 +928,563 @@
       "title": "",
       "description": ""
     }
+  },
+  {
+    "id": "AAS-5031",
+    "sku": "AAS-5031",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5031",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Translucent pale seafoam mint jadeite glass knob with flared tulip fluted perimeter and polished nickel-silver mounting collar.",
+    "shortDescription": "Seafoam Mint Fluted Scalloped Tulip Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5031.webp",
+    "gallery": [
+      "/images/products/AAS-5031.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Seafoam Mint Fluted Scalloped Tulip Knob | Antique Arts Sourcing",
+      "description": "Translucent pale seafoam mint jadeite glass knob with flared tulip fluted perimeter and polished nickel-silver mounting collar."
+    }
+  },
+  {
+    "id": "AAS-5032",
+    "sku": "AAS-5032",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5032",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Translucent light aqua blue mushroom-shaped glass knob with controlled internal effervescent bubble inclusions on polished silver pedestal base.",
+    "shortDescription": "Sky Aqua Blue Effervescent Mushroom Bubble Glass Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5032.webp",
+    "gallery": [
+      "/images/products/AAS-5032.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Sky Aqua Blue Effervescent Mushroom Bubble Glass Knob | Antique Arts Sourcing",
+      "description": "Translucent light aqua blue mushroom-shaped glass knob with controlled internal effervescent bubble inclusions on polished silver pedestal base."
+    }
+  },
+  {
+    "id": "AAS-5033",
+    "sku": "AAS-5033",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5033",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Spherical mouth-blown art glass knob in serene seafoam mint green filled with celestial air bubbles, mounted on polished nickel collar.",
+    "shortDescription": "Seafoam Mint Bubble Glass Orb Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5033.webp",
+    "gallery": [
+      "/images/products/AAS-5033.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Seafoam Mint Bubble Glass Orb Knob | Antique Arts Sourcing",
+      "description": "Spherical mouth-blown art glass knob in serene seafoam mint green filled with celestial air bubbles, mounted on polished nickel collar."
+    }
+  },
+  {
+    "id": "AAS-5034",
+    "sku": "AAS-5034",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5034",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Translucent mint green jadeite crystal knob featuring precision octagonal diamond facets, polished silver collar, and rear bolt.",
+    "shortDescription": "Mint Jadeite Octagonal Beveled Crystal Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5034.webp",
+    "gallery": [
+      "/images/products/AAS-5034.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Mint Jadeite Octagonal Beveled Crystal Knob | Antique Arts Sourcing",
+      "description": "Translucent mint green jadeite crystal knob featuring precision octagonal diamond facets, polished silver collar, and rear bolt."
+    }
+  },
+  {
+    "id": "AAS-5035",
+    "sku": "AAS-5035",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5035",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Spherical satin frosted white glass knob with high-relief hexagonal honeycomb facet impressions and silver pedestal collar.",
+    "shortDescription": "Frosted Honeycomb Textured White Glass Orb Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5035.webp",
+    "gallery": [
+      "/images/products/AAS-5035.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Frosted Honeycomb Textured White Glass Orb Knob | Antique Arts Sourcing",
+      "description": "Spherical satin frosted white glass knob with high-relief hexagonal honeycomb facet impressions and silver pedestal collar."
+    }
+  },
+  {
+    "id": "AAS-5036",
+    "sku": "AAS-5036",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5036",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Tumbled frosted sea glass matte white mushroom disc knob with smooth tactile finish and polished nickel-silver stem collar.",
+    "shortDescription": "Frosted Sea Glass White Disc Mushroom Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5036.webp",
+    "gallery": [
+      "/images/products/AAS-5036.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Frosted Sea Glass White Disc Mushroom Knob | Antique Arts Sourcing",
+      "description": "Tumbled frosted sea glass matte white mushroom disc knob with smooth tactile finish and polished nickel-silver stem collar."
+    }
+  },
+  {
+    "id": "AAS-5037",
+    "sku": "AAS-5037",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5037",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Crystal clear pressed glass knob with flared trumpet bell silhouette, deep vertical optic flutes, scalloped face, and brass bolt.",
+    "shortDescription": "Crystal Clear Scalloped Fluted Trumpet Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5037.webp",
+    "gallery": [
+      "/images/products/AAS-5037.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Crystal Clear Scalloped Fluted Trumpet Knob | Antique Arts Sourcing",
+      "description": "Crystal clear pressed glass knob with flared trumpet bell silhouette, deep vertical optic flutes, scalloped face, and brass bolt."
+    }
+  },
+  {
+    "id": "AAS-5038",
+    "sku": "AAS-5038",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5038",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Pure optical crystal glass cabinet knob with octagonal pavilion diamond cut, tapered pedestal stem, and brass threaded screw.",
+    "shortDescription": "Clear Diamond Faceted Octagonal Crystal Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5038.webp",
+    "gallery": [
+      "/images/products/AAS-5038.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Clear Diamond Faceted Octagonal Crystal Knob | Antique Arts Sourcing",
+      "description": "Pure optical crystal glass cabinet knob with octagonal pavilion diamond cut, tapered pedestal stem, and brass threaded screw."
+    }
+  },
+  {
+    "id": "AAS-5039",
+    "sku": "AAS-5039",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5039",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Architectural crystal knob featuring a pointed cathedral turret crown with multi-faceted diamond cut sides and polished silver collar.",
+    "shortDescription": "Pointed Turret Faceted Crystal Jewel Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5039.webp",
+    "gallery": [
+      "/images/products/AAS-5039.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Pointed Turret Faceted Crystal Jewel Knob | Antique Arts Sourcing",
+      "description": "Architectural crystal knob featuring a pointed cathedral turret crown with multi-faceted diamond cut sides and polished silver collar."
+    }
+  },
+  {
+    "id": "AAS-5040",
+    "sku": "AAS-5040",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5040",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Brilliant diamond-cut crystal glass knob with octagonal geometry, sculpted rear floral scalloped collar neck, and threaded steel bolt.",
+    "shortDescription": "Octagonal Diamond Crystal Knob w/ Floral Scallop Neck",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5040.webp",
+    "gallery": [
+      "/images/products/AAS-5040.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Octagonal Diamond Crystal Knob w/ Floral Scallop Neck | Antique Arts Sourcing",
+      "description": "Brilliant diamond-cut crystal glass knob with octagonal geometry, sculpted rear floral scalloped collar neck, and threaded steel bolt."
+    }
+  },
+  {
+    "id": "AAS-5041",
+    "sku": "AAS-5041",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5041",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Tactile clear glass knob adorned with dense rows of raised rounded hobnail studs over a spherical melon body with silver pedestal base.",
+    "shortDescription": "Clear Hobnail Beaded Melon Glass Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5041.webp",
+    "gallery": [
+      "/images/products/AAS-5041.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Clear Hobnail Beaded Melon Glass Knob | Antique Arts Sourcing",
+      "description": "Tactile clear glass knob adorned with dense rows of raised rounded hobnail studs over a spherical melon body with silver pedestal base."
+    }
+  },
+  {
+    "id": "AAS-5042",
+    "sku": "AAS-5042",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5042",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Smooth opaque porcelain milk glass flattened bun knob with polished silver saucer backplate and embossed floral rosette center cap.",
+    "shortDescription": "Opaque Glossy Milk Glass Bun Knob w/ Floral Rosette",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5042.webp",
+    "gallery": [
+      "/images/products/AAS-5042.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Opaque Glossy Milk Glass Bun Knob w/ Floral Rosette | Antique Arts Sourcing",
+      "description": "Smooth opaque porcelain milk glass flattened bun knob with polished silver saucer backplate and embossed floral rosette center cap."
+    }
+  },
+  {
+    "id": "AAS-5043",
+    "sku": "AAS-5043",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5043",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Opaque creamy ivory custard opaline glass fluted melon pumpkin knob with silver saucer backplate and antique floral rosette cap.",
+    "shortDescription": "Ivory Custard Opaline Fluted Melon Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5043.webp",
+    "gallery": [
+      "/images/products/AAS-5043.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Ivory Custard Opaline Fluted Melon Knob | Antique Arts Sourcing",
+      "description": "Opaque creamy ivory custard opaline glass fluted melon pumpkin knob with silver saucer backplate and antique floral rosette cap."
+    }
+  },
+  {
+    "id": "AAS-5044",
+    "sku": "AAS-5044",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5044",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Timeless solitaire diamond brilliant cut crystal glass knob with sharply defined facets, brass washer, and threaded bolt mount.",
+    "shortDescription": "Classic Solitaire Brilliant Diamond Cut Crystal Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5044.webp",
+    "gallery": [
+      "/images/products/AAS-5044.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Classic Solitaire Brilliant Diamond Cut Crystal Knob | Antique Arts Sourcing",
+      "description": "Timeless solitaire diamond brilliant cut crystal glass knob with sharply defined facets, brass washer, and threaded bolt mount."
+    }
+  },
+  {
+    "id": "AAS-5045",
+    "sku": "AAS-5045",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5045",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Wide-faced octagonal diamond cut crystal glass knob with flared conical facet body and threaded steel spindle.",
+    "shortDescription": "Wide Flared Octagonal Crystal Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5045.webp",
+    "gallery": [
+      "/images/products/AAS-5045.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Wide Flared Octagonal Crystal Knob | Antique Arts Sourcing",
+      "description": "Wide-faced octagonal diamond cut crystal glass knob with flared conical facet body and threaded steel spindle."
+    }
+  },
+  {
+    "id": "AAS-5046",
+    "sku": "AAS-5046",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5046",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Heavy crystal glass sphere cut with all-over diamond facets that refract light brilliantly, mounted with brass collar hardware.",
+    "shortDescription": "Spherical Faceted Crystal Orb Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5046.webp",
+    "gallery": [
+      "/images/products/AAS-5046.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Spherical Faceted Crystal Orb Knob | Antique Arts Sourcing",
+      "description": "Heavy crystal glass sphere cut with all-over diamond facets that refract light brilliantly, mounted with brass collar hardware."
+    }
+  },
+  {
+    "id": "AAS-5047",
+    "sku": "AAS-5047",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5047",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Artisanal Venetian Murano style mushroom glass knob encasing vibrant fluid swirls of sapphire blue, amber, ruby red, and emerald green with heavy brass collar.",
+    "shortDescription": "Murano Multicolored Swirl Art Glass Mushroom Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5047.webp",
+    "gallery": [
+      "/images/products/AAS-5047.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Murano Multicolored Swirl Art Glass Mushroom Knob | Antique Arts Sourcing",
+      "description": "Artisanal Venetian Murano style mushroom glass knob encasing vibrant fluid swirls of sapphire blue, amber, ruby red, and emerald green with heavy brass collar."
+    }
+  },
+  {
+    "id": "AAS-5048",
+    "sku": "AAS-5048",
+    "category": "Glass Knobs",
+    "categorySlug": "glass-knobs",
+    "name": "Glass Knob w/ Fit Screw",
+    "slug": "glass-knob-w-fit-screw-aas-5048",
+    "material": "Glass & Metal",
+    "finish": "Clear & Color",
+    "dimensions": "D-50, HT75 MM",
+    "color": "",
+    "weight": null,
+    "description": "Spherical art glass knob in deep smoky topaz amber with rich internal effervescent bubble matrix, fitted with flared polished brass collar and bolt.",
+    "shortDescription": "Smoky Topaz Amber Bubble Glass Orb Knob",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-5048.webp",
+    "gallery": [
+      "/images/products/AAS-5048.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [],
+    "seo": {
+      "title": "Smoky Topaz Amber Bubble Glass Orb Knob | Antique Arts Sourcing",
+      "description": "Spherical art glass knob in deep smoky topaz amber with rich internal effervescent bubble matrix, fitted with flared polished brass collar and bolt."
+    }
   }
 ]
