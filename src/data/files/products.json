@@ -3414,15 +3414,15 @@
     "sku": "AAS-4001",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Telscope",
-    "slug": "telscope-aas-4001",
-    "material": "Brass & Wood",
-    "finish": "Antique",
-    "dimensions": "100CM",
-    "color": "",
+    "name": "Victorian Pocket-Watch Pedestal Desk Clocks (Set of 5)",
+    "slug": "victorian-pocket-watch-pedestal-desk-clocks-set-of-5-aas-4001",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Ensemble of five antique brass pocket-watch style mantel clocks mounted on turned pedestal plinths, featuring Roman numeral ivory dials with tall-ship and marine navigational motifs.",
+    "shortDescription": "Victorian Pocket-Watch Pedestal Desk Clocks (Set of 5)",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3430,14 +3430,21 @@
     "gallery": [
       "/images/products/AAS-4001.webp"
     ],
-    "featured": false,
+    "featured": true,
     "newArrival": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Victorian Pocket-Watch Pedestal Desk Clocks (Set of 5) | Antique Arts Sourcing",
+      "description": "Ensemble of five antique brass pocket-watch style mantel clocks mounted on turned pedestal plinths, featuring Roman numeral ivory dials with tall-ship and marine navigational motifs."
     }
   },
   {
@@ -3445,15 +3452,15 @@
     "sku": "AAS-4002",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Compass",
-    "slug": "compass-aas-4002",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "10CM",
-    "color": "",
+    "name": "Dual-Gimbal Swivel Clock & Magnetic Compass",
+    "slug": "dual-gimbal-swivel-clock-magnetic-compass-aas-4002",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Double-sided swivel desk instrument combining an antique clock and magnetic navigation compass, pivoting between dual turned brass stanchions on an oval stepped plinth.",
+    "shortDescription": "Dual-Gimbal Swivel Clock & Magnetic Compass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3461,14 +3468,21 @@
     "gallery": [
       "/images/products/AAS-4002.webp"
     ],
-    "featured": false,
+    "featured": true,
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Dual-Gimbal Swivel Clock & Magnetic Compass | Antique Arts Sourcing",
+      "description": "Double-sided swivel desk instrument combining an antique clock and magnetic navigation compass, pivoting between dual turned brass stanchions on an oval stepped plinth."
     }
   },
   {
@@ -3476,15 +3490,15 @@
     "sku": "AAS-4003",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Sextant",
-    "slug": "sextant-aas-4003",
-    "material": "Brass",
-    "finish": "Antique",
-    "dimensions": "10 CM",
-    "color": "",
+    "name": "Victoria London 1876 Gimbaled Desk Timepiece",
+    "slug": "victoria-london-1876-gimbaled-desk-timepiece-aas-4003",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Gimbaled marine desk clock marked 'Victoria London 1876' with nautical anchor emblem, brass winding crown, and swivel mounting on an architectural flared bell pedestal.",
+    "shortDescription": "Victoria London 1876 Gimbaled Desk Timepiece",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3493,13 +3507,20 @@
       "/images/products/AAS-4003.webp"
     ],
     "featured": false,
-    "newArrival": false,
+    "newArrival": true,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Victoria London 1876 Gimbaled Desk Timepiece | Antique Arts Sourcing",
+      "description": "Gimbaled marine desk clock marked 'Victoria London 1876' with nautical anchor emblem, brass winding crown, and swivel mounting on an architectural flared bell pedestal."
     }
   },
   {
@@ -3507,15 +3528,15 @@
     "sku": "AAS-4004",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Diving Helmet",
-    "slug": "diving-helmet-aas-4004",
-    "material": "Brass",
-    "finish": "Antique",
-    "dimensions": "10CM",
-    "color": "",
+    "name": "Marine Anchor 1912 Pocket Watch Suite (10 Pieces)",
+    "slug": "marine-anchor-1912-pocket-watch-suite-10-pieces-aas-4004",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 12-18 CM, Custom Export Dimensions",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Collector's ten-piece suite of antique brass pocket watches with link chains, embossed with ship's anchors and 'Marine Anchor 1912' heritage navigational markings.",
+    "shortDescription": "Marine Anchor 1912 Pocket Watch Suite (10 Pieces)",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3527,10 +3548,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Marine Anchor 1912 Pocket Watch Suite (10 Pieces) | Antique Arts Sourcing",
+      "description": "Collector's ten-piece suite of antique brass pocket watches with link chains, embossed with ship's anchors and 'Marine Anchor 1912' heritage navigational markings."
     }
   },
   {
@@ -3538,15 +3566,15 @@
     "sku": "AAS-4005",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Watch",
-    "slug": "watch-aas-4005",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "10 CM",
-    "color": "",
+    "name": "Cast Brass Sea Turtle Swivel Desk Clocks (Trio)",
+    "slug": "cast-brass-sea-turtle-swivel-desk-clocks-trio-aas-4005",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Set of three sculptural maritime desk clocks, each featuring a swivel pocket-watch timepiece supported on the back of a detailed cast brass oceanic sea turtle figurine.",
+    "shortDescription": "Cast Brass Sea Turtle Swivel Desk Clocks (Trio)",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3558,10 +3586,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Cast Brass Sea Turtle Swivel Desk Clocks (Trio) | Antique Arts Sourcing",
+      "description": "Set of three sculptural maritime desk clocks, each featuring a swivel pocket-watch timepiece supported on the back of a detailed cast brass oceanic sea turtle figurine."
     }
   },
   {
@@ -3569,15 +3604,15 @@
     "sku": "AAS-4006",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Pocket Watch",
-    "slug": "pocket-watch-aas-4006",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "'Superior Ship Timekeeper' Engraved Brass Clock",
+    "slug": "superior-ship-timekeeper-engraved-brass-clock-aas-4006",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Antique maritime brass pedestal desk clock engraved 'Superior Ship Timekeeper', featuring an ornate arched bracket on an engraved stepped disc base.",
+    "shortDescription": "'Superior Ship Timekeeper' Engraved Brass Clock",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3586,13 +3621,20 @@
       "/images/products/AAS-4006.webp"
     ],
     "featured": false,
-    "newArrival": false,
+    "newArrival": true,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "'Superior Ship Timekeeper' Engraved Brass Clock | Antique Arts Sourcing",
+      "description": "Antique maritime brass pedestal desk clock engraved 'Superior Ship Timekeeper', featuring an ornate arched bracket on an engraved stepped disc base."
     }
   },
   {
@@ -3600,15 +3642,15 @@
     "sku": "AAS-4007",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Trophy Watch",
-    "slug": "trophy-watch-aas-4007",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "West London Brass Sundial Compass with Latitude Arc",
+    "slug": "west-london-brass-sundial-compass-with-latitude-arc-aas-4007",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "D: 8-12 CM, H: 4-8 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Master navigational instrument with folding gnomon sundial, curved latitude degree arc, and integrated magnetic compass with locking lever, inscribed 'West London'.",
+    "shortDescription": "West London Brass Sundial Compass with Latitude Arc",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3616,14 +3658,21 @@
     "gallery": [
       "/images/products/AAS-4007.webp"
     ],
-    "featured": false,
+    "featured": true,
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "West London Brass Sundial Compass with Latitude Arc | Antique Arts Sourcing",
+      "description": "Master navigational instrument with folding gnomon sundial, curved latitude degree arc, and integrated magnetic compass with locking lever, inscribed 'West London'."
     }
   },
   {
@@ -3631,15 +3680,15 @@
     "sku": "AAS-4008",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Stand Watch",
-    "slug": "stand-watch-aas-4008",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "Master Marine Keychains Showcase (Set of 6)",
+    "slug": "master-marine-keychains-showcase-set-of-6-aas-4008",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Artisanal collection of six solid brass nautical keychains: Admiralty Anchor, Double-Sheave Rigging Pulley, 8-Spoke Ship's Helm, Ocean Racing Yacht, 3-Blade Propeller, and Grapnel Anchor.",
+    "shortDescription": "Master Marine Keychains Showcase (Set of 6)",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3649,12 +3698,19 @@
     ],
     "featured": false,
     "newArrival": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Master Marine Keychains Showcase (Set of 6) | Antique Arts Sourcing",
+      "description": "Artisanal collection of six solid brass nautical keychains: Admiralty Anchor, Double-Sheave Rigging Pulley, 8-Spoke Ship's Helm, Ocean Racing Yacht, 3-Blade Propeller, and Grapnel Anchor."
     }
   },
   {
@@ -3662,15 +3718,15 @@
     "sku": "AAS-4009",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Moon Stand Watch",
-    "slug": "moon-stand-watch-aas-4009",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "Sculpted Alligator Handle Brass Magnifying Glass",
+    "slug": "sculpted-alligator-handle-brass-magnifying-glass-aas-4009",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Luxury collector's reading glass featuring an exquisitely cast solid brass handle sculpted in the realistic form of a Nile crocodile with textured reptilian scales and claws.",
+    "shortDescription": "Sculpted Alligator Handle Brass Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3682,10 +3738,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Sculpted Alligator Handle Brass Magnifying Glass | Antique Arts Sourcing",
+      "description": "Luxury collector's reading glass featuring an exquisitely cast solid brass handle sculpted in the realistic form of a Nile crocodile with textured reptilian scales and claws."
     }
   },
   {
@@ -3693,15 +3756,15 @@
     "sku": "AAS-4010",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Stand Watch",
-    "slug": "stand-watch-aas-4010",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "Victorian Floral Repouss\u00e9 Brass Reading Glass",
+    "slug": "victorian-floral-repouss-brass-reading-glass-aas-4010",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Classical Victorian study magnifying glass with a tapered brass handle chased in ornate botanical vines, scrolling acanthus leaves, and fluted neck collar.",
+    "shortDescription": "Victorian Floral Repouss\u00e9 Brass Reading Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3713,10 +3776,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Victorian Floral Repouss\u00e9 Brass Reading Glass | Antique Arts Sourcing",
+      "description": "Classical Victorian study magnifying glass with a tapered brass handle chased in ornate botanical vines, scrolling acanthus leaves, and fluted neck collar."
     }
   },
   {
@@ -3724,15 +3794,15 @@
     "sku": "AAS-4011",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Stand Watch",
-    "slug": "stand-watch-aas-4011",
-    "material": "Glass",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "Mother-of-Pearl & Ribbed Brass Reading Glass",
+    "slug": "mother-of-pearl-ribbed-brass-reading-glass-aas-4011",
+    "material": "Mother of Pearl & Solid Brass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Opulent desk magnifier featuring alternating segments of natural iridescent mother-of-pearl shell and fluted solid brass rings, crowned with a faceted finial.",
+    "shortDescription": "Mother-of-Pearl & Ribbed Brass Reading Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3741,13 +3811,20 @@
       "/images/products/AAS-4011.webp"
     ],
     "featured": false,
-    "newArrival": false,
+    "newArrival": true,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Mother-of-Pearl & Ribbed Brass Reading Glass | Antique Arts Sourcing",
+      "description": "Opulent desk magnifier featuring alternating segments of natural iridescent mother-of-pearl shell and fluted solid brass rings, crowned with a faceted finial."
     }
   },
   {
@@ -3755,15 +3832,15 @@
     "sku": "AAS-4012",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Watch with Compass",
-    "slug": "watch-with-compass-aas-4012",
-    "material": "Brass & Lense",
-    "finish": "Shining Brass",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "Paisley Foliate Bulbous Brass Magnifying Glass",
+    "slug": "paisley-foliate-bulbous-brass-magnifying-glass-aas-4012",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Ergonomic executive magnifying glass featuring a bulbous hand-chased brass handle adorned with traditional Indian paisley boteh patterns and floral medallions.",
+    "shortDescription": "Paisley Foliate Bulbous Brass Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3775,10 +3852,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Paisley Foliate Bulbous Brass Magnifying Glass | Antique Arts Sourcing",
+      "description": "Ergonomic executive magnifying glass featuring a bulbous hand-chased brass handle adorned with traditional Indian paisley boteh patterns and floral medallions."
     }
   },
   {
@@ -3786,15 +3870,15 @@
     "sku": "AAS-4013",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4013",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Victorian Skeleton Key Handle Brass Reading Glass",
+    "slug": "victorian-skeleton-key-handle-brass-reading-glass-aas-4013",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 12-18 CM, Custom Export Dimensions",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Whimsical antique reading glass crafted with the handle in the silhouette of a monumental Victorian palace skeleton key, complete with pierced clover ward and fluted shaft.",
+    "shortDescription": "Victorian Skeleton Key Handle Brass Reading Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3806,10 +3890,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Victorian Skeleton Key Handle Brass Reading Glass | Antique Arts Sourcing",
+      "description": "Whimsical antique reading glass crafted with the handle in the silhouette of a monumental Victorian palace skeleton key, complete with pierced clover ward and fluted shaft."
     }
   },
   {
@@ -3817,15 +3908,15 @@
     "sku": "AAS-4014",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4014",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Tropical Sculpted Pineapple Brass Reading Glass",
+    "slug": "tropical-sculpted-pineapple-brass-reading-glass-aas-4014",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 12-18 CM, Custom Export Dimensions",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Symbol of maritime hospitality, featuring an intricately textured pineapple handle with diamond-cut fruit scales and spreading crown leaves in solid cast brass.",
+    "shortDescription": "Tropical Sculpted Pineapple Brass Reading Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3837,10 +3928,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Tropical Sculpted Pineapple Brass Reading Glass | Antique Arts Sourcing",
+      "description": "Symbol of maritime hospitality, featuring an intricately textured pineapple handle with diamond-cut fruit scales and spreading crown leaves in solid cast brass."
     }
   },
   {
@@ -3848,15 +3946,15 @@
     "sku": "AAS-4015",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4015",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Cast Brass Palm Frond & Feather Magnifying Glass",
+    "slug": "cast-brass-palm-frond-feather-magnifying-glass-aas-4015",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Art Nouveau inspired desk magnifier with a curved handle modeled as an elegant ribbed palm frond and quill feather with organic ribbing and warm golden patina.",
+    "shortDescription": "Cast Brass Palm Frond & Feather Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3868,10 +3966,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Cast Brass Palm Frond & Feather Magnifying Glass | Antique Arts Sourcing",
+      "description": "Art Nouveau inspired desk magnifier with a curved handle modeled as an elegant ribbed palm frond and quill feather with organic ribbing and warm golden patina."
     }
   },
   {
@@ -3879,15 +3984,15 @@
     "sku": "AAS-4016",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4016",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Spiral Ocean Conch Shell Brass Magnifying Glass",
+    "slug": "spiral-ocean-conch-shell-brass-magnifying-glass-aas-4016",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Marine desk magnifier with a solid cast brass handle sculpted as a spiral sea conch shell with organic fluting, whorls, and coastal nautical character.",
+    "shortDescription": "Spiral Ocean Conch Shell Brass Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3899,10 +4004,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Spiral Ocean Conch Shell Brass Magnifying Glass | Antique Arts Sourcing",
+      "description": "Marine desk magnifier with a solid cast brass handle sculpted as a spiral sea conch shell with organic fluting, whorls, and coastal nautical character."
     }
   },
   {
@@ -3910,15 +4022,15 @@
     "sku": "AAS-4017",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4017",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Baroque Repouss\u00e9 Relievo Brass Reading Glass",
+    "slug": "baroque-repouss-relievo-brass-reading-glass-aas-4017",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Magnificent baroque reading glass featuring high-relief repouss\u00e9 embossing, foliage swags, and scrollwork on a heavy cast brass tapering handle.",
+    "shortDescription": "Baroque Repouss\u00e9 Relievo Brass Reading Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3930,10 +4042,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Baroque Repouss\u00e9 Relievo Brass Reading Glass | Antique Arts Sourcing",
+      "description": "Magnificent baroque reading glass featuring high-relief repouss\u00e9 embossing, foliage swags, and scrollwork on a heavy cast brass tapering handle."
     }
   },
   {
@@ -3941,15 +4060,15 @@
     "sku": "AAS-4018",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4018",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Pewter Gazelle Horn Sculpted Magnifying Glass",
+    "slug": "pewter-gazelle-horn-sculpted-magnifying-glass-aas-4018",
+    "material": "Artisan Cast Pewter & Brass",
+    "finish": "Antiqued Pewter Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Dramatic safari and maritime study magnifier crafted in gunmetal pewter, featuring a sweeping curved handle sculpted in the ribbed spiral form of a gazelle horn.",
+    "shortDescription": "Pewter Gazelle Horn Sculpted Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3961,10 +4080,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Pewter Gazelle Horn Sculpted Magnifying Glass | Antique Arts Sourcing",
+      "description": "Dramatic safari and maritime study magnifier crafted in gunmetal pewter, featuring a sweeping curved handle sculpted in the ribbed spiral form of a gazelle horn."
     }
   },
   {
@@ -3972,15 +4098,15 @@
     "sku": "AAS-4019",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Keychain",
-    "slug": "keychain-aas-4019",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "7CM",
-    "color": "",
+    "name": "Imperial Ruby Red Lacquer & Nickel Magnifying Glass",
+    "slug": "imperial-ruby-red-lacquer-nickel-magnifying-glass-aas-4019",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Polished Heritage Brass",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "High-gloss executive magnifier combining polished nickel-plated brass fittings with a fluted baluster handle finished in rich translucent ruby crimson lacquer.",
+    "shortDescription": "Imperial Ruby Red Lacquer & Nickel Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -3992,10 +4118,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Imperial Ruby Red Lacquer & Nickel Magnifying Glass | Antique Arts Sourcing",
+      "description": "High-gloss executive magnifier combining polished nickel-plated brass fittings with a fluted baluster handle finished in rich translucent ruby crimson lacquer."
     }
   },
   {
@@ -4003,15 +4136,15 @@
     "sku": "AAS-4020",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Table Bell",
-    "slug": "table-bell-aas-4020",
-    "material": "Brass And Wood",
-    "finish": "Shining Brass",
-    "dimensions": "10CM",
-    "color": "",
+    "name": "Polished Gunmetal Aerodynamic Quill Magnifying Glass",
+    "slug": "polished-gunmetal-aerodynamic-quill-magnifying-glass-aas-4020",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Polished Heritage Brass",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Modernist antique reading glass in sleek polished gunmetal steel, featuring an ergonomic curved handle shaped as an aerodynamic quill feather blade.",
+    "shortDescription": "Polished Gunmetal Aerodynamic Quill Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4023,10 +4156,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Polished Gunmetal Aerodynamic Quill Magnifying Glass | Antique Arts Sourcing",
+      "description": "Modernist antique reading glass in sleek polished gunmetal steel, featuring an ergonomic curved handle shaped as an aerodynamic quill feather blade."
     }
   },
   {
@@ -4034,15 +4174,15 @@
     "sku": "AAS-4021",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Telscope",
-    "slug": "telscope-aas-4021",
-    "material": "Brass & Leather",
-    "finish": "Antique",
-    "dimensions": "35CM",
-    "color": "",
+    "name": "Acanthus Baluster Turned Silver-Plated Magnifier",
+    "slug": "acanthus-baluster-turned-silver-plated-magnifier-aas-4021",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Aged Silver Plate & Nickel",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Refined classical silver-plated study magnifier featuring a turned architectural baluster handle with acanthus leaf motifs, fluted collars, and mirror-bright silver polish.",
+    "shortDescription": "Acanthus Baluster Turned Silver-Plated Magnifier",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4054,10 +4194,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Acanthus Baluster Turned Silver-Plated Magnifier | Antique Arts Sourcing",
+      "description": "Refined classical silver-plated study magnifier featuring a turned architectural baluster handle with acanthus leaf motifs, fluted collars, and mirror-bright silver polish."
     }
   },
   {
@@ -4065,15 +4212,15 @@
     "sku": "AAS-4022",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Watch",
-    "slug": "watch-aas-4022",
-    "material": "Brass & Lense",
-    "finish": "Antique",
-    "dimensions": "5CM",
-    "color": "",
+    "name": "Architectural Eiffel Tower Pewter Magnifying Glass",
+    "slug": "architectural-eiffel-tower-pewter-magnifying-glass-aas-4022",
+    "material": "Artisan Cast Pewter & Brass",
+    "finish": "Antiqued Pewter Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Novelty collector's desk magnifier with a detailed pewter handle cast in the architectural lattice silhouette of the Paris Eiffel Tower with arched base.",
+    "shortDescription": "Architectural Eiffel Tower Pewter Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4085,10 +4232,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Architectural Eiffel Tower Pewter Magnifying Glass | Antique Arts Sourcing",
+      "description": "Novelty collector's desk magnifier with a detailed pewter handle cast in the architectural lattice silhouette of the Paris Eiffel Tower with arched base."
     }
   },
   {
@@ -4096,15 +4250,15 @@
     "sku": "AAS-4023",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Telscope",
-    "slug": "telscope-aas-4023",
-    "material": "Brass & Leather",
-    "finish": "Antique",
-    "dimensions": "40CM",
-    "color": "",
+    "name": "Oceanic Textured Starfish Pewter Magnifying Glass",
+    "slug": "oceanic-textured-starfish-pewter-magnifying-glass-aas-4023",
+    "material": "Artisan Cast Pewter & Brass",
+    "finish": "Antiqued Pewter Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Maritime library reading glass with a cast pewter handle formed as an organic sea stem terminating in a textured five-armed ocean starfish with realistic bumps.",
+    "shortDescription": "Oceanic Textured Starfish Pewter Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4116,10 +4270,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Oceanic Textured Starfish Pewter Magnifying Glass | Antique Arts Sourcing",
+      "description": "Maritime library reading glass with a cast pewter handle formed as an organic sea stem terminating in a textured five-armed ocean starfish with realistic bumps."
     }
   },
   {
@@ -4127,15 +4288,15 @@
     "sku": "AAS-4024",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Compass",
-    "slug": "compass-aas-4024",
-    "material": "Brass",
-    "finish": "Antique",
-    "dimensions": "4CM",
-    "color": "",
+    "name": "Faceted Diamond-Cut Optic Crystal Magnifying Glass",
+    "slug": "faceted-diamond-cut-optic-crystal-magnifying-glass-aas-4024",
+    "material": "Solid Brass & Faceted Optical Crystal",
+    "finish": "Aged Silver Plate & Nickel",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Brilliant executive magnifier featuring an optical lead crystal handle carved with diamond-cut lozenge facets, mounted on polished nickel-silver collar fittings.",
+    "shortDescription": "Faceted Diamond-Cut Optic Crystal Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4147,10 +4308,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Faceted Diamond-Cut Optic Crystal Magnifying Glass | Antique Arts Sourcing",
+      "description": "Brilliant executive magnifier featuring an optical lead crystal handle carved with diamond-cut lozenge facets, mounted on polished nickel-silver collar fittings."
     }
   },
   {
@@ -4158,15 +4326,15 @@
     "sku": "AAS-4025",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Magnifying",
-    "slug": "magnifying-aas-4025",
-    "material": "Brass, Lense And Wood",
-    "finish": "Antique",
-    "dimensions": "10CM",
-    "color": "",
+    "name": "Cast Pewter Oceanic Seahorse Magnifying Glass",
+    "slug": "cast-pewter-oceanic-seahorse-magnifying-glass-aas-4025",
+    "material": "Artisan Cast Pewter & Brass",
+    "finish": "Antiqued Pewter Patina",
+    "dimensions": "L: 18-24 CM, D: 7.5-10 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Marine collector's magnifying glass featuring an intricately cast silver-pewter handle sculpted as an upright seahorse with ribbed armor plates, dorsal fin, and curled tail.",
+    "shortDescription": "Cast Pewter Oceanic Seahorse Magnifying Glass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4178,10 +4346,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Cast Pewter Oceanic Seahorse Magnifying Glass | Antique Arts Sourcing",
+      "description": "Marine collector's magnifying glass featuring an intricately cast silver-pewter handle sculpted as an upright seahorse with ribbed armor plates, dorsal fin, and curled tail."
     }
   },
   {
@@ -4189,15 +4364,15 @@
     "sku": "AAS-4026",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Binacuar",
-    "slug": "binacuar-aas-4026",
-    "material": "",
-    "finish": "Antique",
-    "dimensions": "6CM",
-    "color": "",
+    "name": "Harbor Master Leather & Brass Telescope on Mahogany Tripod",
+    "slug": "harbor-master-leather-brass-telescope-on-mahogany-tripod-aas-4026",
+    "material": "Solid Brass & Hand-Stitched Leather",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 35-45 CM, L: 25-30 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Magnificent full-scale maritime floor telescope featuring a hand-stitched saddle leather barrel, solid brass draw tubes, and an adjustable brass-fitted mahogany tripod stand.",
+    "shortDescription": "Harbor Master Leather & Brass Telescope on Mahogany Tripod",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4205,14 +4380,21 @@
     "gallery": [
       "/images/products/AAS-4026.webp"
     ],
-    "featured": false,
+    "featured": true,
     "newArrival": false,
     "bestSeller": false,
-    "isActive": false,
-    "tags": [],
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Harbor Master Leather & Brass Telescope on Mahogany Tripod | Antique Arts Sourcing",
+      "description": "Magnificent full-scale maritime floor telescope featuring a hand-stitched saddle leather barrel, solid brass draw tubes, and an adjustable brass-fitted mahogany tripod stand."
     }
   },
   {
@@ -4220,15 +4402,15 @@
     "sku": "AAS-4027",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Telscope with Stand",
-    "slug": "telscope-with-stand-aas-4027",
-    "material": "Brass And Lether",
-    "finish": "Antique",
-    "dimensions": "23CM",
-    "color": "",
+    "name": "Stanley London 1917 Anchor Solid Brass Pocket Compass",
+    "slug": "stanley-london-1917-anchor-solid-brass-pocket-compass-aas-4027",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "D: 8-12 CM, H: 4-8 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Heavy solid brass pocket compass engraved with Admiralty anchor and marked 'Stanley London 1917', featuring an internal dampened magnetic dial with brass needle lock.",
+    "shortDescription": "Stanley London 1917 Anchor Solid Brass Pocket Compass",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4237,13 +4419,20 @@
       "/images/products/AAS-4027.webp"
     ],
     "featured": false,
-    "newArrival": false,
+    "newArrival": true,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Stanley London 1917 Anchor Solid Brass Pocket Compass | Antique Arts Sourcing",
+      "description": "Heavy solid brass pocket compass engraved with Admiralty anchor and marked 'Stanley London 1917', featuring an internal dampened magnetic dial with brass needle lock."
     }
   },
   {
@@ -4251,15 +4440,15 @@
     "sku": "AAS-4028",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Telscope",
-    "slug": "telscope-aas-4028",
-    "material": "Brass And Lether",
-    "finish": "Shining Brass",
-    "dimensions": "40CM",
-    "color": "",
+    "name": "Leather-Bound Maritime Spyglass on Desktop Brass Tripod",
+    "slug": "leather-bound-maritime-spyglass-on-desktop-brass-tripod-aas-4028",
+    "material": "Solid Brass & Hand-Stitched Leather",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 35-45 CM, L: 25-30 CM",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Executive desktop harbor telescope with stitched saddle-brown leather wrapping, brass draw tube, and a sturdy 3-legged solid brass folding tabletop tripod stand.",
+    "shortDescription": "Leather-Bound Maritime Spyglass on Desktop Brass Tripod",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4269,12 +4458,19 @@
     ],
     "featured": false,
     "newArrival": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Leather-Bound Maritime Spyglass on Desktop Brass Tripod | Antique Arts Sourcing",
+      "description": "Executive desktop harbor telescope with stitched saddle-brown leather wrapping, brass draw tube, and a sturdy 3-legged solid brass folding tabletop tripod stand."
     }
   },
   {
@@ -4282,15 +4478,15 @@
     "sku": "AAS-4029",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Compass",
-    "slug": "compass-aas-4029",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "4CM",
-    "color": "",
+    "name": "Solid Brass 8-Spoke Ship's Wheel Helm Keychain",
+    "slug": "solid-brass-8-spoke-ship-s-wheel-helm-keychain-aas-4029",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Handcrafted solid brass keychain featuring a traditional eight-spoke mariner's ship helm wheel with turned handles and screw-lock pear carabiner.",
+    "shortDescription": "Solid Brass 8-Spoke Ship's Wheel Helm Keychain",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4302,10 +4498,17 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Solid Brass 8-Spoke Ship's Wheel Helm Keychain | Antique Arts Sourcing",
+      "description": "Handcrafted solid brass keychain featuring a traditional eight-spoke mariner's ship helm wheel with turned handles and screw-lock pear carabiner."
     }
   },
   {
@@ -4313,15 +4516,15 @@
     "sku": "AAS-4030",
     "category": "Nautical Collections",
     "categorySlug": "nautical",
-    "name": "Rope Bell",
-    "slug": "rope-bell-aas-4030",
-    "material": "Brass",
-    "finish": "Shining Brass",
-    "dimensions": "10CM",
-    "color": "",
+    "name": "Solid Brass Marine Porthole Window Keychain",
+    "slug": "solid-brass-marine-porthole-window-keychain-aas-4030",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
     "weight": null,
-    "description": "",
-    "shortDescription": "",
+    "description": "Miniature nautical keychain modeled as a ship's bolted porthole window with simulated glass pane, rivet rim, and sturdy brass chain carabiner.",
+    "shortDescription": "Solid Brass Marine Porthole Window Keychain",
     "stock": 100,
     "price": null,
     "currency": "USD",
@@ -4333,10 +4536,1385 @@
     "newArrival": false,
     "bestSeller": false,
     "isActive": true,
-    "tags": [],
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
     "seo": {
-      "title": "",
-      "description": ""
+      "title": "Solid Brass Marine Porthole Window Keychain | Antique Arts Sourcing",
+      "description": "Miniature nautical keychain modeled as a ship's bolted porthole window with simulated glass pane, rivet rim, and sturdy brass chain carabiner."
+    }
+  },
+  {
+    "id": "AAS-4031",
+    "sku": "AAS-4031",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Miniature Articulated Brass Binoculars Keychain",
+    "slug": "miniature-articulated-brass-binoculars-keychain-aas-4031",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Exquisite pocket miniature of antique marine binoculars / opera glasses in solid brass with twin optical barrels, bridge adjustment wheel, and link chain.",
+    "shortDescription": "Miniature Articulated Brass Binoculars Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4031.webp",
+    "gallery": [
+      "/images/products/AAS-4031.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Miniature Articulated Brass Binoculars Keychain | Antique Arts Sourcing",
+      "description": "Exquisite pocket miniature of antique marine binoculars / opera glasses in solid brass with twin optical barrels, bridge adjustment wheel, and link chain."
+    }
+  },
+  {
+    "id": "AAS-4032",
+    "sku": "AAS-4032",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "US Navy Mark V Deep Sea Diver Helmet Keychain",
+    "slug": "us-navy-mark-v-deep-sea-diver-helmet-keychain-aas-4032",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Heavily cast solid brass miniature of the iconic US Navy Mark V deep sea diving helmet with viewing port grates, air valves, and breastplate collar.",
+    "shortDescription": "US Navy Mark V Deep Sea Diver Helmet Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4032.webp",
+    "gallery": [
+      "/images/products/AAS-4032.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "US Navy Mark V Deep Sea Diver Helmet Keychain | Antique Arts Sourcing",
+      "description": "Heavily cast solid brass miniature of the iconic US Navy Mark V deep sea diving helmet with viewing port grates, air valves, and breastplate collar."
+    }
+  },
+  {
+    "id": "AAS-4033",
+    "sku": "AAS-4033",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Folding Teardrop Brass Pocket Loupe Keychain",
+    "slug": "folding-teardrop-brass-pocket-loupe-keychain-aas-4033",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Functional pocket magnifier and bottle opener keychain encased in a swivel teardrop solid brass casing with knurled hinge and chain loop.",
+    "shortDescription": "Folding Teardrop Brass Pocket Loupe Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4033.webp",
+    "gallery": [
+      "/images/products/AAS-4033.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Folding Teardrop Brass Pocket Loupe Keychain | Antique Arts Sourcing",
+      "description": "Functional pocket magnifier and bottle opener keychain encased in a swivel teardrop solid brass casing with knurled hinge and chain loop."
+    }
+  },
+  {
+    "id": "AAS-4034",
+    "sku": "AAS-4034",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Miniature Naval Signal Cannon Carriage Keychain",
+    "slug": "miniature-naval-signal-cannon-carriage-keychain-aas-4034",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Articulated maritime keychain replicating an 18th-century naval shipboard signal cannon with turned brass barrel and rolling field carriage wheels.",
+    "shortDescription": "Miniature Naval Signal Cannon Carriage Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4034.webp",
+    "gallery": [
+      "/images/products/AAS-4034.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Miniature Naval Signal Cannon Carriage Keychain | Antique Arts Sourcing",
+      "description": "Articulated maritime keychain replicating an 18th-century naval shipboard signal cannon with turned brass barrel and rolling field carriage wheels."
+    }
+  },
+  {
+    "id": "AAS-4035",
+    "sku": "AAS-4035",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Mariner's Ship Helm Magnetic Compass Keychain",
+    "slug": "mariner-s-ship-helm-magnetic-compass-keychain-aas-4035",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Nautical navigation keychain featuring a functioning magnetic compass mounted inside the center hub of an eight-spoke solid brass ship's steering wheel.",
+    "shortDescription": "Mariner's Ship Helm Magnetic Compass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4035.webp",
+    "gallery": [
+      "/images/products/AAS-4035.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Mariner's Ship Helm Magnetic Compass Keychain | Antique Arts Sourcing",
+      "description": "Nautical navigation keychain featuring a functioning magnetic compass mounted inside the center hub of an eight-spoke solid brass ship's steering wheel."
+    }
+  },
+  {
+    "id": "AAS-4036",
+    "sku": "AAS-4036",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Handheld Pocket Magnifying Glass Brass Keychain",
+    "slug": "handheld-pocket-magnifying-glass-brass-keychain-aas-4036",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Fully functional miniature reading glass in solid brass with a clear optical glass lens, turned handle finial, and secure brass carabiner chain.",
+    "shortDescription": "Handheld Pocket Magnifying Glass Brass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4036.webp",
+    "gallery": [
+      "/images/products/AAS-4036.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Handheld Pocket Magnifying Glass Brass Keychain | Antique Arts Sourcing",
+      "description": "Fully functional miniature reading glass in solid brass with a clear optical glass lens, turned handle finial, and secure brass carabiner chain."
+    }
+  },
+  {
+    "id": "AAS-4037",
+    "sku": "AAS-4037",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Admiralty Cross-Stock Fluke Anchor Brass Keychain",
+    "slug": "admiralty-cross-stock-fluke-anchor-brass-keychain-aas-4037",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Classic maritime symbolism represented in a solid brass Admiralty pattern anchor keychain with cross-stock bar, curved flukes, and chain shackle.",
+    "shortDescription": "Admiralty Cross-Stock Fluke Anchor Brass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4037.webp",
+    "gallery": [
+      "/images/products/AAS-4037.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Admiralty Cross-Stock Fluke Anchor Brass Keychain | Antique Arts Sourcing",
+      "description": "Classic maritime symbolism represented in a solid brass Admiralty pattern anchor keychain with cross-stock bar, curved flukes, and chain shackle."
+    }
+  },
+  {
+    "id": "AAS-4038",
+    "sku": "AAS-4038",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Articulated Miniature Navigational Sextant Keychain",
+    "slug": "articulated-miniature-navigational-sextant-keychain-aas-4038",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Master craft pocket miniature of a nautical sextant in solid brass with an articulated index arm, calibrated degree arc, miniature mirrors, and telescope.",
+    "shortDescription": "Articulated Miniature Navigational Sextant Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4038.webp",
+    "gallery": [
+      "/images/products/AAS-4038.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Articulated Miniature Navigational Sextant Keychain | Antique Arts Sourcing",
+      "description": "Master craft pocket miniature of a nautical sextant in solid brass with an articulated index arm, calibrated degree arc, miniature mirrors, and telescope."
+    }
+  },
+  {
+    "id": "AAS-4039",
+    "sku": "AAS-4039",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Rotating 50-Year Perpetual Calendar Brass Keychain",
+    "slug": "rotating-50-year-perpetual-calendar-brass-keychain-aas-4039",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Mechanical maritime curiosity featuring dual rotating brass discs engraved with a 50-year perpetual calendar showing days, dates, and months from 2010 to 2060.",
+    "shortDescription": "Rotating 50-Year Perpetual Calendar Brass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4039.webp",
+    "gallery": [
+      "/images/products/AAS-4039.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Rotating 50-Year Perpetual Calendar Brass Keychain | Antique Arts Sourcing",
+      "description": "Mechanical maritime curiosity featuring dual rotating brass discs engraved with a 50-year perpetual calendar showing days, dates, and months from 2010 to 2060."
+    }
+  },
+  {
+    "id": "AAS-4040",
+    "sku": "AAS-4040",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Dual-Sheave Ship Rigging Pulley Block Keychain",
+    "slug": "dual-sheave-ship-rigging-pulley-block-keychain-aas-4040",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Working pocket replica of an antique shipboard rigging tackle with twin rotating grooved brass pulley sheaves enclosed in a riveted block shell.",
+    "shortDescription": "Dual-Sheave Ship Rigging Pulley Block Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4040.webp",
+    "gallery": [
+      "/images/products/AAS-4040.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Dual-Sheave Ship Rigging Pulley Block Keychain | Antique Arts Sourcing",
+      "description": "Working pocket replica of an antique shipboard rigging tackle with twin rotating grooved brass pulley sheaves enclosed in a riveted block shell."
+    }
+  },
+  {
+    "id": "AAS-4041",
+    "sku": "AAS-4041",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Two-Tone Brass & Red Copper 8-Spoke Helm Keychain",
+    "slug": "two-tone-brass-red-copper-8-spoke-helm-keychain-aas-4041",
+    "material": "Solid Brass & Glass",
+    "finish": "Dual-Tone Antiqued Copper & Brass",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Artisanal mariner keychain combining a golden brass eight-spoke ship's wheel with a central red copper rivet hub and knurled wire carabiner.",
+    "shortDescription": "Two-Tone Brass & Red Copper 8-Spoke Helm Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4041.webp",
+    "gallery": [
+      "/images/products/AAS-4041.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Two-Tone Brass & Red Copper 8-Spoke Helm Keychain | Antique Arts Sourcing",
+      "description": "Artisanal mariner keychain combining a golden brass eight-spoke ship's wheel with a central red copper rivet hub and knurled wire carabiner."
+    }
+  },
+  {
+    "id": "AAS-4042",
+    "sku": "AAS-4042",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Solid Brass Working Pocket Magnetic Compass Keychain",
+    "slug": "solid-brass-working-pocket-magnetic-compass-keychain-aas-4042",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Compact maritime navigational keychain housing a high-precision dampened magnetic compass card within a milled solid brass protective drum casing.",
+    "shortDescription": "Solid Brass Working Pocket Magnetic Compass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4042.webp",
+    "gallery": [
+      "/images/products/AAS-4042.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Solid Brass Working Pocket Magnetic Compass Keychain | Antique Arts Sourcing",
+      "description": "Compact maritime navigational keychain housing a high-precision dampened magnetic compass card within a milled solid brass protective drum casing."
+    }
+  },
+  {
+    "id": "AAS-4043",
+    "sku": "AAS-4043",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Brass Caged Hourglass Sandglass Timer Keychain",
+    "slug": "brass-caged-hourglass-sandglass-timer-keychain-aas-4043",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Miniature mariner's sand timer in solid brass featuring a blown glass ampoule with running sand protected by four structural brass cage stanchions.",
+    "shortDescription": "Brass Caged Hourglass Sandglass Timer Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4043.webp",
+    "gallery": [
+      "/images/products/AAS-4043.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Brass Caged Hourglass Sandglass Timer Keychain | Antique Arts Sourcing",
+      "description": "Miniature mariner's sand timer in solid brass featuring a blown glass ampoule with running sand protected by four structural brass cage stanchions."
+    }
+  },
+  {
+    "id": "AAS-4044",
+    "sku": "AAS-4044",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Hall's Patent Stockless Grapnel Anchor Keychain",
+    "slug": "hall-s-patent-stockless-grapnel-anchor-keychain-aas-4044",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Heavy brass keychain modeled after the modern naval Hall's stockless anchor with pivoting flukes, heavy crown head, and threaded key carabiner.",
+    "shortDescription": "Hall's Patent Stockless Grapnel Anchor Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4044.webp",
+    "gallery": [
+      "/images/products/AAS-4044.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Hall's Patent Stockless Grapnel Anchor Keychain | Antique Arts Sourcing",
+      "description": "Heavy brass keychain modeled after the modern naval Hall's stockless anchor with pivoting flukes, heavy crown head, and threaded key carabiner."
+    }
+  },
+  {
+    "id": "AAS-4045",
+    "sku": "AAS-4045",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Caged Maritime Masthead Storm Lantern Keychain",
+    "slug": "caged-maritime-masthead-storm-lantern-keychain-aas-4045",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Charming brass pocket miniature of a ship's storm lantern with a vented top chimney dome, protective wire cage bars, and chain loop.",
+    "shortDescription": "Caged Maritime Masthead Storm Lantern Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4045.webp",
+    "gallery": [
+      "/images/products/AAS-4045.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Caged Maritime Masthead Storm Lantern Keychain | Antique Arts Sourcing",
+      "description": "Charming brass pocket miniature of a ship's storm lantern with a vented top chimney dome, protective wire cage bars, and chain loop."
+    }
+  },
+  {
+    "id": "AAS-4046",
+    "sku": "AAS-4046",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Smith London Brass Sea Turtle Swivel Desk Clock",
+    "slug": "smith-london-brass-sea-turtle-swivel-desk-clock-aas-4046",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Iconic mariner's desk timepiece marked 'Smith London', featuring a swivel pocket-watch casing held on a solid cast brass oceanic sea turtle sculpture.",
+    "shortDescription": "Smith London Brass Sea Turtle Swivel Desk Clock",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4046.webp",
+    "gallery": [
+      "/images/products/AAS-4046.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Smith London Brass Sea Turtle Swivel Desk Clock | Antique Arts Sourcing",
+      "description": "Iconic mariner's desk timepiece marked 'Smith London', featuring a swivel pocket-watch casing held on a solid cast brass oceanic sea turtle sculpture."
+    }
+  },
+  {
+    "id": "AAS-4047",
+    "sku": "AAS-4047",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Gilbert & Sons Triangular Brass Sundial Compass",
+    "slug": "gilbert-sons-triangular-brass-sundial-compass-aas-4047",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "D: 8-12 CM, H: 4-8 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Historic scientific instrument marked 'Gilbert & Sons London', combining a triangular brass base, folding shadow gnomon, round compass, and tubular spirit bubble level.",
+    "shortDescription": "Gilbert & Sons Triangular Brass Sundial Compass",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4047.webp",
+    "gallery": [
+      "/images/products/AAS-4047.webp"
+    ],
+    "featured": false,
+    "newArrival": true,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Gilbert & Sons Triangular Brass Sundial Compass | Antique Arts Sourcing",
+      "description": "Historic scientific instrument marked 'Gilbert & Sons London', combining a triangular brass base, folding shadow gnomon, round compass, and tubular spirit bubble level."
+    }
+  },
+  {
+    "id": "AAS-4048",
+    "sku": "AAS-4048",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Renaissance Brass Armillary Sphere & Astrolabe",
+    "slug": "renaissance-brass-armillary-sphere-astrolabe-aas-4048",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 12-18 CM, Custom Export Dimensions",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Monumental navigational sphere with interlocking graduated brass rings, central terrestrial globe, zodiac band, and meridian ring mounted on an urn pedestal plinth.",
+    "shortDescription": "Renaissance Brass Armillary Sphere & Astrolabe",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4048.webp",
+    "gallery": [
+      "/images/products/AAS-4048.webp"
+    ],
+    "featured": true,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Renaissance Brass Armillary Sphere & Astrolabe | Antique Arts Sourcing",
+      "description": "Monumental navigational sphere with interlocking graduated brass rings, central terrestrial globe, zodiac band, and meridian ring mounted on an urn pedestal plinth."
+    }
+  },
+  {
+    "id": "AAS-4049",
+    "sku": "AAS-4049",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Diving Helmet Desk Clocks with Inset Compasses (Trio)",
+    "slug": "diving-helmet-desk-clocks-with-inset-compasses-trio-aas-4049",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Dual-Tone Antiqued Copper & Brass",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Trio of heavyweight brass and copper Mark V diving helmet sculptures, each featuring an inset front clock dial and top-mounted navigation compass.",
+    "shortDescription": "Diving Helmet Desk Clocks with Inset Compasses (Trio)",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4049.webp",
+    "gallery": [
+      "/images/products/AAS-4049.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": true,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Diving Helmet Desk Clocks with Inset Compasses (Trio) | Antique Arts Sourcing",
+      "description": "Trio of heavyweight brass and copper Mark V diving helmet sculptures, each featuring an inset front clock dial and top-mounted navigation compass."
+    }
+  },
+  {
+    "id": "AAS-4050",
+    "sku": "AAS-4050",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Kelvin & Hughes London 1917 Master Brass Sextant",
+    "slug": "kelvin-hughes-london-1917-master-brass-sextant-aas-4050",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 20-40 CM (Extended)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Museum-grade mariner's sextant inscribed 'Kelvin & Hughes London 1917' with index arm, optical sighting telescope, index mirrors, and colored sun shade filters.",
+    "shortDescription": "Kelvin & Hughes London 1917 Master Brass Sextant",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4050.webp",
+    "gallery": [
+      "/images/products/AAS-4050.webp"
+    ],
+    "featured": true,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Kelvin & Hughes London 1917 Master Brass Sextant | Antique Arts Sourcing",
+      "description": "Museum-grade mariner's sextant inscribed 'Kelvin & Hughes London 1917' with index arm, optical sighting telescope, index mirrors, and colored sun shade filters."
+    }
+  },
+  {
+    "id": "AAS-4051",
+    "sku": "AAS-4051",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Fluted Scallop Sea Clam Shell Solid Brass Keychain",
+    "slug": "fluted-scallop-sea-clam-shell-solid-brass-keychain-aas-4051",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Marine littoral keychain crafted in solid cast brass in the organic form of a scalloped clam shell with radiating ribbed grooves and oval carabiner.",
+    "shortDescription": "Fluted Scallop Sea Clam Shell Solid Brass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4051.webp",
+    "gallery": [
+      "/images/products/AAS-4051.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Fluted Scallop Sea Clam Shell Solid Brass Keychain | Antique Arts Sourcing",
+      "description": "Marine littoral keychain crafted in solid cast brass in the organic form of a scalloped clam shell with radiating ribbed grooves and oval carabiner."
+    }
+  },
+  {
+    "id": "AAS-4052",
+    "sku": "AAS-4052",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Chased Acanthus Victorian Brass Reception Desk Bell",
+    "slug": "chased-acanthus-victorian-brass-reception-desk-bell-aas-4052",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 12-16 CM, D: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Antique hotel and ship's reception counter call bell in cast brass, chased with ornate acanthus scrollwork and floral cartouches with a top push-button striker.",
+    "shortDescription": "Chased Acanthus Victorian Brass Reception Desk Bell",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4052.webp",
+    "gallery": [
+      "/images/products/AAS-4052.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Chased Acanthus Victorian Brass Reception Desk Bell | Antique Arts Sourcing",
+      "description": "Antique hotel and ship's reception counter call bell in cast brass, chased with ornate acanthus scrollwork and floral cartouches with a top push-button striker."
+    }
+  },
+  {
+    "id": "AAS-4053",
+    "sku": "AAS-4053",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Polished Brass Service Call Bell on Turned Rosewood Base",
+    "slug": "polished-brass-service-call-bell-on-turned-rosewood-base-aas-4053",
+    "material": "Solid Brass & Hardwood",
+    "finish": "Polished Heritage Brass",
+    "dimensions": "H: 12-16 CM, D: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Classic officer's counter bell featuring a mirror-polished golden brass bell dome with top striker pin mounted onto a turned dark Indian rosewood plinth.",
+    "shortDescription": "Polished Brass Service Call Bell on Turned Rosewood Base",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4053.webp",
+    "gallery": [
+      "/images/products/AAS-4053.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Polished Brass Service Call Bell on Turned Rosewood Base | Antique Arts Sourcing",
+      "description": "Classic officer's counter bell featuring a mirror-polished golden brass bell dome with top striker pin mounted onto a turned dark Indian rosewood plinth."
+    }
+  },
+  {
+    "id": "AAS-4054",
+    "sku": "AAS-4054",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Robert Frost 'Road Not Taken' Compass with Leather Case",
+    "slug": "robert-frost-road-not-taken-compass-with-leather-case-aas-4054",
+    "material": "Solid Brass & Hand-Stitched Leather",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "D: 8-12 CM, H: 4-8 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Engraved brass presentation pocket compass with poem excerpt from Robert Frost's 'The Road Not Taken' inside the lid, paired with a custom stitched leather pouch.",
+    "shortDescription": "Robert Frost 'Road Not Taken' Compass with Leather Case",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4054.webp",
+    "gallery": [
+      "/images/products/AAS-4054.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": true,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Robert Frost 'Road Not Taken' Compass with Leather Case | Antique Arts Sourcing",
+      "description": "Engraved brass presentation pocket compass with poem excerpt from Robert Frost's 'The Road Not Taken' inside the lid, paired with a custom stitched leather pouch."
+    }
+  },
+  {
+    "id": "AAS-4055",
+    "sku": "AAS-4055",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Dollond London 1920 4-Draw Spyglass with Embossed Case",
+    "slug": "dollond-london-1920-4-draw-spyglass-with-embossed-case-aas-4055",
+    "material": "Solid Brass & Hand-Stitched Leather",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 20-40 CM (Extended)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Authentic marine officer's 4-draw collapsible brass spyglass engraved 'Dollond London 1920', accompanied by a heavy embossed saddle-leather protective cylinder case.",
+    "shortDescription": "Dollond London 1920 4-Draw Spyglass with Embossed Case",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4055.webp",
+    "gallery": [
+      "/images/products/AAS-4055.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Dollond London 1920 4-Draw Spyglass with Embossed Case | Antique Arts Sourcing",
+      "description": "Authentic marine officer's 4-draw collapsible brass spyglass engraved 'Dollond London 1920', accompanied by a heavy embossed saddle-leather protective cylinder case."
+    }
+  },
+  {
+    "id": "AAS-4056",
+    "sku": "AAS-4056",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Maritime Pocket Watch Showcase (Set of 9)",
+    "slug": "maritime-pocket-watch-showcase-set-of-9-aas-4056",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 12-18 CM, Custom Export Dimensions",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Collector's nine-piece showcase of antique brass pocket watches with chains, featuring Victoria London 1876, Marine Arts 1917, and ship's anchor engraved cases.",
+    "shortDescription": "Maritime Pocket Watch Showcase (Set of 9)",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4056.webp",
+    "gallery": [
+      "/images/products/AAS-4056.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Maritime Pocket Watch Showcase (Set of 9) | Antique Arts Sourcing",
+      "description": "Collector's nine-piece showcase of antique brass pocket watches with chains, featuring Victoria London 1876, Marine Arts 1917, and ship's anchor engraved cases."
+    }
+  },
+  {
+    "id": "AAS-4057",
+    "sku": "AAS-4057",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Antique Brass Rococo Scrollwork Easel Desk Clocks",
+    "slug": "antique-brass-rococo-scrollwork-easel-desk-clocks-aas-4057",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Pair of ornate cast brass easel-back mantel clocks featuring pierced Rococo scrollwork frames, shell crestings, and vintage marine anchor timekeeper dials.",
+    "shortDescription": "Antique Brass Rococo Scrollwork Easel Desk Clocks",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4057.webp",
+    "gallery": [
+      "/images/products/AAS-4057.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Antique Brass Rococo Scrollwork Easel Desk Clocks | Antique Arts Sourcing",
+      "description": "Pair of ornate cast brass easel-back mantel clocks featuring pierced Rococo scrollwork frames, shell crestings, and vintage marine anchor timekeeper dials."
+    }
+  },
+  {
+    "id": "AAS-4058",
+    "sku": "AAS-4058",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Royal Navy Boatswain Bosun Pipe Whistle Keychain",
+    "slug": "royal-navy-boatswain-bosun-pipe-whistle-keychain-aas-4058",
+    "material": "Solid Brass & Glass",
+    "finish": "Dual-Tone Antiqued Copper & Brass",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Authentic mariner's boatswain pipe whistle in polished brass and copper with curved sound gun, buoy sphere chamber, keel fin, and carabiner chain.",
+    "shortDescription": "Royal Navy Boatswain Bosun Pipe Whistle Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4058.webp",
+    "gallery": [
+      "/images/products/AAS-4058.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Royal Navy Boatswain Bosun Pipe Whistle Keychain | Antique Arts Sourcing",
+      "description": "Authentic mariner's boatswain pipe whistle in polished brass and copper with curved sound gun, buoy sphere chamber, keel fin, and carabiner chain."
+    }
+  },
+  {
+    "id": "AAS-4059",
+    "sku": "AAS-4059",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Cast Brass Marine Officer & Referee Whistle Keychain",
+    "slug": "cast-brass-marine-officer-referee-whistle-keychain-aas-4059",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Heavy-gauge solid cast brass mariner and officer sound whistle with internal cork pea, suspension loop, chain links, and threaded knurled carabiner.",
+    "shortDescription": "Cast Brass Marine Officer & Referee Whistle Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4059.webp",
+    "gallery": [
+      "/images/products/AAS-4059.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Cast Brass Marine Officer & Referee Whistle Keychain | Antique Arts Sourcing",
+      "description": "Heavy-gauge solid cast brass mariner and officer sound whistle with internal cork pea, suspension loop, chain links, and threaded knurled carabiner."
+    }
+  },
+  {
+    "id": "AAS-4060",
+    "sku": "AAS-4060",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Robert Frost 'Road Not Taken' Wreath Pocket Compass",
+    "slug": "robert-frost-road-not-taken-wreath-pocket-compass-aas-4060",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "D: 8-12 CM, H: 4-8 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Heirloom presentation pocket compass in solid brass featuring the complete Robert Frost poem deeply engraved within a decorative rope-twist and laurel wreath border.",
+    "shortDescription": "Robert Frost 'Road Not Taken' Wreath Pocket Compass",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4060.webp",
+    "gallery": [
+      "/images/products/AAS-4060.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Robert Frost 'Road Not Taken' Wreath Pocket Compass | Antique Arts Sourcing",
+      "description": "Heirloom presentation pocket compass in solid brass featuring the complete Robert Frost poem deeply engraved within a decorative rope-twist and laurel wreath border."
+    }
+  },
+  {
+    "id": "AAS-4061",
+    "sku": "AAS-4061",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "'Not All Those Who Wander Are Lost' Compasses (8 Pieces)",
+    "slug": "not-all-those-who-wander-are-lost-compasses-8-pieces-aas-4061",
+    "material": "Solid Brass & Hand-Stitched Leather",
+    "finish": "Dual-Tone Antiqued Copper & Brass",
+    "dimensions": "D: 8-12 CM, H: 4-8 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Eight-piece collector's compass ensemble in brass, antique bronze, copper, and gunmetal finishes engraved 'Not All Those Who Wander Are Lost', with custom leather pouches.",
+    "shortDescription": "'Not All Those Who Wander Are Lost' Compasses (8 Pieces)",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4061.webp",
+    "gallery": [
+      "/images/products/AAS-4061.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "'Not All Those Who Wander Are Lost' Compasses (8 Pieces) | Antique Arts Sourcing",
+      "description": "Eight-piece collector's compass ensemble in brass, antique bronze, copper, and gunmetal finishes engraved 'Not All Those Who Wander Are Lost', with custom leather pouches."
+    }
+  },
+  {
+    "id": "AAS-4062",
+    "sku": "AAS-4062",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Victorian Marine Telescope R&J Beck London 1857",
+    "slug": "victorian-marine-telescope-r-j-beck-london-1857-aas-4062",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 20-40 CM (Extended)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Historic 3-draw marine spyglass in black enameled brass with oval medallion marked 'Victorian Marine Telescope R&J Beck London 1857', with push-on lens cap.",
+    "shortDescription": "Victorian Marine Telescope R&J Beck London 1857",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4062.webp",
+    "gallery": [
+      "/images/products/AAS-4062.webp"
+    ],
+    "featured": false,
+    "newArrival": true,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Victorian Marine Telescope R&J Beck London 1857 | Antique Arts Sourcing",
+      "description": "Historic 3-draw marine spyglass in black enameled brass with oval medallion marked 'Victorian Marine Telescope R&J Beck London 1857', with push-on lens cap."
+    }
+  },
+  {
+    "id": "AAS-4063",
+    "sku": "AAS-4063",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Stitched Saddle Brown Leather Marine Draw Spyglass",
+    "slug": "stitched-saddle-brown-leather-marine-draw-spyglass-aas-4063",
+    "material": "Solid Brass & Hand-Stitched Leather",
+    "finish": "Polished Heritage Brass",
+    "dimensions": "L: 20-40 CM (Extended)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Classic mariner's draw telescope wrapped in hand-stitched rich cognac saddle leather with cross-laced detailing and mirror-polished solid brass fittings.",
+    "shortDescription": "Stitched Saddle Brown Leather Marine Draw Spyglass",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4063.webp",
+    "gallery": [
+      "/images/products/AAS-4063.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": true,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Stitched Saddle Brown Leather Marine Draw Spyglass | Antique Arts Sourcing",
+      "description": "Classic mariner's draw telescope wrapped in hand-stitched rich cognac saddle leather with cross-laced detailing and mirror-polished solid brass fittings."
+    }
+  },
+  {
+    "id": "AAS-4064",
+    "sku": "AAS-4064",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Maritime Pocket Watch Desk Clocks Ensemble (Set of 6)",
+    "slug": "maritime-pocket-watch-desk-clocks-ensemble-set-of-6-aas-4064",
+    "material": "Solid Brass, Glass & Copper",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "H: 15-22 CM, W: 10-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Six-piece ensemble of maritime desk clocks on flared pedestals, featuring Victoria London 1876 anchor dials and hand-painted tall ship clipper dials.",
+    "shortDescription": "Maritime Pocket Watch Desk Clocks Ensemble (Set of 6)",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4064.webp",
+    "gallery": [
+      "/images/products/AAS-4064.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Maritime Pocket Watch Desk Clocks Ensemble (Set of 6) | Antique Arts Sourcing",
+      "description": "Six-piece ensemble of maritime desk clocks on flared pedestals, featuring Victoria London 1876 anchor dials and hand-painted tall ship clipper dials."
+    }
+  },
+  {
+    "id": "AAS-4065",
+    "sku": "AAS-4065",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "Cylindrical Marine Knurled Brass Sounding Whistle",
+    "slug": "cylindrical-marine-knurled-brass-sounding-whistle-aas-4065",
+    "material": "Solid Brass & Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-14 CM",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Tubular solid brass marine signaling whistle with diamond-knurled center band, resonant acoustic chamber, suspension eyelet, and carabiner chain.",
+    "shortDescription": "Cylindrical Marine Knurled Brass Sounding Whistle",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4065.webp",
+    "gallery": [
+      "/images/products/AAS-4065.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "Cylindrical Marine Knurled Brass Sounding Whistle | Antique Arts Sourcing",
+      "description": "Tubular solid brass marine signaling whistle with diamond-knurled center band, resonant acoustic chamber, suspension eyelet, and carabiner chain."
+    }
+  },
+  {
+    "id": "AAS-4066",
+    "sku": "AAS-4066",
+    "category": "Nautical Collections",
+    "categorySlug": "nautical",
+    "name": "S.S. Albatross Miniature Brass Draw Spyglass Keychain",
+    "slug": "s-s-albatross-miniature-brass-draw-spyglass-keychain-aas-4066",
+    "material": "Solid Brass & Precision Optical Glass",
+    "finish": "Antiqued Aged Brass Patina",
+    "dimensions": "L: 8-12 CM (Overall)",
+    "color": "Antiqued Brass / Gold",
+    "weight": null,
+    "description": "Delightful functioning pocket miniature 3-draw brass spyglass engraved 'S.S. ALBATROSS' with extending optical lenses and threaded screw-collar carabiner.",
+    "shortDescription": "S.S. Albatross Miniature Brass Draw Spyglass Keychain",
+    "stock": 100,
+    "price": null,
+    "currency": "USD",
+    "image": "/images/products/AAS-4066.webp",
+    "gallery": [
+      "/images/products/AAS-4066.webp"
+    ],
+    "featured": false,
+    "newArrival": false,
+    "bestSeller": false,
+    "isActive": true,
+    "tags": [
+      "nautical",
+      "antique",
+      "brass",
+      "maritime",
+      "handcrafted",
+      "export"
+    ],
+    "seo": {
+      "title": "S.S. Albatross Miniature Brass Draw Spyglass Keychain | Antique Arts Sourcing",
+      "description": "Delightful functioning pocket miniature 3-draw brass spyglass engraved 'S.S. ALBATROSS' with extending optical lenses and threaded screw-collar carabiner."
     }
   },
   {
