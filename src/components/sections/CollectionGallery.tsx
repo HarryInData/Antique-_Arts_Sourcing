@@ -6,6 +6,15 @@ import Link from "next/link";
 import { useReveal } from "@/hooks/useReveal";
 import { collections } from "@/data/collections";
 
+const categoryVideos: Record<string, string> = {
+  lamps: "/videos/lamps-lighting-hero.mp4",
+  "glass-vases": "/videos/glass-vases.mp4",
+  antique: "/videos/antique-collection.mp4",
+  "glass-knobs": "/videos/glass-knobs.mp4",
+  "glass-votives": "/videos/glass-votives.mp4",
+  nautical: "/videos/nautical.mp4",
+};
+
 export const CollectionGallery: FC = () => {
   const { ref, isVisible } = useReveal();
 
@@ -34,6 +43,7 @@ export const CollectionGallery: FC = () => {
           {collections.map((cat, i) => {
             const isWide = i % 7 === 0 || i % 7 === 6;
             const numStr = String(i + 1).padStart(2, "0");
+            const videoSrc = categoryVideos[cat.filterKey];
 
             return (
               <Link
@@ -43,20 +53,32 @@ export const CollectionGallery: FC = () => {
                   isWide ? "md:col-span-2 lg:col-span-2" : "col-span-1"
                 }`}
               >
-                {/* Image Box */}
+                {/* Image / Video Box */}
                 <div
                   className={`relative overflow-hidden bg-[#ECE7DE] mb-5 border border-[rgba(24,24,22,0.08)] ${
                     isWide ? "aspect-[16/9] sm:aspect-[2/1]" : "aspect-[4/5]"
                   }`}
                 >
-                  <Image
-                    src={cat.image}
-                    alt={`${cat.title} — Handcrafted luxury export décor by Antique Arts Sourcing`}
-                    fill
-                    sizes={isWide ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-                    className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]"
-                  />
-                  <div className="absolute top-3 left-3 bg-[#F4F1EA]/90 backdrop-blur-md px-2.5 py-1 text-[9px] font-sans font-medium tracking-[0.2em] uppercase text-[#181816]">
+                  {videoSrc ? (
+                    <video
+                      src={videoSrc}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="auto"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]"
+                    />
+                  ) : (
+                    <Image
+                      src={cat.image}
+                      alt={`${cat.title} — Handcrafted luxury export décor by Antique Arts Sourcing`}
+                      fill
+                      sizes={isWide ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+                      className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03]"
+                    />
+                  )}
+                  <div className="absolute top-3 left-3 bg-[#F4F1EA]/90 backdrop-blur-md px-2.5 py-1 text-[9px] font-sans font-medium tracking-[0.2em] uppercase text-[#181816] z-10">
                     Category {numStr}
                   </div>
                 </div>
